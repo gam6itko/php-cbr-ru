@@ -1,0 +1,24 @@
+{
+    "name": "gam6itko/php-cbrru",
+    "keywords": ["cbrru","cbr","api", "php", "russia", "banking"],
+    "description": "CBR.RU API for PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Strizhak",
+            "email": "gam6itko@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "7.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gam6itko\\CbrRu\\": "src"
+        }
+    }
+}
