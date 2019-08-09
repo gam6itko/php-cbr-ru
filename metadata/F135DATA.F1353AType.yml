@@ -1,0 +1,34 @@
+Gam6itko\CbrRu\Type\F135DATA\F1353AType:
+    properties:
+        c3:
+            expose: true
+            access_type: public_method
+            serialized_name: C3
+            accessor:
+                getter: getC3
+                setter: setC3
+            type: string
+        v3:
+            expose: true
+            access_type: public_method
+            serialized_name: V3
+            accessor:
+                getter: getV3
+                setter: setV3
+            type: float
+        v32:
+            expose: true
+            access_type: public_method
+            serialized_name: V3_2
+            accessor:
+                getter: getV32
+                setter: setV32
+            type: float
+        v33:
+            expose: true
+            access_type: public_method
+            serialized_name: V3_3
+            accessor:
+                getter: getV33
+                setter: setV33
+            type: string

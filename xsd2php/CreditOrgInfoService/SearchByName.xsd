@@ -1,0 +1,19 @@
+<xs:schema xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+           id="CreditOrg">
+    <xs:element name="CreditOrg" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="EnumCredits">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="IntCode" msdata:Caption="Вн. код КО" type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="OrgName" msdata:Caption="Название орг." type="xs:string" minOccurs="0"/>
+                            <xs:element name="bic" msdata:Caption="Код BIC" type="xs:string" minOccurs="0"/>
+                            <xs:element name="cregnum" msdata:Caption="рег. номер" type="xs:decimal" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

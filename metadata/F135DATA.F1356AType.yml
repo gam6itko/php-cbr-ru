@@ -1,0 +1,18 @@
+Gam6itko\CbrRu\Type\F135DATA\F1356AType:
+    properties:
+        v61:
+            expose: true
+            access_type: public_method
+            serialized_name: V6_1
+            accessor:
+                getter: getV61
+                setter: setV61
+            type: float
+        v62:
+            expose: true
+            access_type: public_method
+            serialized_name: V6_2
+            accessor:
+                getter: getV62
+                setter: setV62
+            type: float

@@ -1,0 +1,20 @@
+<xs:schema xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+           xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" id="F134DATA">
+    <xs:element name="F134DATA" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:OnDate="20190809">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="FD">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NS" msdata:Caption="Номер строки" type="xs:string" minOccurs="0"/>
+                            <xs:element name="PN" msdata:Caption="Наименование показателя" type="xs:string"
+                                        minOccurs="0"/>
+                            <xs:element name="VAL" msdata:Caption="Остаток на отчётную дату" type="xs:decimal"
+                                        minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

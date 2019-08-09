@@ -1,0 +1,14 @@
+Gam6itko\CbrRu\Type\F102DATAFULL:
+    xml_root_name: F102DATAFULL
+    properties:
+        fDF:
+            expose: true
+            access_type: public_method
+            serialized_name: FDF
+            accessor:
+                getter: getFDF
+                setter: setFDF
+            xml_list:
+                inline: true
+                entry_name: FDF
+            type: array<Gam6itko\CbrRu\Type\F102DATAFULL\FDFAType>

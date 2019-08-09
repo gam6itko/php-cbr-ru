@@ -1,0 +1,18 @@
+<xs:schema xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+           id="RegionsEnum">
+    <xs:element name="RegionsEnum" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="RGID">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="RegCode" msdata:Caption="Внутренний код региона" type="xs:decimal"
+                                        minOccurs="0"/>
+                            <xs:element name="CNAME" msdata:Caption="Название региона" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,14 @@
+Gam6itko\CbrRu\Type\CoOffices:
+    xml_root_name: CoOffices
+    properties:
+        offices:
+            expose: true
+            access_type: public_method
+            serialized_name: Offices
+            accessor:
+                getter: getOffices
+                setter: setOffices
+            xml_list:
+                inline: true
+                entry_name: Offices
+            type: array<Gam6itko\CbrRu\Type\CoOffices\OfficesAType>

@@ -1,0 +1,21 @@
+<xs:schema xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+           id="IndicatorsEnum101">
+    <xs:element name="IndicatorsEnum101" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="EIND">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="IndID" msdata:Caption="Внутренний код" type="xs:short" minOccurs="0"/>
+                            <xs:element name="IndCode" msdata:Caption="Номер счета" type="xs:string" minOccurs="0"/>
+                            <xs:element name="name" msdata:Caption="Название счетов баланса" type="xs:string"
+                                        minOccurs="0"/>
+                            <xs:element name="IndType" msdata:Caption="Код счета" type="xs:string" minOccurs="0"/>
+                            <xs:element name="IndChapter" msdata:Caption="Код раздела" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

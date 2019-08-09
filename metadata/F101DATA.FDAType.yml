@@ -1,0 +1,26 @@
+Gam6itko\CbrRu\Type\F101DATA\FDAType:
+    properties:
+        dT:
+            expose: true
+            access_type: public_method
+            serialized_name: DT
+            accessor:
+                getter: getDT
+                setter: setDT
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        val:
+            expose: true
+            access_type: public_method
+            serialized_name: val
+            accessor:
+                getter: getVal
+                setter: setVal
+            type: float
+        aP:
+            expose: true
+            access_type: public_method
+            serialized_name: AP
+            accessor:
+                getter: getAP
+                setter: setAP
+            type: string

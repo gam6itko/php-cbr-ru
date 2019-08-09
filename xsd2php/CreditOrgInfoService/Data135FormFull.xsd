@@ -1,0 +1,75 @@
+<xs:schema xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+           xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" id="F135DATA">
+    <xs:element name="F135DATA" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:OnDate="20190809">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="F135_1"
+                            msprop:Title="Раздел 1. Расшифровки отдельных балансовых счетов для расчёта обязательных нормативов">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="C1" msdata:Caption="Код обозначения" type="xs:string" minOccurs="0"/>
+                            <xs:element name="V1" msdata:Caption="Сумма, тыс. руб." type="xs:decimal" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="F135_2"
+                            msprop:Title="Раздел 2. Отдельные показатели деятельности кредитной организации, используемые для расчёта обязательных нормативов">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="C2" msdata:Caption="Код" type="xs:string" minOccurs="0"/>
+                            <xs:element name="V2" msdata:Caption="Значение, тыс. руб" type="xs:decimal" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="F135_3" msprop:Title="Раздел 3. Значения обязательных нормативов">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="C3" msdata:Caption="Код" type="xs:string" minOccurs="0"/>
+                            <xs:element name="V3" msdata:Caption="Фактическое значение, процент" type="xs:decimal"
+                                        minOccurs="0"/>
+                            <xs:element name="V3_2" msdata:Caption="Установленное контрольное значение, процент"
+                                        type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="V3_3" msdata:Caption="Примечание" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="F135_4"
+                            msprop:Title="Раздел 4. Информация о нарушении обязательных нормативов и (или) снижении значения норматива достаточности базового капитала банка (Н1.1) ниже 5,5 процента">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="num" msdata:Caption="Номер строки" type="xs:int" minOccurs="0"/>
+                            <xs:element name="nn" msdata:Caption="Наименование нарушенного норматива" type="xs:string"
+                                        minOccurs="0"/>
+                            <xs:element name="nnd"
+                                        msdata:Caption="Числовое значение нарушенного норматива и (или) норматива Н1.1 (в случае если его значение ниже 5,5 процента), процент"
+                                        type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="DT"
+                                        msdata:Caption="Дата, за которую норматив нарушен и (или) значение норматива Н1.1 ниже 5,5 процента"
+                                        type="xs:dateTime" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="F135_5" msprop:Title="Раздел 5. Число операционных дней в отчётном месяце">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="DT" msdata:Caption="Даты нерабочих дней отчётного месяца"
+                                        type="xs:dateTime" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="F135_6" msprop:Title="Раздел «Справочно»">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="V6_1"
+                                        msdata:Caption="Величина кредитного риска на контрагента по операциям, совершаемым на возвратной основе с ценными бумагами, полученными (переданными) без прекращения признания, и операциям займа ценных бумаг (код 8800),  тыс. руб."
+                                        type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="V6_2"
+                                        msdata:Caption="Величина риска изменения стоимости кредитного требования в результате ухудшения кредитного качества контрагента (код 8866),  тыс. руб."
+                                        type="xs:decimal" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

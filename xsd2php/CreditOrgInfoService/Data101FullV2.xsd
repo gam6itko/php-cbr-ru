@@ -1,0 +1,54 @@
+<xs:schema xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+           xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" id="F101DATA">
+    <xs:element name="F101DATA" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="FD" msprop:Caption="Форма N101">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="DT" msdata:Caption="Дата" type="xs:dateTime" minOccurs="0"/>
+                            <xs:element name="val" msdata:Caption="Значение символа - cумма" type="xs:decimal"
+                                        minOccurs="0"/>
+                            <xs:element name="AP" msdata:Caption="Актив/Пассив" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="FDF" msprop:Caption="Код формы по ОКУД 0409101 ">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="dt" msdata:Caption="Дата" type="xs:dateTime" minOccurs="0"/>
+                            <xs:element name="pln" msdata:Caption="Балансовые счета" type="xs:string" minOccurs="0"/>
+                            <xs:element name="ap" msdata:Caption="Актив/Пассив" type="xs:unsignedByte" minOccurs="0"/>
+                            <xs:element name="vr" msdata:Caption="Входящие остатки в рублях" type="xs:decimal"
+                                        minOccurs="0"/>
+                            <xs:element name="vv" msdata:Caption="Входящие остатки в ин. вал., драг. металлы"
+                                        type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="vitg" msdata:Caption="Входящие остатки итого" type="xs:decimal"
+                                        minOccurs="0"/>
+                            <xs:element name="ora" msdata:Caption="Обороты за отчетный период по дебету в рублях"
+                                        type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="ova"
+                                        msdata:Caption="Обороты за отчетный период по дебету в ин. вал., драг. металлы"
+                                        type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="oitga" msdata:Caption="Обороты за отчетный период по дебету итого"
+                                        type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="orp" msdata:Caption="Обороты за отчетный период по кредиту в рублях"
+                                        type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="ovp"
+                                        msdata:Caption="Обороты за отчетный период по кредиту в ин. вал., драг. металлы"
+                                        type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="oitgp" msdata:Caption="Обороты за отчетный период по кредиту итого"
+                                        type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="ir" msdata:Caption="Исходящие остатки в рублях" type="xs:decimal"
+                                        minOccurs="0"/>
+                            <xs:element name="iv" msdata:Caption="Исходящие остатки в ин. вал., драг. металлы"
+                                        type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="iitg" msdata:Caption="Исходящие остатки итого" type="xs:decimal"
+                                        minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

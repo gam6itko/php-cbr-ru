@@ -1,0 +1,23 @@
+<xs:schema xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+           id="CoOffices">
+    <xs:element name="CoOffices" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="Offices">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="cregnum" msdata:Caption="рег. номер филиала" type="xs:decimal"
+                                        minOccurs="0"/>
+                            <xs:element name="cname" msdata:Caption="название филиала" type="xs:string" minOccurs="0"/>
+                            <xs:element name="cndate" msdata:Caption="Дата регистрации филиала" type="xs:string"
+                                        minOccurs="0"/>
+                            <xs:element name="straddrmn" msdata:Caption="Место нахождения (фактический адрес)"
+                                        type="xs:string" minOccurs="0"/>
+                            <xs:element name="RegId" msdata:Caption="вн. Код региона" type="xs:decimal" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

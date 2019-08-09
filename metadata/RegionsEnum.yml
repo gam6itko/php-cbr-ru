@@ -1,0 +1,14 @@
+Gam6itko\CbrRu\Type\RegionsEnum:
+    xml_root_name: RegionsEnum
+    properties:
+        rGID:
+            expose: true
+            access_type: public_method
+            serialized_name: RGID
+            accessor:
+                getter: getRGID
+                setter: setRGID
+            xml_list:
+                inline: true
+                entry_name: RGID
+            type: array<Gam6itko\CbrRu\Type\RegionsEnum\RGIDAType>

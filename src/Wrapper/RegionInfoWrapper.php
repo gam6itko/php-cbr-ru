@@ -1,112 +1,120 @@
 <?php
-namespace Gam6itko\DpdCarrier\WebService;
+namespace Gam6itko\CbrRu\Wrapper;
 
-class RegionInfoService extends AbstractService
+class RegionInfoWrapper extends AbstractWrapper
 {
     protected function getWsdl()
     {
         return 'https://www.cbr.ru/RegionWebServ/regional.asmx?WSDL';
     }
 
-    /** Добавление кода индикатора в список */
-    public function addIndicators()
+    /**
+     * Добавление кода индикатора в список
+     * @param int $indicatorCode
+     * @return array|mixed|\stdClass
+     */
+    public function addIndicators(int $indicatorCode)
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__, ['Indicator_code' => $indicatorCode]);
     }
 
-    /** Добавление кодов региона в список регионов */
-    public function addRegion()
+    /**
+     * Добавление кодов региона в список регионов
+     * @param int $regionCode
+     * @return array|mixed|\stdClass
+     */
+    public function addRegion(int $regionCode)
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__, ['Region_code' => $regionCode]);
     }
 
     /** Удаление всех кодов индикаторов из списока */
     public function clearIndicatorsList()
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__);
     }
 
     /** Удаление всех кодов регионов из списока */
     public function clearRegionList()
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__);
     }
 
     /** Завершение работы */
     public function close()
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__);
     }
 
     /** Получение данных в формате XML */
     public function execASXMLDocument()
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__);
     }
 
     /** Данные об ошибках */
     public function getError()
     {
-        throw new \Exception('not realized');
+        return $this->doRequest('GET_Error');
     }
 
     /** Получение данных  (как DataSet) */
     public function getRawRegionData()
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__);
     }
 
     /** Получение кодов индикаторов по названию */
     public function indicatorCodeByName()
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__);
     }
 
     /** Получение списка индикаторов для таблиц */
     public function indicatorsList()
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__);
     }
 
     /** Открытие базы данных */
     public function openDataBase()
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__);
     }
 
     /** получение кодов регионов по названию региона */
     public function regionCodeByName()
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__);
     }
 
     /** Получение списка регионов */
     public function regionsList()
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__);
     }
 
     /** Размерность индикатора */
     public function retIndicatorDim()
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__);
     }
 
     /** Установка диапазона дат */
     public function setDatesRange()
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__);
     }
 
     /** Получение списка таблиц индикаторов */
     public function tablesList()
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__);
     }
 
     /** Переключение на англ. язык */
     public function swToEnglish()
     {
-        throw new \Exception('not realized');
+        return $this->doRequest(__FUNCTION__);
     }
 }

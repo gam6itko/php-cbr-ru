@@ -1,0 +1,27 @@
+<xs:schema xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+           xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" id="EnumBIC">
+    <xs:element name="EnumBIC" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:TotalBICs="765">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="BIC" msprop:Caption="Данные по BIC кодам КО">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="BIC" msdata:Caption="Код BIC" type="xs:string" minOccurs="0"/>
+                            <xs:element name="RC" msdata:Caption="Дата регистрации" type="xs:dateTime" minOccurs="0"/>
+                            <xs:element name="NM" msdata:Caption="Название КО." type="xs:string" minOccurs="0"/>
+                            <xs:element name="RB" msdata:Caption="Код регистрации" type="xs:string" minOccurs="0"/>
+                            <xs:element name="RN" msdata:Caption="Регистрационный номер" type="xs:decimal"
+                                        minOccurs="0"/>
+                            <xs:element name="intCode" msdata:Caption="внутренний код КО" type="xs:decimal"
+                                        minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1">
+            <xs:selector xpath=".//BIC"/>
+            <xs:field xpath="intCode"/>
+        </xs:unique>
+    </xs:element>
+</xs:schema>

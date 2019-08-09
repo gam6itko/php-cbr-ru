@@ -1,0 +1,22 @@
+<xs:schema xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+           id="F102DATAFULL">
+    <xs:element name="F102DATAFULL" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="FDF">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="DT" msdata:Caption="Дата" type="xs:dateTime" minOccurs="0"/>
+                            <xs:element name="val" msdata:Caption="Всего" type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="r" msdata:Caption="Суммы от операций в рублях(в рублях)" type="xs:decimal"
+                                        minOccurs="0"/>
+                            <xs:element name="v"
+                                        msdata:Caption="Суммы от операций в ин. валюте и драг. металлах(в рублях)"
+                                        type="xs:decimal" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
