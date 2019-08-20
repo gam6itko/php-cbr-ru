@@ -1,5 +1,5 @@
 {
-    "name": "gam6itko/php-cbrru",
+    "name": "gam6itko/php-cbrf-api",
     "keywords": ["cbr.ru", "cbr","api", "php", "russia", "banking", "credit organization info"],
     "description": "CBR.RU API for PHP",
     "type": "library",
