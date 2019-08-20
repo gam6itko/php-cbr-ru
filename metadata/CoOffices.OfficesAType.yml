@@ -1,5 +1,13 @@
 Gam6itko\CbrRu\Type\CoOffices\OfficesAType:
     properties:
+        cmain:
+            expose: true
+            access_type: public_method
+            serialized_name: cmain
+            accessor:
+                getter: getCmain
+                setter: setCmain
+            type: float
         cregnum:
             expose: true
             access_type: public_method
@@ -32,11 +40,3 @@ Gam6itko\CbrRu\Type\CoOffices\OfficesAType:
                 getter: getStraddrmn
                 setter: setStraddrmn
             type: string
-        regId:
-            expose: true
-            access_type: public_method
-            serialized_name: RegId
-            accessor:
-                getter: getRegId
-                setter: setRegId
-            type: float

@@ -23,4 +23,4 @@ Gam6itko\CbrRu\Type\CreditOrgInfo\LICAType:
             accessor:
                 getter: getLDate
                 setter: setLDate
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+            type: DateTime

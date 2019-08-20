@@ -1,0 +1,14 @@
+Gam6itko\CbrRu\Type\IndicatorsEnum102:
+    xml_root_name: IndicatorsEnum102
+    properties:
+        sIND:
+            expose: true
+            access_type: public_method
+            serialized_name: SIND
+            accessor:
+                getter: getSIND
+                setter: setSIND
+            xml_list:
+                inline: true
+                entry_name: SIND
+            type: array<Gam6itko\CbrRu\Type\IndicatorsEnum102\SINDAType>

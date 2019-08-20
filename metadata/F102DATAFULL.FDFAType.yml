@@ -7,7 +7,7 @@ Gam6itko\CbrRu\Type\F102DATAFULL\FDFAType:
             accessor:
                 getter: getDT
                 setter: setDT
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+            type: DateTime
         val:
             expose: true
             access_type: public_method

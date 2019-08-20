@@ -1,0 +1,50 @@
+Gam6itko\CbrRu\Type\IndicatorsEnum102\SINDAType:
+    properties:
+        symid:
+            expose: true
+            access_type: public_method
+            serialized_name: symid
+            accessor:
+                getter: getSymid
+                setter: setSymid
+            type: int
+        symsort:
+            expose: true
+            access_type: public_method
+            serialized_name: symsort
+            accessor:
+                getter: getSymsort
+                setter: setSymsort
+            type: int
+        symbol:
+            expose: true
+            access_type: public_method
+            serialized_name: symbol
+            accessor:
+                getter: getSymbol
+                setter: setSymbol
+            type: string
+        symtype:
+            expose: true
+            access_type: public_method
+            serialized_name: symtype
+            accessor:
+                getter: getSymtype
+                setter: setSymtype
+            type: int
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: name
+            accessor:
+                getter: getName
+                setter: setName
+            type: string
+        symset:
+            expose: true
+            access_type: public_method
+            serialized_name: symset
+            accessor:
+                getter: getSymset
+                setter: setSymset
+            type: int

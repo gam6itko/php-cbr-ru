@@ -2,56 +2,56 @@
 namespace Gam6itko\CbrRu\Wrapper;
 
 /**
- * Class CreditOrgInfoService
- * @package Gam6itko\CbrRu\Service
+ * @see
+ *
  * @method int BicToIntCode(string $bicCode) Bic код во внутренний код кред.орг.
  * @method int BicToRegNumber(string $bicCode) Bic код в регистрационный номер кред.орг.
- * @method mixed CreditInfoByIntCode(float $internalCode) Информация о кредитной орг. по вн.коду (как DataSet) ver- 11.01.2007
- * @method mixed CreditInfoByIntCodeXML(float $internalCode) Информация о кредитной орг. по вн.коду (как XMLDocument)
- * @method mixed CreditInfoByIntCodeEx(float[] $internalCodes) Информация о кредитной орг. по вн.коду (как DataSet) ver- 03.03.2015
- * @method mixed CreditInfoByIntCodeExXML(float[] $internalCodes) Информация о кредитной орг. по вн.коду (как XML Document) ver- 26.02.2015
- * @method mixed Data101Form(int $credorgNumber, int $indId, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, без оборотов (как DataSet)
- * @method mixed Data101FormXML(int $credorgNumber, int $indId, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, без оборотов (как XMLDocument)
- * @method mixed Data101FormEx(int[] $credorgNumbers, int $indId, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, без оборотов (как DataSet) по нескольким КО ver 07.03.2017
- * @method mixed Data101FormExXML(int[] $credorgNumbers, int $indId, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101 (как XMLDocument) по нескольким КО
- * @method mixed Data101Full(int $credorgNumber, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (Устарел, используйте v2) (как DataSet)
- * @method mixed Data101FullXML(int $credorgNumber, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (как XMLDocument)
- * @method mixed Data101FullEx(int[] $credorgNumbers, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (Внимание, метод устарел, используйте v2) (как DataSet) ver 17.03.2015
- * @method mixed Data101FullExXML(int[] $credorgNumbers, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (Внимание, метод устарел, используйте v2) (как XMLDocument) по нескольким КО. ver 17.03.2015
- * @method mixed Data101FullExV2(int[] $credorgNumbers, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (как DataSet) ver 07.03.2017
- * @method mixed Data101FullExV2XML(int[] $credorgNumbers, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (как XML) ver 07.03.2017
- * @method mixed Data101FullV2(int $credorgNumber, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (как DataSet) mod 07.03.2017
- * @method mixed Data101FullV2XML(int $credorgNumber, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (как XML) mod 07.03.2017
- * @method mixed Data102Form(int $credorgNumber, int $symbCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 102 (как DataSet)
- * @method mixed Data102FormXML(int $credorgNumber, int $symbCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 102, кратко (как XMLDocument)
- * @method mixed Data102FormEx(int[] $credorgNumber, int $symbCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 102 (как DataSet) по нескольким КО. ver 24.06.2014
- * @method mixed Data102FormExXML(int[] $credorgNumber, int $symbCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 102, кратко (как XMLDocument) по нескольким КО.
- * @method mixed Data123FormFull(int $credorgNumber, \DateTime $onDate = null) Данные по форме 123 (как DataSet)
- * @method mixed Data123FormFullXML(int $credorgNumber, \DateTime $onDate = null) Данные по форме 123 (как XML)
- * @method mixed Data134FormFull(int $credorgNumber, \DateTime $onDate = null) Данные по форме 134 - устаревшие, данные до 2015 г. (как DataSet)
- * @method mixed Data134FormFullXML(int $credorgNumber, \DateTime $onDate = null) Данные по форме 134 (как XML)
- * @method mixed Data135FormFull(int $credorgNumber, \DateTime $onDate = null) Данные по форме 135 (как DataSet) ver 05.06.2014
- * @method mixed Data135FormFullXML(int $credorgNumber, \DateTime $onDate = null) Данные по форме 135 (как XML)
- * @method mixed EnumBIC() Данные по BIC кодам КО (как DataSet), без филиалов, ver: 17.03.2015
- * @method mixed EnumBIC_XML() Данные по BIC кодам КО (как XMLDocument), без филиалов, ver: 04.07.2007
- * @method mixed Form101IndicatorsEnum() Справочник индикаторов для формы 101 (как DataSet)
- * @method mixed Form101IndicatorsEnumXML() Справочник индикаторов для формы 101 (как XMLDocument)
- * @method mixed Form102IndicatorsEnum() Справочник символов для формы 102 (как DataSet)
- * @method mixed Form102IndicatorsEnumXML() Справочник символов для формы 102 (как XMLDocument)
- * @method mixed GetDatesForF101(int $credPrgNumber) Список дат для формы 101
- * @method mixed GetDatesForF102(int $credPrgNumber) Список дат для формы 102
- * @method mixed GetDatesForF123(int $credPrgNumber) Список дат для формы 123
- * @method mixed GetDatesForF134(int $credPrgNumber) Список дат для формы 134
- * @method mixed GetDatesForF135(int $credPrgNumber) Список дат для формы 135
- * @method mixed LastUpdate() Получение даты последнего обновления базы по КО
- * @method mixed RegionsEnum() Справочник регионов (как DataSet)
- * @method mixed RegionsEnumXML() Справочник регионов (как XMLDocument), ver- 18.01.2007
- * @method mixed GetOfficesByRegion(int $regCode) Информация по филиальной сети кредитной орг. по региону (коду) (как DataSet), ver- 18.01.2007
- * @method mixed GetOfficesByRegionXML(int $regCode) Информация по филиальной сети кредитной орг. по региону (коду) (как XML), ver- 18.01.2007
- * @method mixed SearchByRegionCode(int $regCode) Поиск кредитных орг. по региону(коду) (как DataSet)
- * @method mixed SearchByRegionCodeXML(int $regCode) Поиск кредитных орг. по региону(коду) (как XML)
- * @method mixed SearchByName(string $str) Поиск кредитных орг. по названию (как DataSet)
- * @method mixed SearchByNameXML(string $str) Поиск кредитных орг. по названию (как XML)
+ * @method array CreditInfoByIntCode(float $internalCode) Информация о кредитной орг. по вн.коду (как DataSet)
+ * @method array CreditInfoByIntCodeXML(float $internalCode) Информация о кредитной орг. по вн.коду (как XMLDocument)
+ * @method array CreditInfoByIntCodeEx(float[] $internalCodes) Информация о кредитной орг. по вн.коду (как DataSet)
+ * @method array CreditInfoByIntCodeExXML(float[] $internalCodes) Информация о кредитной орг. по вн.коду (как XML Document)
+ * @method array Data101Form(int $credorgNumber, int $indId, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, без оборотов (как DataSet)
+ * @method array Data101FormXML(int $credorgNumber, int $indId, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, без оборотов (как XMLDocument)
+ * @method array Data101FormEx(int[] $credorgNumbers, int $indId, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, без оборотов (как DataSet) по нескольким КО.
+ * @method array Data101FormExXML(int[] $credorgNumbers, int $indId, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101 (как XMLDocument) по нескольким КО.
+ * @method array Data101Full(int $credorgNumber, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (Устарел, используйте v2) (как DataSet)
+ * @method array Data101FullXML(int $credorgNumber, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (как XMLDocument)
+ * @method array Data101FullEx(int[] $credorgNumbers, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (Внимание, метод устарел, используйте v2) (как DataSet)
+ * @method array Data101FullExXML(int[] $credorgNumbers, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (Внимание, метод устарел, используйте v2) (как XMLDocument) по нескольким КО
+ * @method array Data101FullExV2(int[] $credorgNumbers, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (как DataSet)
+ * @method array Data101FullExV2XML(int[] $credorgNumbers, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (как XML)
+ * @method array Data101FullV2(int $credorgNumber, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (как DataSet)
+ * @method array Data101FullV2XML(int $credorgNumber, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (как XML)
+ * @method array Data102Form(int $credorgNumber, int $symbCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 102 (как DataSet)
+ * @method array Data102FormXML(int $credorgNumber, int $symbCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 102, кратко (как XMLDocument)
+ * @method array Data102FormEx(int[] $credorgNumber, int $symbCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 102 (как DataSet) по нескольким КО.
+ * @method array Data102FormExXML(int[] $credorgNumber, int $symbCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 102, кратко (как XMLDocument) по нескольким КО.
+ * @method array Data123FormFull(int $credorgNumber, \DateTime $onDate = null) Данные по форме 123 (как DataSet)
+ * @method array Data123FormFullXML(int $credorgNumber, \DateTime $onDate = null) Данные по форме 123 (как XML)
+ * @method array Data134FormFull(int $credorgNumber, \DateTime $onDate = null) Данные по форме 134 - устаревшие, данные до 2015 г. (как DataSet)
+ * @method array Data134FormFullXML(int $credorgNumber, \DateTime $onDate = null) Данные по форме 134 (как XML)
+ * @method array Data135FormFull(int $credorgNumber, \DateTime $onDate = null) Данные по форме 135 (как DataSet)
+ * @method array Data135FormFullXML(int $credorgNumber, \DateTime $onDate = null) Данные по форме 135 (как XML)
+ * @method array EnumBIC() Данные по BIC кодам КО (как DataSet), без филиалов
+ * @method array EnumBIC_XML() Данные по BIC кодам КО (как XMLDocument), без филиалов
+ * @method array Form101IndicatorsEnum() Справочник индикаторов для формы 101 (как DataSet)
+ * @method array Form101IndicatorsEnumXML() Справочник индикаторов для формы 101 (как XMLDocument)
+ * @method array Form102IndicatorsEnum() Справочник символов для формы 102 (как DataSet)
+ * @method array Form102IndicatorsEnumXML() Справочник символов для формы 102 (как XMLDocument)
+ * @method array GetDatesForF101(int $credPrgNumber) Список дат для формы 101
+ * @method array GetDatesForF102(int $credPrgNumber) Список дат для формы 102
+ * @method array GetDatesForF123(int $credPrgNumber) Список дат для формы 123
+ * @method array GetDatesForF134(int $credPrgNumber) Список дат для формы 134
+ * @method array GetDatesForF135(int $credPrgNumber) Список дат для формы 135
+ * @method string LastUpdate() Получение даты последнего обновления базы по КО
+ * @method array RegionsEnum() Справочник регионов (как DataSet)
+ * @method array RegionsEnumXML() Справочник регионов (как XMLDocument)
+ * @method array GetOfficesByRegion(int $regCode) Информация по филиальной сети кредитной орг. по региону (коду) (как DataSet)
+ * @method array GetOfficesByRegionXML(int $regCode) Информация по филиальной сети кредитной орг. по региону (коду) (как XML)
+ * @method array SearchByRegionCode(int $regCode) Поиск кредитных орг. по региону(коду) (как DataSet)
+ * @method array SearchByRegionCodeXML(int $regCode) Поиск кредитных орг. по региону(коду) (как XML)
+ * @method array SearchByName(string $str) Поиск кредитных орг. по названию (как DataSet)
+ * @method array SearchByNameXML(string $str) Поиск кредитных орг. по названию (как XML)
  */
 class CreditOrgInfoWrapper extends AbstractWrapper
 {
@@ -176,7 +176,7 @@ class CreditOrgInfoWrapper extends AbstractWrapper
     }
 
     /**
-     * Получение максимальной даты отчетов по формам, ver: 22.04.2015
+     * Получение максимальной даты отчетов по формам
      * @param int $code
      * @return array|mixed|\stdClass
      */
@@ -186,7 +186,7 @@ class CreditOrgInfoWrapper extends AbstractWrapper
     }
 
     /**
-     * Информация по филиальной сети кредитной орг. по вн.коду (как DataSet), ver- 18.01.2007
+     * Информация по филиальной сети кредитной орг. по вн.коду (как DataSet)
      * @param int $intCode
      * @return array|mixed|\stdClass
      */

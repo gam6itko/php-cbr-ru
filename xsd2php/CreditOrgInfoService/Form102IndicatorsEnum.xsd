@@ -1,0 +1,22 @@
+<xs:schema xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+           id="IndicatorsEnum102">
+    <xs:element name="IndicatorsEnum102" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="SIND">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="symid" msdata:Caption="внутренний код" type="xs:int" minOccurs="0"/>
+                            <xs:element name="symsort" msdata:Caption="порядок сортировки" type="xs:int" minOccurs="0"/>
+                            <xs:element name="symbol" msdata:Caption="Код показателя" type="xs:string" minOccurs="0"/>
+                            <xs:element name="symtype" type="xs:short" minOccurs="0"/>
+                            <xs:element name="name" msdata:Caption="Название показателя" type="xs:string"
+                                        minOccurs="0"/>
+                            <xs:element name="symset" type="xs:int" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

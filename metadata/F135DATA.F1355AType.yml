@@ -7,4 +7,4 @@ Gam6itko\CbrRu\Type\F135DATA\F1355AType:
             accessor:
                 getter: getDT
                 setter: setDT
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+            type: DateTime

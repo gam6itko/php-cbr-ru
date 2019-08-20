@@ -47,7 +47,7 @@ Gam6itko\CbrRu\Type\CreditOrgInfo\COAType:
             accessor:
                 getter: getDateKGRRegistration
                 setter: setDateKGRRegistration
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+            type: DateTime
         mainRegNumber:
             expose: true
             access_type: public_method
@@ -63,7 +63,7 @@ Gam6itko\CbrRu\Type\CreditOrgInfo\COAType:
             accessor:
                 getter: getMainDateReg
                 setter: setMainDateReg
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+            type: DateTime
         ustavAdr:
             expose: true
             access_type: public_method
@@ -119,4 +119,4 @@ Gam6itko\CbrRu\Type\CreditOrgInfo\COAType:
             accessor:
                 getter: getSSVDate
                 setter: setSSVDate
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+            type: DateTime

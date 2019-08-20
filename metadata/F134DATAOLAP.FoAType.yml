@@ -7,7 +7,7 @@ Gam6itko\CbrRu\Type\F134DATAOLAP\FoAType:
             accessor:
                 getter: getDT
                 setter: setDT
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+            type: DateTime
         v1:
             expose: true
             access_type: public_method

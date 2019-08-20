@@ -15,7 +15,7 @@ Gam6itko\CbrRu\Type\EnumBIC\BICAType:
             accessor:
                 getter: getRC
                 setter: setRC
-            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+            type: DateTime
         nM:
             expose: true
             access_type: public_method

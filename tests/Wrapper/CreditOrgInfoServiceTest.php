@@ -1,7 +1,7 @@
 <?php
 namespace Tests\Gam6itko\CbrRu\Wrapper;
 
-use Gam6itko\CbrRu\Webservice\CreditOrgInfoWrapper;
+use Gam6itko\CbrRu\Wrapper\CreditOrgInfoWrapper;
 use PHPUnit\Framework\TestCase;
 
 class CreditOrgInfoServiceTest extends TestCase
@@ -137,8 +137,8 @@ class CreditOrgInfoServiceTest extends TestCase
 
     public function testData101FormEx()
     {
-        $arr = [350000004];
-        $result = $this->getSvc()->Data101FormEx($arr, 1);
+        $arr = [350000004, 450000036];
+        $result = $this->getSvc()->Data101FormEx($arr, 1, new \DateTime('2018-01-01'), new \DateTime('2019-12-31'));
         self::assertNotEmpty($result);
     }
 
@@ -170,21 +170,21 @@ class CreditOrgInfoServiceTest extends TestCase
 
     public function testData101FullExV2()
     {
-        $arr = [3500000040];
+        $arr = [350000004];
         $result = $this->getSvc()->Data101FullExV2($arr, 1);
         self::assertNotEmpty($result);
     }
 
     public function testData101FullExV2XML()
     {
-        $arr = [3500000040];
+        $arr = [350000004];
         $result = $this->getSvc()->Data101FullExV2XML($arr, 1);
         self::assertNotEmpty($result);
     }
 
     public function testData101FullExXML()
     {
-        $arr = [3500000040];
+        $arr = [350000004];
         $result = $this->getSvc()->Data101FullExXML($arr, 1);
         self::assertNotEmpty($result);
     }
@@ -209,17 +209,17 @@ class CreditOrgInfoServiceTest extends TestCase
     //</editor-fold>
 
     //<editor-fold desc="102Form">
-//    public function testForm102IndicatorsEnum()
-//    {
-//        $result = $this->getSvc()->Form102IndicatorsEnum();
-//        self::assertNotEmpty($result);
-//    }
+    public function testForm102IndicatorsEnum()
+    {
+        $result = $this->getSvc()->Form102IndicatorsEnum();
+        self::assertNotEmpty($result);
+    }
 
-//    public function testForm102IndicatorsEnumXML()
-//    {
-//        $result = $this->getSvc()->Form102IndicatorsEnumXML();
-//        self::assertNotEmpty($result);
-//    }
+    public function testForm102IndicatorsEnumXML()
+    {
+        $result = $this->getSvc()->Form102IndicatorsEnumXML();
+        self::assertNotEmpty($result);
+    }
 
     public function testData102Form()
     {
@@ -229,14 +229,14 @@ class CreditOrgInfoServiceTest extends TestCase
 
     public function testData102FormEx()
     {
-        $arr = [3500000040];
+        $arr = [350000004];
         $result = $this->getSvc()->Data102FormEx($arr, 1);
         self::assertNotEmpty($result);
     }
 
     public function testData102FormExXML()
     {
-        $arr = [3500000040];
+        $arr = [350000004];
         $result = $this->getSvc()->Data102FormExXML($arr, 1);
         self::assertNotEmpty($result);
     }
