@@ -1,16 +1,16 @@
 <?php
-namespace Gam6itko\CbrRu;
+namespace Gam6itko\Cbrf;
 
-use Gam6itko\CbrRu\Type\CoOffices;
-use Gam6itko\CbrRu\Type\CreditOrg;
-use Gam6itko\CbrRu\Type\CreditOrgInfo;
-use Gam6itko\CbrRu\Type\EnumBIC;
-use Gam6itko\CbrRu\Type\F101DATA;
-use Gam6itko\CbrRu\Type\IndicatorsEnum101;
-use Gam6itko\CbrRu\Type\IndicatorsEnum102;
-use Gam6itko\CbrRu\Type\RegionsEnum;
-use Gam6itko\CbrRu\Wrapper\CreditOrgInfoWrapper;
-use Gam6itko\CbrRu\Enum\FormType;
+use Gam6itko\Cbrf\Type\CoOffices;
+use Gam6itko\Cbrf\Type\CreditOrg;
+use Gam6itko\Cbrf\Type\CreditOrgInfo;
+use Gam6itko\Cbrf\Type\EnumBIC;
+use Gam6itko\Cbrf\Type\F101DATA;
+use Gam6itko\Cbrf\Type\IndicatorsEnum101;
+use Gam6itko\Cbrf\Type\IndicatorsEnum102;
+use Gam6itko\Cbrf\Type\RegionsEnum;
+use Gam6itko\Cbrf\Wrapper\CreditOrgInfoWrapper;
+use Gam6itko\Cbrf\Enum\FormType;
 use JMS\Serializer\SerializerInterface;
 
 /**

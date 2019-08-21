@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type;
+namespace Gam6itko\Cbrf\Type;
 
 /**
  * Class representing EnumBIC
@@ -9,7 +9,7 @@ class EnumBIC
 {
 
     /**
-     * @property \Gam6itko\CbrRu\Type\EnumBIC\BICAType[] $bIC
+     * @property \Gam6itko\Cbrf\Type\EnumBIC\BICAType[] $bIC
      */
     private $bIC = [
         
@@ -19,9 +19,9 @@ class EnumBIC
      * Adds as bIC
      *
      * @return self
-     * @param \Gam6itko\CbrRu\Type\EnumBIC\BICAType $bIC
+     * @param \Gam6itko\Cbrf\Type\EnumBIC\BICAType $bIC
      */
-    public function addToBIC(\Gam6itko\CbrRu\Type\EnumBIC\BICAType $bIC)
+    public function addToBIC(\Gam6itko\Cbrf\Type\EnumBIC\BICAType $bIC)
     {
         $this->bIC[] = $bIC;
         return $this;
@@ -52,7 +52,7 @@ class EnumBIC
     /**
      * Gets as bIC
      *
-     * @return \Gam6itko\CbrRu\Type\EnumBIC\BICAType[]
+     * @return \Gam6itko\Cbrf\Type\EnumBIC\BICAType[]
      */
     public function getBIC()
     {
@@ -62,7 +62,7 @@ class EnumBIC
     /**
      * Sets a new bIC
      *
-     * @param \Gam6itko\CbrRu\Type\EnumBIC\BICAType[] $bIC
+     * @param \Gam6itko\Cbrf\Type\EnumBIC\BICAType[] $bIC
      * @return self
      */
     public function setBIC(array $bIC)

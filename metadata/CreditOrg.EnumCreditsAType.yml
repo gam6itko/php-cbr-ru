@@ -1,4 +1,4 @@
-Gam6itko\CbrRu\Type\CreditOrg\EnumCreditsAType:
+Gam6itko\Cbrf\Type\CreditOrg\EnumCreditsAType:
     properties:
         intCode:
             expose: true

@@ -1,4 +1,4 @@
-Gam6itko\CbrRu\Type\F135DATA:
+Gam6itko\Cbrf\Type\F135DATA:
     xml_root_name: F135DATA
     properties:
         f1351:
@@ -11,7 +11,7 @@ Gam6itko\CbrRu\Type\F135DATA:
             xml_list:
                 inline: true
                 entry_name: F135_1
-            type: array<Gam6itko\CbrRu\Type\F135DATA\F1351AType>
+            type: array<Gam6itko\Cbrf\Type\F135DATA\F1351AType>
         f1352:
             expose: true
             access_type: public_method
@@ -22,7 +22,7 @@ Gam6itko\CbrRu\Type\F135DATA:
             xml_list:
                 inline: true
                 entry_name: F135_2
-            type: array<Gam6itko\CbrRu\Type\F135DATA\F1352AType>
+            type: array<Gam6itko\Cbrf\Type\F135DATA\F1352AType>
         f1353:
             expose: true
             access_type: public_method
@@ -33,7 +33,7 @@ Gam6itko\CbrRu\Type\F135DATA:
             xml_list:
                 inline: true
                 entry_name: F135_3
-            type: array<Gam6itko\CbrRu\Type\F135DATA\F1353AType>
+            type: array<Gam6itko\Cbrf\Type\F135DATA\F1353AType>
         f1354:
             expose: true
             access_type: public_method
@@ -44,7 +44,7 @@ Gam6itko\CbrRu\Type\F135DATA:
             xml_list:
                 inline: true
                 entry_name: F135_4
-            type: array<Gam6itko\CbrRu\Type\F135DATA\F1354AType>
+            type: array<Gam6itko\Cbrf\Type\F135DATA\F1354AType>
         f1355:
             expose: true
             access_type: public_method
@@ -55,7 +55,7 @@ Gam6itko\CbrRu\Type\F135DATA:
             xml_list:
                 inline: true
                 entry_name: F135_5
-            type: array<Gam6itko\CbrRu\Type\F135DATA\F1355AType>
+            type: array<Gam6itko\Cbrf\Type\F135DATA\F1355AType>
         f1356:
             expose: true
             access_type: public_method
@@ -66,4 +66,4 @@ Gam6itko\CbrRu\Type\F135DATA:
             xml_list:
                 inline: true
                 entry_name: F135_6
-            type: array<Gam6itko\CbrRu\Type\F135DATA\F1356AType>
+            type: array<Gam6itko\Cbrf\Type\F135DATA\F1356AType>

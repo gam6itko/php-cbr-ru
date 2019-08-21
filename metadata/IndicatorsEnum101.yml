@@ -1,4 +1,4 @@
-Gam6itko\CbrRu\Type\IndicatorsEnum101:
+Gam6itko\Cbrf\Type\IndicatorsEnum101:
     xml_root_name: IndicatorsEnum101
     properties:
         eIND:
@@ -11,4 +11,4 @@ Gam6itko\CbrRu\Type\IndicatorsEnum101:
             xml_list:
                 inline: true
                 entry_name: EIND
-            type: array<Gam6itko\CbrRu\Type\IndicatorsEnum101\EINDAType>
+            type: array<Gam6itko\Cbrf\Type\IndicatorsEnum101\EINDAType>

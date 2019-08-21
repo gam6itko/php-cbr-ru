@@ -1,4 +1,4 @@
-Gam6itko\CbrRu\Type\RegionsEnum:
+Gam6itko\Cbrf\Type\RegionsEnum:
     xml_root_name: RegionsEnum
     properties:
         rGID:
@@ -11,4 +11,4 @@ Gam6itko\CbrRu\Type\RegionsEnum:
             xml_list:
                 inline: true
                 entry_name: RGID
-            type: array<Gam6itko\CbrRu\Type\RegionsEnum\RGIDAType>
+            type: array<Gam6itko\Cbrf\Type\RegionsEnum\RGIDAType>

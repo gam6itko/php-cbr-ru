@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type\IndicatorsEnum102;
+namespace Gam6itko\Cbrf\Type\IndicatorsEnum102;
 
 /**
  * Class representing SINDAType

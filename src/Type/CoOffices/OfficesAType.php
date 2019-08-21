@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type\CoOffices;
+namespace Gam6itko\Cbrf\Type\CoOffices;
 
 /**
  * Class representing OfficesAType

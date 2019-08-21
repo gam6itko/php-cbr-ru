@@ -1,4 +1,4 @@
-Gam6itko\CbrRu\Type\EnumBIC:
+Gam6itko\Cbrf\Type\EnumBIC:
     xml_root_name: EnumBIC
     properties:
         bIC:
@@ -11,4 +11,4 @@ Gam6itko\CbrRu\Type\EnumBIC:
             xml_list:
                 inline: true
                 entry_name: BIC
-            type: array<Gam6itko\CbrRu\Type\EnumBIC\BICAType>
+            type: array<Gam6itko\Cbrf\Type\EnumBIC\BICAType>

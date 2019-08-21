@@ -1,4 +1,4 @@
-Gam6itko\CbrRu\Type\RegionsEnum\RGIDAType:
+Gam6itko\Cbrf\Type\RegionsEnum\RGIDAType:
     properties:
         regCode:
             expose: true

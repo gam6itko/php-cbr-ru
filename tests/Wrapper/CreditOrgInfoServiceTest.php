@@ -1,7 +1,7 @@
 <?php
-namespace Tests\Gam6itko\CbrRu\Wrapper;
+namespace Tests\Gam6itko\Cbrf\Wrapper;
 
-use Gam6itko\CbrRu\Wrapper\CreditOrgInfoWrapper;
+use Gam6itko\Cbrf\Wrapper\CreditOrgInfoWrapper;
 use PHPUnit\Framework\TestCase;
 
 class CreditOrgInfoServiceTest extends TestCase

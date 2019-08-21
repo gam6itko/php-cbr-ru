@@ -1,4 +1,4 @@
-Gam6itko\CbrRu\Type\F123DATA:
+Gam6itko\Cbrf\Type\F123DATA:
     xml_root_name: F123DATA
     properties:
         f123:
@@ -11,4 +11,4 @@ Gam6itko\CbrRu\Type\F123DATA:
             xml_list:
                 inline: true
                 entry_name: F123
-            type: array<Gam6itko\CbrRu\Type\F123DATA\F123AType>
+            type: array<Gam6itko\Cbrf\Type\F123DATA\F123AType>

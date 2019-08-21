@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type;
+namespace Gam6itko\Cbrf\Type;
 
 /**
  * Class representing CreditOrgInfo
@@ -9,14 +9,14 @@ class CreditOrgInfo
 {
 
     /**
-     * @property \Gam6itko\CbrRu\Type\CreditOrgInfo\COAType[] $cO
+     * @property \Gam6itko\Cbrf\Type\CreditOrgInfo\COAType[] $cO
      */
     private $cO = [
         
     ];
 
     /**
-     * @property \Gam6itko\CbrRu\Type\CreditOrgInfo\LICAType[] $lIC
+     * @property \Gam6itko\Cbrf\Type\CreditOrgInfo\LICAType[] $lIC
      */
     private $lIC = [
         
@@ -26,9 +26,9 @@ class CreditOrgInfo
      * Adds as cO
      *
      * @return self
-     * @param \Gam6itko\CbrRu\Type\CreditOrgInfo\COAType $cO
+     * @param \Gam6itko\Cbrf\Type\CreditOrgInfo\COAType $cO
      */
-    public function addToCO(\Gam6itko\CbrRu\Type\CreditOrgInfo\COAType $cO)
+    public function addToCO(\Gam6itko\Cbrf\Type\CreditOrgInfo\COAType $cO)
     {
         $this->cO[] = $cO;
         return $this;
@@ -59,7 +59,7 @@ class CreditOrgInfo
     /**
      * Gets as cO
      *
-     * @return \Gam6itko\CbrRu\Type\CreditOrgInfo\COAType[]
+     * @return \Gam6itko\Cbrf\Type\CreditOrgInfo\COAType[]
      */
     public function getCO()
     {
@@ -69,7 +69,7 @@ class CreditOrgInfo
     /**
      * Sets a new cO
      *
-     * @param \Gam6itko\CbrRu\Type\CreditOrgInfo\COAType[] $cO
+     * @param \Gam6itko\Cbrf\Type\CreditOrgInfo\COAType[] $cO
      * @return self
      */
     public function setCO(array $cO)
@@ -82,9 +82,9 @@ class CreditOrgInfo
      * Adds as lIC
      *
      * @return self
-     * @param \Gam6itko\CbrRu\Type\CreditOrgInfo\LICAType $lIC
+     * @param \Gam6itko\Cbrf\Type\CreditOrgInfo\LICAType $lIC
      */
-    public function addToLIC(\Gam6itko\CbrRu\Type\CreditOrgInfo\LICAType $lIC)
+    public function addToLIC(\Gam6itko\Cbrf\Type\CreditOrgInfo\LICAType $lIC)
     {
         $this->lIC[] = $lIC;
         return $this;
@@ -115,7 +115,7 @@ class CreditOrgInfo
     /**
      * Gets as lIC
      *
-     * @return \Gam6itko\CbrRu\Type\CreditOrgInfo\LICAType[]
+     * @return \Gam6itko\Cbrf\Type\CreditOrgInfo\LICAType[]
      */
     public function getLIC()
     {
@@ -125,7 +125,7 @@ class CreditOrgInfo
     /**
      * Sets a new lIC
      *
-     * @param \Gam6itko\CbrRu\Type\CreditOrgInfo\LICAType[] $lIC
+     * @param \Gam6itko\Cbrf\Type\CreditOrgInfo\LICAType[] $lIC
      * @return self
      */
     public function setLIC(array $lIC)

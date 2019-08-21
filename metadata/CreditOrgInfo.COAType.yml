@@ -1,4 +1,4 @@
-Gam6itko\CbrRu\Type\CreditOrgInfo\COAType:
+Gam6itko\Cbrf\Type\CreditOrgInfo\COAType:
     properties:
         regNumber:
             expose: true

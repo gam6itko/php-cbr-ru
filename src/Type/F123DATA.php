@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type;
+namespace Gam6itko\Cbrf\Type;
 
 /**
  * Class representing F123DATA
@@ -9,7 +9,7 @@ class F123DATA
 {
 
     /**
-     * @property \Gam6itko\CbrRu\Type\F123DATA\F123AType[] $f123
+     * @property \Gam6itko\Cbrf\Type\F123DATA\F123AType[] $f123
      */
     private $f123 = [
         
@@ -19,9 +19,9 @@ class F123DATA
      * Adds as f123
      *
      * @return self
-     * @param \Gam6itko\CbrRu\Type\F123DATA\F123AType $f123
+     * @param \Gam6itko\Cbrf\Type\F123DATA\F123AType $f123
      */
-    public function addToF123(\Gam6itko\CbrRu\Type\F123DATA\F123AType $f123)
+    public function addToF123(\Gam6itko\Cbrf\Type\F123DATA\F123AType $f123)
     {
         $this->f123[] = $f123;
         return $this;
@@ -52,7 +52,7 @@ class F123DATA
     /**
      * Gets as f123
      *
-     * @return \Gam6itko\CbrRu\Type\F123DATA\F123AType[]
+     * @return \Gam6itko\Cbrf\Type\F123DATA\F123AType[]
      */
     public function getF123()
     {
@@ -62,7 +62,7 @@ class F123DATA
     /**
      * Sets a new f123
      *
-     * @param \Gam6itko\CbrRu\Type\F123DATA\F123AType[] $f123
+     * @param \Gam6itko\Cbrf\Type\F123DATA\F123AType[] $f123
      * @return self
      */
     public function setF123(array $f123)

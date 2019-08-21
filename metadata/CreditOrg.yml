@@ -1,4 +1,4 @@
-Gam6itko\CbrRu\Type\CreditOrg:
+Gam6itko\Cbrf\Type\CreditOrg:
     xml_root_name: CreditOrg
     properties:
         enumCredits:
@@ -11,4 +11,4 @@ Gam6itko\CbrRu\Type\CreditOrg:
             xml_list:
                 inline: true
                 entry_name: EnumCredits
-            type: array<Gam6itko\CbrRu\Type\CreditOrg\EnumCreditsAType>
+            type: array<Gam6itko\Cbrf\Type\CreditOrg\EnumCreditsAType>

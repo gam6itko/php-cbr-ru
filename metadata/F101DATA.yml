@@ -1,4 +1,4 @@
-Gam6itko\CbrRu\Type\F101DATA:
+Gam6itko\Cbrf\Type\F101DATA:
     xml_root_name: F101DATA
     properties:
         fD:
@@ -11,7 +11,7 @@ Gam6itko\CbrRu\Type\F101DATA:
             xml_list:
                 inline: true
                 entry_name: FD
-            type: array<Gam6itko\CbrRu\Type\F101DATA\FDAType>
+            type: array<Gam6itko\Cbrf\Type\F101DATA\FDAType>
         fDF:
             expose: true
             access_type: public_method
@@ -22,4 +22,4 @@ Gam6itko\CbrRu\Type\F101DATA:
             xml_list:
                 inline: true
                 entry_name: FDF
-            type: array<Gam6itko\CbrRu\Type\F101DATA\FDFAType>
+            type: array<Gam6itko\Cbrf\Type\F101DATA\FDFAType>

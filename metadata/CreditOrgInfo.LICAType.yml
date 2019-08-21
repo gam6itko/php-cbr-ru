@@ -1,4 +1,4 @@
-Gam6itko\CbrRu\Type\CreditOrgInfo\LICAType:
+Gam6itko\Cbrf\Type\CreditOrgInfo\LICAType:
     properties:
         lCode:
             expose: true

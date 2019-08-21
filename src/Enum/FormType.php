@@ -1,5 +1,5 @@
 <?php
-namespace Gam6itko\CbrRu\Enum;
+namespace Gam6itko\Cbrf\Enum;
 
 final class FormType
 {

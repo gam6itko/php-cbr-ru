@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type\CreditOrg;
+namespace Gam6itko\Cbrf\Type\CreditOrg;
 
 /**
  * Class representing EnumCreditsAType

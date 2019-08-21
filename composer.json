@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Gam6itko\\CbrRu\\": "src"
+            "Gam6itko\\Cbrf\\": "src"
         }
     }
 }

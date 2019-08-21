@@ -1,4 +1,4 @@
-Gam6itko\CbrRu\Type\IndicatorsEnum101\EINDAType:
+Gam6itko\Cbrf\Type\IndicatorsEnum101\EINDAType:
     properties:
         indID:
             expose: true

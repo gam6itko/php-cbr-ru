@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type\RegionsEnum;
+namespace Gam6itko\Cbrf\Type\RegionsEnum;
 
 /**
  * Class representing RGIDAType

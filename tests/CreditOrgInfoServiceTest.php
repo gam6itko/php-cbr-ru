@@ -1,18 +1,18 @@
 <?php
-namespace Tests\Gam6itko\CbrRu;
+namespace Tests\Gam6itko\Cbrf;
 
-use Gam6itko\CbrRu\CreditOrgInfoService;
-use Gam6itko\CbrRu\Enum\FormType;
-use Gam6itko\CbrRu\Type\CoOffices;
-use Gam6itko\CbrRu\Type\CreditOrg;
-use Gam6itko\CbrRu\Type\CreditOrg\EnumCreditsAType;
-use Gam6itko\CbrRu\Type\CreditOrgInfo;
-use Gam6itko\CbrRu\Type\EnumBIC;
-use Gam6itko\CbrRu\Type\F101DATA;
-use Gam6itko\CbrRu\Type\IndicatorsEnum101;
-use Gam6itko\CbrRu\Type\IndicatorsEnum102;
-use Gam6itko\CbrRu\Type\RegionsEnum;
-use Gam6itko\CbrRu\Wrapper\CreditOrgInfoWrapper;
+use Gam6itko\Cbrf\CreditOrgInfoService;
+use Gam6itko\Cbrf\Enum\FormType;
+use Gam6itko\Cbrf\Type\CoOffices;
+use Gam6itko\Cbrf\Type\CreditOrg;
+use Gam6itko\Cbrf\Type\CreditOrg\EnumCreditsAType;
+use Gam6itko\Cbrf\Type\CreditOrgInfo;
+use Gam6itko\Cbrf\Type\EnumBIC;
+use Gam6itko\Cbrf\Type\F101DATA;
+use Gam6itko\Cbrf\Type\IndicatorsEnum101;
+use Gam6itko\Cbrf\Type\IndicatorsEnum102;
+use Gam6itko\Cbrf\Type\RegionsEnum;
+use Gam6itko\Cbrf\Wrapper\CreditOrgInfoWrapper;
 use JMS\Serializer\SerializerBuilder;
 use PHPUnit\Framework\TestCase;
 
@@ -22,7 +22,7 @@ class CreditOrgInfoServiceTest extends TestCase
     {
         $svc = new CreditOrgInfoWrapper();
         $serializer = SerializerBuilder::create()
-            ->addMetadataDir(realpath(__DIR__ . '/../metadata/'), 'Gam6itko\CbrRu\Type')
+            ->addMetadataDir(realpath(__DIR__ . '/../metadata/'), 'Gam6itko\Cbrf\Type')
             ->build();
         return new CreditOrgInfoService($svc, $serializer);
     }
@@ -53,7 +53,7 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(CreditOrgInfo\LICAType::class, $list[0]);
     }
 
-    public function testCreditInfoByIntCodeEx(string $intCode = '044525225')
+    public function testCreditInfoByIntCodeEx()
     {
         $array = [350000004, 450000036];
         $result = $this->build()->creditInfoByIntCodeEx($array);

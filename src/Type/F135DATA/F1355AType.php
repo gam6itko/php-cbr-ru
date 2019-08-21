@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type\F135DATA;
+namespace Gam6itko\Cbrf\Type\F135DATA;
 
 /**
  * Class representing F1355AType

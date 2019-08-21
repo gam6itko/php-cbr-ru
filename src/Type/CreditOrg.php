@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type;
+namespace Gam6itko\Cbrf\Type;
 
 /**
  * Class representing CreditOrg
@@ -9,7 +9,7 @@ class CreditOrg
 {
 
     /**
-     * @property \Gam6itko\CbrRu\Type\CreditOrg\EnumCreditsAType[] $enumCredits
+     * @property \Gam6itko\Cbrf\Type\CreditOrg\EnumCreditsAType[] $enumCredits
      */
     private $enumCredits = [
         
@@ -19,9 +19,9 @@ class CreditOrg
      * Adds as enumCredits
      *
      * @return self
-     * @param \Gam6itko\CbrRu\Type\CreditOrg\EnumCreditsAType $enumCredits
+     * @param \Gam6itko\Cbrf\Type\CreditOrg\EnumCreditsAType $enumCredits
      */
-    public function addToEnumCredits(\Gam6itko\CbrRu\Type\CreditOrg\EnumCreditsAType $enumCredits)
+    public function addToEnumCredits(\Gam6itko\Cbrf\Type\CreditOrg\EnumCreditsAType $enumCredits)
     {
         $this->enumCredits[] = $enumCredits;
         return $this;
@@ -52,7 +52,7 @@ class CreditOrg
     /**
      * Gets as enumCredits
      *
-     * @return \Gam6itko\CbrRu\Type\CreditOrg\EnumCreditsAType[]
+     * @return \Gam6itko\Cbrf\Type\CreditOrg\EnumCreditsAType[]
      */
     public function getEnumCredits()
     {
@@ -62,7 +62,7 @@ class CreditOrg
     /**
      * Sets a new enumCredits
      *
-     * @param \Gam6itko\CbrRu\Type\CreditOrg\EnumCreditsAType[] $enumCredits
+     * @param \Gam6itko\Cbrf\Type\CreditOrg\EnumCreditsAType[] $enumCredits
      * @return self
      */
     public function setEnumCredits(array $enumCredits)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type\F101DATA;
+namespace Gam6itko\Cbrf\Type\F101DATA;
 
 /**
  * Class representing FDAType

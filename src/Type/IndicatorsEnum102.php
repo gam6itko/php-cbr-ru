@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type;
+namespace Gam6itko\Cbrf\Type;
 
 /**
  * Class representing IndicatorsEnum102
@@ -9,7 +9,7 @@ class IndicatorsEnum102
 {
 
     /**
-     * @property \Gam6itko\CbrRu\Type\IndicatorsEnum102\SINDAType[] $sIND
+     * @property \Gam6itko\Cbrf\Type\IndicatorsEnum102\SINDAType[] $sIND
      */
     private $sIND = [
         
@@ -19,9 +19,9 @@ class IndicatorsEnum102
      * Adds as sIND
      *
      * @return self
-     * @param \Gam6itko\CbrRu\Type\IndicatorsEnum102\SINDAType $sIND
+     * @param \Gam6itko\Cbrf\Type\IndicatorsEnum102\SINDAType $sIND
      */
-    public function addToSIND(\Gam6itko\CbrRu\Type\IndicatorsEnum102\SINDAType $sIND)
+    public function addToSIND(\Gam6itko\Cbrf\Type\IndicatorsEnum102\SINDAType $sIND)
     {
         $this->sIND[] = $sIND;
         return $this;
@@ -52,7 +52,7 @@ class IndicatorsEnum102
     /**
      * Gets as sIND
      *
-     * @return \Gam6itko\CbrRu\Type\IndicatorsEnum102\SINDAType[]
+     * @return \Gam6itko\Cbrf\Type\IndicatorsEnum102\SINDAType[]
      */
     public function getSIND()
     {
@@ -62,7 +62,7 @@ class IndicatorsEnum102
     /**
      * Sets a new sIND
      *
-     * @param \Gam6itko\CbrRu\Type\IndicatorsEnum102\SINDAType[] $sIND
+     * @param \Gam6itko\Cbrf\Type\IndicatorsEnum102\SINDAType[] $sIND
      * @return self
      */
     public function setSIND(array $sIND)

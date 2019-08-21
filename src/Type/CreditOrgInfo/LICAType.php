@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type\CreditOrgInfo;
+namespace Gam6itko\Cbrf\Type\CreditOrgInfo;
 
 /**
  * Class representing LICAType

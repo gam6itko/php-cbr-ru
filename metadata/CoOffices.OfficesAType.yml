@@ -1,4 +1,4 @@
-Gam6itko\CbrRu\Type\CoOffices\OfficesAType:
+Gam6itko\Cbrf\Type\CoOffices\OfficesAType:
     properties:
         cmain:
             expose: true

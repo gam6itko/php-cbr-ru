@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type\F134DATAOLAP;
+namespace Gam6itko\Cbrf\Type\F134DATAOLAP;
 
 /**
  * Class representing FoAType

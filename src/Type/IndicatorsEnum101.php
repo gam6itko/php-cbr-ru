@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type;
+namespace Gam6itko\Cbrf\Type;
 
 /**
  * Class representing IndicatorsEnum101
@@ -9,7 +9,7 @@ class IndicatorsEnum101
 {
 
     /**
-     * @property \Gam6itko\CbrRu\Type\IndicatorsEnum101\EINDAType[] $eIND
+     * @property \Gam6itko\Cbrf\Type\IndicatorsEnum101\EINDAType[] $eIND
      */
     private $eIND = [
         
@@ -19,9 +19,9 @@ class IndicatorsEnum101
      * Adds as eIND
      *
      * @return self
-     * @param \Gam6itko\CbrRu\Type\IndicatorsEnum101\EINDAType $eIND
+     * @param \Gam6itko\Cbrf\Type\IndicatorsEnum101\EINDAType $eIND
      */
-    public function addToEIND(\Gam6itko\CbrRu\Type\IndicatorsEnum101\EINDAType $eIND)
+    public function addToEIND(\Gam6itko\Cbrf\Type\IndicatorsEnum101\EINDAType $eIND)
     {
         $this->eIND[] = $eIND;
         return $this;
@@ -52,7 +52,7 @@ class IndicatorsEnum101
     /**
      * Gets as eIND
      *
-     * @return \Gam6itko\CbrRu\Type\IndicatorsEnum101\EINDAType[]
+     * @return \Gam6itko\Cbrf\Type\IndicatorsEnum101\EINDAType[]
      */
     public function getEIND()
     {
@@ -62,7 +62,7 @@ class IndicatorsEnum101
     /**
      * Sets a new eIND
      *
-     * @param \Gam6itko\CbrRu\Type\IndicatorsEnum101\EINDAType[] $eIND
+     * @param \Gam6itko\Cbrf\Type\IndicatorsEnum101\EINDAType[] $eIND
      * @return self
      */
     public function setEIND(array $eIND)

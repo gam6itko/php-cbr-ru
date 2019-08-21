@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type\F102DATAFULL;
+namespace Gam6itko\Cbrf\Type\F102DATAFULL;
 
 /**
  * Class representing FDFAType

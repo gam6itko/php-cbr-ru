@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type\EnumBIC;
+namespace Gam6itko\Cbrf\Type\EnumBIC;
 
 /**
  * Class representing BICAType

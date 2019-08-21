@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type;
+namespace Gam6itko\Cbrf\Type;
 
 /**
  * Class representing F134DATAOLAP
@@ -9,7 +9,7 @@ class F134DATAOLAP
 {
 
     /**
-     * @property \Gam6itko\CbrRu\Type\F134DATAOLAP\FoAType[] $fo
+     * @property \Gam6itko\Cbrf\Type\F134DATAOLAP\FoAType[] $fo
      */
     private $fo = [
         
@@ -19,9 +19,9 @@ class F134DATAOLAP
      * Adds as fo
      *
      * @return self
-     * @param \Gam6itko\CbrRu\Type\F134DATAOLAP\FoAType $fo
+     * @param \Gam6itko\Cbrf\Type\F134DATAOLAP\FoAType $fo
      */
-    public function addToFo(\Gam6itko\CbrRu\Type\F134DATAOLAP\FoAType $fo)
+    public function addToFo(\Gam6itko\Cbrf\Type\F134DATAOLAP\FoAType $fo)
     {
         $this->fo[] = $fo;
         return $this;
@@ -52,7 +52,7 @@ class F134DATAOLAP
     /**
      * Gets as fo
      *
-     * @return \Gam6itko\CbrRu\Type\F134DATAOLAP\FoAType[]
+     * @return \Gam6itko\Cbrf\Type\F134DATAOLAP\FoAType[]
      */
     public function getFo()
     {
@@ -62,7 +62,7 @@ class F134DATAOLAP
     /**
      * Sets a new fo
      *
-     * @param \Gam6itko\CbrRu\Type\F134DATAOLAP\FoAType[] $fo
+     * @param \Gam6itko\Cbrf\Type\F134DATAOLAP\FoAType[] $fo
      * @return self
      */
     public function setFo(array $fo)

@@ -1,7 +1,7 @@
 <?php
-namespace Tests\Gam6itko\CbrRu\Wrapper;
+namespace Tests\Gam6itko\Cbrf\Wrapper;
 
-use Gam6itko\CbrRu\Wrapper\RegionInfoWrapper;
+use Gam6itko\Cbrf\Wrapper\RegionInfoWrapper;
 use PHPUnit\Framework\TestCase;
 
 class RegionInfoServiceTest extends TestCase

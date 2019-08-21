@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type;
+namespace Gam6itko\Cbrf\Type;
 
 /**
  * Class representing F101DATA
@@ -9,14 +9,14 @@ class F101DATA
 {
 
     /**
-     * @property \Gam6itko\CbrRu\Type\F101DATA\FDAType[] $fD
+     * @property \Gam6itko\Cbrf\Type\F101DATA\FDAType[] $fD
      */
     private $fD = [
         
     ];
 
     /**
-     * @property \Gam6itko\CbrRu\Type\F101DATA\FDFAType[] $fDF
+     * @property \Gam6itko\Cbrf\Type\F101DATA\FDFAType[] $fDF
      */
     private $fDF = [
         
@@ -26,9 +26,9 @@ class F101DATA
      * Adds as fD
      *
      * @return self
-     * @param \Gam6itko\CbrRu\Type\F101DATA\FDAType $fD
+     * @param \Gam6itko\Cbrf\Type\F101DATA\FDAType $fD
      */
-    public function addToFD(\Gam6itko\CbrRu\Type\F101DATA\FDAType $fD)
+    public function addToFD(\Gam6itko\Cbrf\Type\F101DATA\FDAType $fD)
     {
         $this->fD[] = $fD;
         return $this;
@@ -59,7 +59,7 @@ class F101DATA
     /**
      * Gets as fD
      *
-     * @return \Gam6itko\CbrRu\Type\F101DATA\FDAType[]
+     * @return \Gam6itko\Cbrf\Type\F101DATA\FDAType[]
      */
     public function getFD()
     {
@@ -69,7 +69,7 @@ class F101DATA
     /**
      * Sets a new fD
      *
-     * @param \Gam6itko\CbrRu\Type\F101DATA\FDAType[] $fD
+     * @param \Gam6itko\Cbrf\Type\F101DATA\FDAType[] $fD
      * @return self
      */
     public function setFD(array $fD)
@@ -82,9 +82,9 @@ class F101DATA
      * Adds as fDF
      *
      * @return self
-     * @param \Gam6itko\CbrRu\Type\F101DATA\FDFAType $fDF
+     * @param \Gam6itko\Cbrf\Type\F101DATA\FDFAType $fDF
      */
-    public function addToFDF(\Gam6itko\CbrRu\Type\F101DATA\FDFAType $fDF)
+    public function addToFDF(\Gam6itko\Cbrf\Type\F101DATA\FDFAType $fDF)
     {
         $this->fDF[] = $fDF;
         return $this;
@@ -115,7 +115,7 @@ class F101DATA
     /**
      * Gets as fDF
      *
-     * @return \Gam6itko\CbrRu\Type\F101DATA\FDFAType[]
+     * @return \Gam6itko\Cbrf\Type\F101DATA\FDFAType[]
      */
     public function getFDF()
     {
@@ -125,7 +125,7 @@ class F101DATA
     /**
      * Sets a new fDF
      *
-     * @param \Gam6itko\CbrRu\Type\F101DATA\FDFAType[] $fDF
+     * @param \Gam6itko\Cbrf\Type\F101DATA\FDFAType[] $fDF
      * @return self
      */
     public function setFDF(array $fDF)

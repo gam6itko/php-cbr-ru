@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type\IndicatorsEnum101;
+namespace Gam6itko\Cbrf\Type\IndicatorsEnum101;
 
 /**
  * Class representing EINDAType

@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type\F134DATA;
+namespace Gam6itko\Cbrf\Type\F134DATA;
 
 /**
  * Class representing FDAType

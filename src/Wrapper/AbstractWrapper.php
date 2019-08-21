@@ -1,5 +1,5 @@
 <?php
-namespace Gam6itko\CbrRu\Wrapper;
+namespace Gam6itko\Cbrf\Wrapper;
 
 abstract class AbstractWrapper
 {

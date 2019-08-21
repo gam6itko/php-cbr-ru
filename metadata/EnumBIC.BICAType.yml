@@ -1,4 +1,4 @@
-Gam6itko\CbrRu\Type\EnumBIC\BICAType:
+Gam6itko\Cbrf\Type\EnumBIC\BICAType:
     properties:
         bIC:
             expose: true

@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type\F123DATA;
+namespace Gam6itko\Cbrf\Type\F123DATA;
 
 /**
  * Class representing F123AType

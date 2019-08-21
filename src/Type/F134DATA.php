@@ -1,6 +1,6 @@
 <?php
 
-namespace Gam6itko\CbrRu\Type;
+namespace Gam6itko\Cbrf\Type;
 
 /**
  * Class representing F134DATA
@@ -9,7 +9,7 @@ class F134DATA
 {
 
     /**
-     * @property \Gam6itko\CbrRu\Type\F134DATA\FDAType[] $fD
+     * @property \Gam6itko\Cbrf\Type\F134DATA\FDAType[] $fD
      */
     private $fD = [
         
@@ -19,9 +19,9 @@ class F134DATA
      * Adds as fD
      *
      * @return self
-     * @param \Gam6itko\CbrRu\Type\F134DATA\FDAType $fD
+     * @param \Gam6itko\Cbrf\Type\F134DATA\FDAType $fD
      */
-    public function addToFD(\Gam6itko\CbrRu\Type\F134DATA\FDAType $fD)
+    public function addToFD(\Gam6itko\Cbrf\Type\F134DATA\FDAType $fD)
     {
         $this->fD[] = $fD;
         return $this;
@@ -52,7 +52,7 @@ class F134DATA
     /**
      * Gets as fD
      *
-     * @return \Gam6itko\CbrRu\Type\F134DATA\FDAType[]
+     * @return \Gam6itko\Cbrf\Type\F134DATA\FDAType[]
      */
     public function getFD()
     {
@@ -62,7 +62,7 @@ class F134DATA
     /**
      * Sets a new fD
      *
-     * @param \Gam6itko\CbrRu\Type\F134DATA\FDAType[] $fD
+     * @param \Gam6itko\Cbrf\Type\F134DATA\FDAType[] $fD
      * @return self
      */
     public function setFD(array $fD)
