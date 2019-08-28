@@ -327,10 +327,21 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertNotEmpty($result);
     }
 
+    /**
+     * @expectedException \LogicException
+     */
     public function testGetFormsMaxDate()
     {
-        $result = $this->getSvc()->GetFormsMaxDate(1481);
+        $result = $this->getSvc()->GetFormsMaxDate(101);
         self::assertNotEmpty($result);
+    }
+
+    /**
+     * @expectedException \LogicException
+     */
+    public function testGetFormsMaxDateFail()
+    {
+        $this->getSvc()->GetFormsMaxDate(1481);
     }
 
     public function testGetOffices()

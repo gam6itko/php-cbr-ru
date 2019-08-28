@@ -1,8 +1,10 @@
 <?php
 namespace Gam6itko\Cbrf\Wrapper;
 
+use Gam6itko\Cbrf\Enum\FormType;
+
 /**
- * @see
+ * @see https://www.cbr.ru/CreditInfoWebServ/CreditOrgInfo.asmx
  *
  * @method int BicToIntCode(string $bicCode) Bic код во внутренний код кред.орг.
  * @method int BicToRegNumber(string $bicCode) Bic код в регистрационный номер кред.орг.
@@ -10,28 +12,28 @@ namespace Gam6itko\Cbrf\Wrapper;
  * @method array CreditInfoByIntCodeXML(float $internalCode) Информация о кредитной орг. по вн.коду (как XMLDocument)
  * @method array CreditInfoByIntCodeEx(float[] $internalCodes) Информация о кредитной орг. по вн.коду (как DataSet)
  * @method array CreditInfoByIntCodeExXML(float[] $internalCodes) Информация о кредитной орг. по вн.коду (как XML Document)
- * @method array Data101Form(int $credorgNumber, int $indId, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, без оборотов (как DataSet)
- * @method array Data101FormXML(int $credorgNumber, int $indId, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, без оборотов (как XMLDocument)
- * @method array Data101FormEx(int[] $credorgNumbers, int $indId, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, без оборотов (как DataSet) по нескольким КО.
- * @method array Data101FormExXML(int[] $credorgNumbers, int $indId, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101 (как XMLDocument) по нескольким КО.
- * @method array Data101Full(int $credorgNumber, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (Устарел, используйте v2) (как DataSet)
- * @method array Data101FullXML(int $credorgNumber, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (как XMLDocument)
- * @method array Data101FullEx(int[] $credorgNumbers, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (Внимание, метод устарел, используйте v2) (как DataSet)
- * @method array Data101FullExXML(int[] $credorgNumbers, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (Внимание, метод устарел, используйте v2) (как XMLDocument) по нескольким КО
- * @method array Data101FullExV2(int[] $credorgNumbers, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (как DataSet)
- * @method array Data101FullExV2XML(int[] $credorgNumbers, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (как XML)
- * @method array Data101FullV2(int $credorgNumber, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (как DataSet)
- * @method array Data101FullV2XML(int $credorgNumber, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101, полностью (как XML)
- * @method array Data102Form(int $credorgNumber, int $symbCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 102 (как DataSet)
- * @method array Data102FormXML(int $credorgNumber, int $symbCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 102, кратко (как XMLDocument)
- * @method array Data102FormEx(int[] $credorgNumber, int $symbCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 102 (как DataSet) по нескольким КО.
- * @method array Data102FormExXML(int[] $credorgNumber, int $symbCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 102, кратко (как XMLDocument) по нескольким КО.
- * @method array Data123FormFull(int $credorgNumber, \DateTime $onDate = null) Данные по форме 123 (как DataSet)
- * @method array Data123FormFullXML(int $credorgNumber, \DateTime $onDate = null) Данные по форме 123 (как XML)
- * @method array Data134FormFull(int $credorgNumber, \DateTime $onDate = null) Данные по форме 134 - устаревшие, данные до 2015 г. (как DataSet)
- * @method array Data134FormFullXML(int $credorgNumber, \DateTime $onDate = null) Данные по форме 134 (как XML)
- * @method array Data135FormFull(int $credorgNumber, \DateTime $onDate = null) Данные по форме 135 (как DataSet)
- * @method array Data135FormFullXML(int $credorgNumber, \DateTime $onDate = null) Данные по форме 135 (как XML)
+ * @method array Data101Form(int $credorgNumber, int $indId, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 101, без оборотов (как DataSet)
+ * @method array Data101FormXML(int $credorgNumber, int $indId, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 101, без оборотов (как XMLDocument)
+ * @method array Data101FormEx(int[] $credorgNumbers, int $indId, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 101, без оборотов (как DataSet) по нескольким КО.
+ * @method array Data101FormExXML(int[] $credorgNumbers, int $indId, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 101 (как XMLDocument) по нескольким КО.
+ * @method array Data101Full(int $credorgNumber, int $indCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 101, полностью (Устарел, используйте v2) (как DataSet)
+ * @method array Data101FullXML(int $credorgNumber, int $indCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 101, полностью (как XMLDocument)
+ * @method array Data101FullEx(int[] $credorgNumbers, int $indCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 101, полностью (Внимание, метод устарел, используйте v2) (как DataSet)
+ * @method array Data101FullExXML(int[] $credorgNumbers, int $indCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 101, полностью (Внимание, метод устарел, используйте v2) (как XMLDocument) по нескольким КО
+ * @method array Data101FullExV2(int[] $credorgNumbers, int $indCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 101, полностью (как DataSet)
+ * @method array Data101FullExV2XML(int[] $credorgNumbers, int $indCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 101, полностью (как XML)
+ * @method array Data101FullV2(int $credorgNumber, int $indCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 101, полностью (как DataSet)
+ * @method array Data101FullV2XML(int $credorgNumber, int $indCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 101, полностью (как XML)
+ * @method array Data102Form(int $credorgNumber, int $symbCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 102 (как DataSet)
+ * @method array Data102FormXML(int $credorgNumber, int $symbCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 102, кратко (как XMLDocument)
+ * @method array Data102FormEx(int[] $credorgNumber, int $symbCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 102 (как DataSet) по нескольким КО.
+ * @method array Data102FormExXML(int[] $credorgNumber, int $symbCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 102, кратко (как XMLDocument) по нескольким КО.
+ * @method array Data123FormFull(int $credorgNumber, \DateTimeInterface $onDate = null) Данные по форме 123 (как DataSet)
+ * @method array Data123FormFullXML(int $credorgNumber, \DateTimeInterface $onDate = null) Данные по форме 123 (как XML)
+ * @method array Data134FormFull(int $credorgNumber, \DateTimeInterface $onDate = null) Данные по форме 134 - устаревшие, данные до 2015 г. (как DataSet)
+ * @method array Data134FormFullXML(int $credorgNumber, \DateTimeInterface $onDate = null) Данные по форме 134 (как XML)
+ * @method array Data135FormFull(int $credorgNumber, \DateTimeInterface $onDate = null) Данные по форме 135 (как DataSet)
+ * @method array Data135FormFullXML(int $credorgNumber, \DateTimeInterface $onDate = null) Данные по форме 135 (как XML)
  * @method array EnumBIC() Данные по BIC кодам КО (как DataSet), без филиалов
  * @method array EnumBIC_XML() Данные по BIC кодам КО (как XMLDocument), без филиалов
  * @method array Form101IndicatorsEnum() Справочник индикаторов для формы 101 (как DataSet)
@@ -99,8 +101,8 @@ class CreditOrgInfoWrapper extends AbstractWrapper
         }
 
         $request = [
-            'DateFrom' => $dateFrom->format(\DateTime::ATOM),
-            'DateTo'   => $dateTo->format(\DateTime::ATOM),
+            'DateFrom' => $dateFrom->format(\DateTimeInterface::ATOM),
+            'DateTo'   => $dateTo->format(\DateTimeInterface::ATOM),
         ];
 
         $mappingInd = [
@@ -133,7 +135,7 @@ class CreditOrgInfoWrapper extends AbstractWrapper
 
         return [
             'CredorgNumber' => $credorgNumber,
-            'OnDate'        => $onDate->format(\DateTime::ATOM),
+            'OnDate'        => $onDate->format(\DateTimeInterface::ATOM),
         ];
     }
 
@@ -182,6 +184,9 @@ class CreditOrgInfoWrapper extends AbstractWrapper
      */
     public function GetFormsMaxDate(int $code)
     {
+        if (!in_array($code, FormType::getNumbers())) {
+            throw new \LogicException('Not supported form number');
+        }
         return $this->doRequest(__FUNCTION__, ['code' => $code]);
     }
 
@@ -219,12 +224,12 @@ class CreditOrgInfoWrapper extends AbstractWrapper
      * Данные по форме 134, OLAP, (как DataSet)
      * @param string $code
      * @param int $credorgNumber
-     * @param \DateTime|null $dateFrom
-     * @param \DateTime|null $dateTo
+     * @param \DateTimeInterface|null $dateFrom
+     * @param \DateTimeInterface|null $dateTo
      * @return array|mixed|\stdClass
      * @throws \Exception
      */
-    public function Olap134Form(string $code, int $credorgNumber, \DateTime $dateFrom = null, \DateTime $dateTo = null)
+    public function Olap134Form(string $code, int $credorgNumber, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null)
     {
         if (!$dateFrom && !$dateTo) {
             $dateFrom = new \DateTime('last week');
@@ -234,8 +239,8 @@ class CreditOrgInfoWrapper extends AbstractWrapper
         return $this->doRequest(__FUNCTION__, [
             'Code'          => $code,
             'CredorgNumber' => $credorgNumber,
-            'FromDate'      => $dateFrom->format(\DateTime::ATOM),
-            'ToDate'        => $dateTo->format(\DateTime::ATOM),
+            'FromDate'      => $dateFrom->format(\DateTimeInterface::ATOM),
+            'ToDate'        => $dateTo->format(\DateTimeInterface::ATOM),
         ]);
     }
 

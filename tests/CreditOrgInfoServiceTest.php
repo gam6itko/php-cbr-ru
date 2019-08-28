@@ -16,9 +16,12 @@ use Gam6itko\Cbrf\Wrapper\CreditOrgInfoWrapper;
 use JMS\Serializer\SerializerBuilder;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @coversDefaultClass \Gam6itko\Cbrf\CreditOrgInfoService
+ */
 class CreditOrgInfoServiceTest extends TestCase
 {
-    private function build()
+    private function build(): CreditOrgInfoService
     {
         $svc = new CreditOrgInfoWrapper();
         $serializer = SerializerBuilder::create()
@@ -27,19 +30,30 @@ class CreditOrgInfoServiceTest extends TestCase
         return new CreditOrgInfoService($svc, $serializer);
     }
 
-    public function testGetBicToIntCode(string $bic = '044525225')
+    /**
+     * @covers ::getBicToIntCode()
+     * @param string $bic
+     */
+    public function testGetBicToIntCode(string $bic = '044525225'): void
     {
         $result = $this->build()->getBicToIntCode($bic);
         self::assertNotNull($result);
     }
 
-    public function testBicToRegNumber(string $bic = '044525225')
+    /**
+     * @covers ::getBicToRegNumber
+     * @param string $bic
+     */
+    public function testBicToRegNumber(string $bic = '044525225'): void
     {
         $result = $this->build()->getBicToRegNumber($bic);
         self::assertNotNull($result);
     }
 
-    public function testCreditInfoByIntCode(int $intCode = 350000004)
+    /**
+     * @param int $intCode
+     */
+    public function testCreditInfoByIntCode(int $intCode = 350000004): void
     {
         $result = $this->build()->creditInfoByIntCode($intCode);
         self::assertInstanceOf(CreditOrgInfo::class, $result);
@@ -53,7 +67,7 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(CreditOrgInfo\LICAType::class, $list[0]);
     }
 
-    public function testCreditInfoByIntCodeEx()
+    public function testCreditInfoByIntCodeEx(): void
     {
         $array = [350000004, 450000036];
         $result = $this->build()->creditInfoByIntCodeEx($array);
@@ -68,7 +82,10 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(CreditOrgInfo\LICAType::class, $list[0]);
     }
 
-    public function testSearchByRegion(int $regionCode = 19)
+    /**
+     * @param int $regionCode
+     */
+    public function testSearchByRegion(int $regionCode = 19): void
     {
         $result = $this->build()->searchByRegionCode($regionCode);
         self::assertInstanceOf(CreditOrg::class, $result);
@@ -76,7 +93,10 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(EnumCreditsAType::class, $result->getEnumCredits()[0]);
     }
 
-    public function testSearchByName(string $name = 'альфа')
+    /**
+     * @param string $name
+     */
+    public function testSearchByName(string $name = 'альфа'): void
     {
         $result = $this->build()->searchByName($name);
         self::assertInstanceOf(CreditOrg::class, $result);
@@ -84,74 +104,74 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(EnumCreditsAType::class, $result->getEnumCredits()[0]);
     }
 
-    public function testData101Form()
+    public function testData101Form(): void
     {
-        $result = $this->build()->data101Form(350000004, 1);
+        $result = $this->build()->data101Form(350000004, 1, new \DateTime('2019-01-01'), new \DateTime('2019-08-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData101FormEx()
+    public function testData101FormEx(): void
     {
         $result = $this->build()->data101FormEx([350000004], 1);
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData101Full()
+    public function testData101Full(): void
     {
         $result = $this->build()->data101Full(350000004, 1);
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData101FullEx()
+    public function testData101FullEx(): void
     {
         $result = $this->build()->data101FullEx([350000004], 1);
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData101FullExV2()
+    public function testData101FullExV2(): void
     {
         $result = $this->build()->data101FullExV2([350000004], 1);
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData101FullV2()
+    public function testData101FullV2(): void
     {
         $result = $this->build()->data101FullV2(350000004, 1);
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData102Form()
+    public function testData102Form(): void
     {
-        $result = $this->build()->data102Form(350000004, 1);
+        $result = $this->build()->data102Form(1000, 10000);
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData102FormEx()
+    public function testData102FormEx(): void
     {
         $result = $this->build()->data102FormEx([350000004], 1);
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData123FormFull()
+    public function testData123FormFull(): void
     {
         $result = $this->build()->data123FormFull(350000004);
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData134FormFull()
+    public function testData134FormFull(): void
     {
         $result = $this->build()->data134FormFull(350000004);
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData135FormFull()
+    public function testData135FormFull(): void
     {
         $result = $this->build()->data135FormFull(350000004);
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
     //<editor-fold desc="enum">
-    public function testGetDatesForForm()
+    public function testGetDatesForForm(): void
     {
         $result = $this->build()->getDatesForForm(FormType::F101, 1481);
         self::assertIsArray($result);
@@ -160,18 +180,22 @@ class CreditOrgInfoServiceTest extends TestCase
     /**
      * @expectedException \LogicException
      */
-    public function testGetDatesForFormException()
+    public function testGetDatesForFormException(): void
     {
         $this->build()->getDatesForForm(0, 1481);
     }
 
-    public function testLastUpdate()
+    /**
+     * @covers ::getLastUpdate
+     * @throws \Exception
+     */
+    public function testLastUpdate(): void
     {
         $result = $this->build()->getLastUpdate();
         self::assertInstanceOf(\DateTime::class, $result);
     }
 
-    public function testEnumBIC()
+    public function testEnumBIC(): void
     {
         $result = $this->build()->enumBIC();
         self::assertInstanceOf(EnumBIC::class, $result);
@@ -180,7 +204,7 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(EnumBIC\BICAType::class, $list[0]);
     }
 
-    public function testRegionsEnum()
+    public function testRegionsEnum(): void
     {
         $result = $this->build()->regionsEnum();
         self::assertInstanceOf(RegionsEnum::class, $result);
@@ -189,7 +213,10 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(RegionsEnum\RGIDAType::class, $list[0]);
     }
 
-    public function testOfficesByRegion(int $regionCode = 19)
+    /**
+     * @param int $regionCode
+     */
+    public function testOfficesByRegion(int $regionCode = 19): void
     {
         $result = $this->build()->officesByRegion($regionCode);
         self::assertInstanceOf(CoOffices::class, $result);
@@ -198,7 +225,7 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(CoOffices\OfficesAType::class, $list[0]);
     }
 
-    public function testForm102IndicatorsEnum()
+    public function testForm102IndicatorsEnum(): void
     {
         $result = $this->build()->form102IndicatorsEnum();
         self::assertInstanceOf(IndicatorsEnum102::class, $result);
@@ -206,7 +233,7 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(IndicatorsEnum102\SINDAType::class, $result->getSIND()[0]);
     }
 
-    public function testForm101IndicatorsEnum()
+    public function testForm101IndicatorsEnum(): void
     {
         $result = $this->build()->form101IndicatorsEnum();
         self::assertInstanceOf(IndicatorsEnum101::class, $result);

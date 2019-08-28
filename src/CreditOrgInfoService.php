@@ -14,23 +14,22 @@ use Gam6itko\Cbrf\Enum\FormType;
 use JMS\Serializer\SerializerInterface;
 
 /**
- * @method mixed creditInfoByIntCode(float $internalCode) Информация о кредитной орг. по вн.коду
- * @method mixed creditInfoByIntCodeEx(float[] $internalCode) Информация о кредитной орг. по вн.коду
- * @method F101DATA data101Form(int $credorgNumber, int $indId, \DateTime $dateFrom = null, \DateTime $dateTo = null)
- * @method F101DATA data101FormEx(int[] $credorgNumbers, int $indId, \DateTime $dateFrom = null, \DateTime $dateTo = null)
- * @method F101DATA data101Full(int $credorgNumber, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null)
- * @method F101DATA data101FullEx(int[] $credorgNumbers, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null)
- * @method F101DATA data101FullExV2(int[] $credorgNumbers, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null)
- * @method F101DATA data101FullV2(int $credorgNumber, int $indCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 101
- * @method F101DATA data102Form(int $credorgNumber, int $symbCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 102, кратко
- * @method F101DATA data102FormEx(int[] $credorgNumber, int $symbCode, \DateTime $dateFrom = null, \DateTime $dateTo = null) Данные КО. формы 102, кратко по нескольким КО.
- * @method F101DATA data123FormFull(int $credorgNumber, \DateTime $onDate = null) Данные по форме 123
- * @method F101DATA data134FormFull(int $credorgNumber, \DateTime $onDate = null) Данные по форме 134
- * @method F101DATA data135FormFull(int $credorgNumber, \DateTime $onDate = null) Данные по форме 135
+ * @method CreditOrgInfo creditInfoByIntCode(float $internalCode) Информация о кредитной орг. по вн.коду
+ * @method CreditOrgInfo creditInfoByIntCodeEx(float[] $internalCode) Информация о кредитной орг. по вн.коду
+ * @method F101DATA data101Form(int $credorgNumber, int $indId, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null)
+ * @method F101DATA data101FormEx(int[] $credorgNumbers, int $indId, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null)
+ * @method F101DATA data101Full(int $credorgNumber, int $indCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null)
+ * @method F101DATA data101FullEx(int[] $credorgNumbers, int $indCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null)
+ * @method F101DATA data101FullExV2(int[] $credorgNumbers, int $indCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null)
+ * @method F101DATA data101FullV2(int $credorgNumber, int $indCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 101
+ * @method F101DATA data102Form(int $credorgNumber, int $symbCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 102, кратко
+ * @method F101DATA data102FormEx(int[] $credorgNumber, int $symbCode, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null) Данные КО. формы 102, кратко по нескольким КО.
+ * @method F101DATA data123FormFull(int $credorgNumber, \DateTimeInterface $onDate = null) Данные по форме 123
+ * @method F101DATA data134FormFull(int $credorgNumber, \DateTimeInterface $onDate = null) Данные по форме 134
+ * @method F101DATA data135FormFull(int $credorgNumber, \DateTimeInterface $onDate = null) Данные по форме 135
  * @method EnumBIC enumBIC() Данные по BIC кодам КО, без филиалов
  * @method IndicatorsEnum101 form101IndicatorsEnum() Справочник индикаторов для формы 101
  * @method IndicatorsEnum102 form102IndicatorsEnum() Справочник символов для формы 102
- * @method mixed lastUpdate() Получение даты последнего обновления базы по КО
  * @method RegionsEnum regionsEnum() Справочник регионов
  * @method CoOffices officesByRegion(int $regCode) Информация по филиальной сети кредитной орг. по региону (коду)
  * @method CreditOrg searchByRegionCode(string $regionCode) Поиск кредитных орг. по региону(коду)
@@ -60,7 +59,7 @@ class CreditOrgInfoService
     public function getDatesForForm(int $formNumber, int $credPrgNumber)
     {
         if (!in_array($formNumber, FormType::getNumbers())) {
-            throw new \LogicException('Not supported from number');
+            throw new \LogicException('Not supported form number');
         }
 
         $methodName = "GetDatesForF{$formNumber}";
@@ -68,6 +67,11 @@ class CreditOrgInfoService
         return $result['dateTime'];
     }
 
+    /**
+     * Получение даты последнего обновления базы по КО
+     * @return \DateTime
+     * @throws \Exception
+     */
     public function getLastUpdate(): \DateTime
     {
         $dt = preg_replace('/\.\d*/', '', $this->svc->LastUpdate());

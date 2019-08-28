@@ -2,6 +2,11 @@
 
 Dev API: https://www.cbr.ru/development/
 
+# instalation
+
+```bash
+    composer require gam6itko/cbrf-api
+```
 
 #Create php Classes from xsd 
 
