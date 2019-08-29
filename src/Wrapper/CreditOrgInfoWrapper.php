@@ -62,6 +62,11 @@ class CreditOrgInfoWrapper extends AbstractWrapper
         return 'https://www.cbr.ru/CreditInfoWebServ/CreditOrgInfo.asmx?WSDL';
     }
 
+    protected function getDefaultTimeZone(): \DateTimeZone
+    {
+        return new \DateTimeZone('Europe/Moscow');
+    }
+
     //<editor-fold desc="argValidator">
     private function argBicTo(array $arguments)
     {
@@ -96,9 +101,12 @@ class CreditOrgInfoWrapper extends AbstractWrapper
         @list($credorgNumber, $indId, $dateFrom, $dateTo) = $arguments;
 
         if (!$dateFrom && !$dateTo) {
-            $dateFrom = new \DateTime('last week');
-            $dateTo = new \DateTime();
+            $dateFrom = new \DateTime('first day of last month', $this->getDefaultTimeZone());
+            $dateTo = new \DateTime('first day of this month', $this->getDefaultTimeZone());
         }
+
+        $this->ensureTimezone($dateFrom);
+        $this->ensureTimezone($dateTo);
 
         $request = [
             'DateFrom' => $dateFrom->format(\DateTimeInterface::ATOM),
@@ -130,8 +138,10 @@ class CreditOrgInfoWrapper extends AbstractWrapper
     {
         @list($credorgNumber, $onDate) = $arguments;
         if (empty($onDate)) {
-            $onDate = new \DateTime();
+            $onDate = new \DateTime('firts day of month', $this->getDefaultTimeZone());
         }
+
+        $this->ensureTimezone($onDate);
 
         return [
             'CredorgNumber' => $credorgNumber,
@@ -232,9 +242,12 @@ class CreditOrgInfoWrapper extends AbstractWrapper
     public function Olap134Form(string $code, int $credorgNumber, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null)
     {
         if (!$dateFrom && !$dateTo) {
-            $dateFrom = new \DateTime('last week');
-            $dateTo = new \DateTime();
+            $dateFrom = new \DateTime('first day of last month', $this->getDefaultTimeZone());
+            $dateTo = new \DateTime('first day of this month', $this->getDefaultTimeZone());
         }
+
+        $this->ensureTimezone($dateFrom);
+        $this->ensureTimezone($dateTo);
 
         return $this->doRequest(__FUNCTION__, [
             'Code'          => $code,
@@ -252,5 +265,14 @@ class CreditOrgInfoWrapper extends AbstractWrapper
     public function RegNumToIntCode(float $regNumber)
     {
         return $this->doRequest(__FUNCTION__, ['RegNumber' => $regNumber]);
+    }
+
+    private function ensureTimezone(\DateTimeInterface &$dt): void
+    {
+        if ('+0300' === $dt->format('O')) {
+            return;
+        }
+
+        $dt = new \DateTime($dt->format('Y-m-d\TH:i:s'), $this->getDefaultTimeZone());
     }
 }

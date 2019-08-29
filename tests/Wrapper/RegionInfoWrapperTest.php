@@ -4,7 +4,7 @@ namespace Tests\Gam6itko\Cbrf\Wrapper;
 use Gam6itko\Cbrf\Wrapper\RegionInfoWrapper;
 use PHPUnit\Framework\TestCase;
 
-class RegionInfoServiceTest extends TestCase
+class RegionInfoWrapperTest extends TestCase
 {
     public function testAddIndicators()
     {

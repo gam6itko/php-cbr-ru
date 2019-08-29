@@ -104,69 +104,89 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(EnumCreditsAType::class, $result->getEnumCredits()[0]);
     }
 
-    public function testData101Form(): void
+    public function testData101Form(): void //todo нет реальных данных
     {
-        $result = $this->build()->data101Form(350000004, 1, new \DateTime('2019-01-01'), new \DateTime('2019-08-01'));
+        $result = $this->build()->data101Form(1481, 1, new \DateTime('2019-01-01'), new \DateTime('2019-08-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData101FormEx(): void
+    public function testData101FormEx(): void //todo нет реальных данных
     {
-        $result = $this->build()->data101FormEx([350000004], 1);
+        $result = $this->build()->data101FormEx([1481], 1);
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
     public function testData101Full(): void
     {
-        $result = $this->build()->data101Full(350000004, 1);
+        $result = $this->build()->data101Full(1481, 42503, new \DateTime('2019-01-01'), new \DateTime('2019-02-01'));
         self::assertInstanceOf(F101DATA::class, $result);
+        self::assertNotEmpty($result->getFDF());
+        self::assertCount(2, $result->getFDF());
     }
 
-    public function testData101FullEx(): void
+    public function testData101FullEx(): void //todo нет реальных данных
     {
-        $result = $this->build()->data101FullEx([350000004], 1);
-        self::assertInstanceOf(F101DATA::class, $result);
-    }
-
-    public function testData101FullExV2(): void
-    {
-        $result = $this->build()->data101FullExV2([350000004], 1);
+        $result = $this->build()->data101FullEx([101, 1481], 42503, new \DateTime('2019-01-01'), new \DateTime('2019-02-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
     public function testData101FullV2(): void
     {
-        $result = $this->build()->data101FullV2(350000004, 1);
+        $result = $this->build()->data101FullV2(1481, 42503, new \DateTime('2019-01-01'), new \DateTime('2019-02-01'));
+        self::assertInstanceOf(F101DATA::class, $result);
+        self::assertNotEmpty($result->getFDF());
+        self::assertCount(2, $result->getFDF());
+
+        $fDfa = $result->getFDF()[1];
+        self::assertEquals('А', $fDfa->getPln()); // латинская А
+        self::assertEquals(2, $fDfa->getAp());
+        self::assertEquals(903785, $fDfa->getVr());
+        self::assertEquals(13663360, $fDfa->getVv());
+        self::assertEquals(14567145, $fDfa->getVitg());
+        self::assertEquals(667685, $fDfa->getOra());
+        self::assertEquals(13606535, $fDfa->getOva());
+        self::assertEquals(14274220, $fDfa->getOitga());
+        self::assertEquals(900760, $fDfa->getOrp());
+        self::assertEquals(114081, $fDfa->getOvp());
+        self::assertEquals(1014841, $fDfa->getOitgp());
+        self::assertEquals(1136860, $fDfa->getIr());
+        self::assertEquals(170906, $fDfa->getIv());
+        self::assertEquals(1307766, $fDfa->getIitg());
+    }
+
+    public function testData101FullExV2(): void //todo нет реальных данных
+    {
+        $result = $this->build()->data101FullExV2([101, 1481], 42503, new \DateTime('2019-01-01'), new \DateTime('2019-02-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData102Form(): void
+    public function testData102Form(): void //todo нет реальных данных
     {
-        $result = $this->build()->data102Form(1000, 10000);
+        $result = $this->build()->data102Form(1481, 10101, new \DateTime('2019-01-01'), new \DateTime('2019-02-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData102FormEx(): void
+    public function testData102FormEx(): void //todo нет реальных данных
     {
-        $result = $this->build()->data102FormEx([350000004], 1);
+        $result = $this->build()->data102FormEx([1481], 10101, new \DateTime('2019-01-01'), new \DateTime('2019-02-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData123FormFull(): void
+    public function testData123FormFull(): void //todo нет реальных данных
     {
-        $result = $this->build()->data123FormFull(350000004);
+        $result = $this->build()->data123FormFull(1481, new \DateTime('2019-01-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData134FormFull(): void
+    public function testData134FormFull(): void //todo нет реальных данных
     {
-        $result = $this->build()->data134FormFull(350000004);
+        $result = $this->build()->data134FormFull(1481, new \DateTime('2019-01-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
-    public function testData135FormFull(): void
+    public function testData135FormFull(): void //todo нет реальных данных
     {
-        $result = $this->build()->data135FormFull(350000004);
+        $result = $this->build()->data135FormFull(1481, new \DateTime('2019-01-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 

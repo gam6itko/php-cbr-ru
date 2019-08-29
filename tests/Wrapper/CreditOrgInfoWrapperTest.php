@@ -4,7 +4,7 @@ namespace Tests\Gam6itko\Cbrf\Wrapper;
 use Gam6itko\Cbrf\Wrapper\CreditOrgInfoWrapper;
 use PHPUnit\Framework\TestCase;
 
-class CreditOrgInfoServiceTest extends TestCase
+class CreditOrgInfoWrapperTest extends TestCase
 {
     /**
      * @dataProvider dataBicToIntCode
