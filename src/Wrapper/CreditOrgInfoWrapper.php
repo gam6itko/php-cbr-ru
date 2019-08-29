@@ -57,6 +57,20 @@ use Gam6itko\Cbrf\Enum\FormType;
  */
 class CreditOrgInfoWrapper extends AbstractWrapper
 {
+    /**
+     * @var bool Исправлять временную зону
+     */
+    protected $fixTimezone = true;
+
+    /**
+     * CreditOrgInfoWrapper constructor.
+     * @param bool $fixTimezone
+     */
+    public function __construct(bool $fixTimezone = true)
+    {
+        $this->fixTimezone = $fixTimezone;
+    }
+
     protected function getWsdl()
     {
         return 'https://www.cbr.ru/CreditInfoWebServ/CreditOrgInfo.asmx?WSDL';
@@ -269,6 +283,10 @@ class CreditOrgInfoWrapper extends AbstractWrapper
 
     private function ensureTimezone(\DateTimeInterface &$dt): void
     {
+        if (!$this->fixTimezone) {
+            return;
+        }
+
         if ('+0300' === $dt->format('O')) {
             return;
         }
