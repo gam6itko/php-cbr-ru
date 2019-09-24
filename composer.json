@@ -27,6 +27,11 @@
             "Gam6itko\\Cbrf\\": "src"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Gam6itko\\Cbrf\\Tests": "tests"
+        }
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "0.1.x-dev"

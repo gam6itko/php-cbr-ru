@@ -1,0 +1,14 @@
+Gam6itko\Cbrf\Model\F134DATA:
+    xml_root_name: F134DATA
+    properties:
+        fD:
+            expose: true
+            access_type: public_method
+            serialized_name: FD
+            accessor:
+                getter: getFD
+                setter: setFD
+            xml_list:
+                inline: true
+                entry_name: FD
+            type: array<Gam6itko\Cbrf\Model\F134DATA\FDAType>

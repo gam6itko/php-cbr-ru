@@ -1,0 +1,122 @@
+Gam6itko\Cbrf\Model\CreditOrgInfo\COAType:
+    properties:
+        regNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: RegNumber
+            accessor:
+                getter: getRegNumber
+                setter: setRegNumber
+            type: int
+        bIC:
+            expose: true
+            access_type: public_method
+            serialized_name: BIC
+            accessor:
+                getter: getBIC
+                setter: setBIC
+            type: string
+        orgName:
+            expose: true
+            access_type: public_method
+            serialized_name: OrgName
+            accessor:
+                getter: getOrgName
+                setter: setOrgName
+            type: string
+        orgFullName:
+            expose: true
+            access_type: public_method
+            serialized_name: OrgFullName
+            accessor:
+                getter: getOrgFullName
+                setter: setOrgFullName
+            type: string
+        phones:
+            expose: true
+            access_type: public_method
+            serialized_name: phones
+            accessor:
+                getter: getPhones
+                setter: setPhones
+            type: string
+        dateKGRRegistration:
+            expose: true
+            access_type: public_method
+            serialized_name: DateKGRRegistration
+            accessor:
+                getter: getDateKGRRegistration
+                setter: setDateKGRRegistration
+            type: DateTime
+        mainRegNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: MainRegNumber
+            accessor:
+                getter: getMainRegNumber
+                setter: setMainRegNumber
+            type: string
+        mainDateReg:
+            expose: true
+            access_type: public_method
+            serialized_name: MainDateReg
+            accessor:
+                getter: getMainDateReg
+                setter: setMainDateReg
+            type: DateTime
+        ustavAdr:
+            expose: true
+            access_type: public_method
+            serialized_name: UstavAdr
+            accessor:
+                getter: getUstavAdr
+                setter: setUstavAdr
+            type: string
+        factAdr:
+            expose: true
+            access_type: public_method
+            serialized_name: FactAdr
+            accessor:
+                getter: getFactAdr
+                setter: setFactAdr
+            type: string
+        director:
+            expose: true
+            access_type: public_method
+            serialized_name: Director
+            accessor:
+                getter: getDirector
+                setter: setDirector
+            type: string
+        ustMoney:
+            expose: true
+            access_type: public_method
+            serialized_name: UstMoney
+            accessor:
+                getter: getUstMoney
+                setter: setUstMoney
+            type: float
+        orgStatus:
+            expose: true
+            access_type: public_method
+            serialized_name: OrgStatus
+            accessor:
+                getter: getOrgStatus
+                setter: setOrgStatus
+            type: string
+        regCode:
+            expose: true
+            access_type: public_method
+            serialized_name: RegCode
+            accessor:
+                getter: getRegCode
+                setter: setRegCode
+            type: int
+        sSVDate:
+            expose: true
+            access_type: public_method
+            serialized_name: SSV_Date
+            accessor:
+                getter: getSSVDate
+                setter: setSSVDate
+            type: DateTime

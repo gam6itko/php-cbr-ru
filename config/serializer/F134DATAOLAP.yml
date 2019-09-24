@@ -1,0 +1,14 @@
+Gam6itko\Cbrf\Model\F134DATAOLAP:
+    xml_root_name: F134DATA_OLAP
+    properties:
+        fo:
+            expose: true
+            access_type: public_method
+            serialized_name: Fo
+            accessor:
+                getter: getFo
+                setter: setFo
+            xml_list:
+                inline: true
+                entry_name: Fo
+            type: array<Gam6itko\Cbrf\Model\F134DATAOLAP\FoAType>

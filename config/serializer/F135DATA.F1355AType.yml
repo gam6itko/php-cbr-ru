@@ -1,0 +1,10 @@
+Gam6itko\Cbrf\Model\F135DATA\F1355AType:
+    properties:
+        dT:
+            expose: true
+            access_type: public_method
+            serialized_name: DT
+            accessor:
+                getter: getDT
+                setter: setDT
+            type: DateTime

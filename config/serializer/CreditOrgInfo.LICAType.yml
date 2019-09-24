@@ -1,0 +1,26 @@
+Gam6itko\Cbrf\Model\CreditOrgInfo\LICAType:
+    properties:
+        lCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LCode
+            accessor:
+                getter: getLCode
+                setter: setLCode
+            type: int
+        lT:
+            expose: true
+            access_type: public_method
+            serialized_name: LT
+            accessor:
+                getter: getLT
+                setter: setLT
+            type: string
+        lDate:
+            expose: true
+            access_type: public_method
+            serialized_name: LDate
+            accessor:
+                getter: getLDate
+                setter: setLDate
+            type: DateTime

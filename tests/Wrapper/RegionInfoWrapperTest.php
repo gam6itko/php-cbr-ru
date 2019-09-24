@@ -1,5 +1,5 @@
 <?php
-namespace Tests\Gam6itko\Cbrf\Wrapper;
+namespace Gam6itko\Cbrf\Tests\Wrapper;
 
 use Gam6itko\Cbrf\Wrapper\RegionInfoWrapper;
 use PHPUnit\Framework\TestCase;

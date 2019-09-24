@@ -1,0 +1,18 @@
+Gam6itko\Cbrf\Model\F134DATAOLAP\FoAType:
+    properties:
+        dT:
+            expose: true
+            access_type: public_method
+            serialized_name: DT
+            accessor:
+                getter: getDT
+                setter: setDT
+            type: DateTime
+        v1:
+            expose: true
+            access_type: public_method
+            serialized_name: V1
+            accessor:
+                getter: getV1
+                setter: setV1
+            type: float

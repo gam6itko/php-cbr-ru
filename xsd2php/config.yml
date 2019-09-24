@@ -4,13 +4,13 @@
 
 xsd2php:
     namespaces:
-        '': 'Gam6itko\Cbrf\Type'
+        '': 'Gam6itko\Cbrf\Model'
     destinations_php:
-        'Gam6itko\Cbrf\Type': src/Type
+        'Gam6itko\Cbrf\Type': src/Model
     #    'TestNs\MyApp': soap\src  #  on Windows
 
     destinations_jms:
-        'Gam6itko\Cbrf\Type': metadata
+        'Gam6itko\Cbrf\Type': config/serializer
         #    'TestNs\MyApp': soap\metadata  #  on Windows
 
         #  Uncomment this section if you want to have also symfony/validator metadata to be generated from XSD

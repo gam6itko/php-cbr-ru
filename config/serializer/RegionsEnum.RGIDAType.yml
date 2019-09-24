@@ -1,0 +1,18 @@
+Gam6itko\Cbrf\Model\RegionsEnum\RGIDAType:
+    properties:
+        regCode:
+            expose: true
+            access_type: public_method
+            serialized_name: RegCode
+            accessor:
+                getter: getRegCode
+                setter: setRegCode
+            type: float
+        cNAME:
+            expose: true
+            access_type: public_method
+            serialized_name: CNAME
+            accessor:
+                getter: getCNAME
+                setter: setCNAME
+            type: string

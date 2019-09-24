@@ -1,0 +1,42 @@
+Gam6itko\Cbrf\Model\CoOffices\OfficesAType:
+    properties:
+        cmain:
+            expose: true
+            access_type: public_method
+            serialized_name: cmain
+            accessor:
+                getter: getCmain
+                setter: setCmain
+            type: float
+        cregnum:
+            expose: true
+            access_type: public_method
+            serialized_name: cregnum
+            accessor:
+                getter: getCregnum
+                setter: setCregnum
+            type: float
+        cname:
+            expose: true
+            access_type: public_method
+            serialized_name: cname
+            accessor:
+                getter: getCname
+                setter: setCname
+            type: string
+        cndate:
+            expose: true
+            access_type: public_method
+            serialized_name: cndate
+            accessor:
+                getter: getCndate
+                setter: setCndate
+            type: string
+        straddrmn:
+            expose: true
+            access_type: public_method
+            serialized_name: straddrmn
+            accessor:
+                getter: getStraddrmn
+                setter: setStraddrmn
+            type: string
