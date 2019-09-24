@@ -56,6 +56,14 @@ class CreditOrgInfoService
         $this->svc = $svc;
     }
 
+    /**
+     * @return CreditOrgInfoWrapper
+     */
+    public function getSvc(): CreditOrgInfoWrapper
+    {
+        return $this->svc;
+    }
+
     public function getDatesForForm(int $formNumber, int $credPrgNumber)
     {
         if (!in_array($formNumber, FormType::getNumbers())) {
