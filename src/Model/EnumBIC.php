@@ -9,7 +9,7 @@ class EnumBIC
 {
 
     /**
-     * @property \Gam6itko\Cbrf\Model\EnumBIC\BICAType[] $bIC
+     * @var \Gam6itko\Cbrf\Model\EnumBIC\BICAType[] $bIC
      */
     private $bIC = [
         

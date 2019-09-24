@@ -3,83 +3,84 @@
 namespace Gam6itko\Cbrf\Model\F101DATA;
 
 /**
+ * Оборотная ведомость по счетам бухгалтерского учета кредитной организации
  * Class representing FDFAType
  */
 class FDFAType
 {
 
     /**
-     * @property \DateTime $dt
+     * @var \DateTime $dt
      */
     private $dt = null;
 
     /**
-     * @property string $plan
+     * @var string $plan
      */
     private $plan = null;
 
     /**
-     * @property int $ap
+     * @var int $ap
      */
     private $ap = null;
 
     /**
-     * @property float $inRur vr
+     * @var float $inRur vr
      */
     private $inRur = null;
 
     /**
-     * @property float $inCur vv
+     * @var float $inCur vv
      */
     private $inCur = null;
 
     /**
-     * @property float $inTotal vitg
+     * @var float $inTotal vitg
      */
     private $inTotal = null;
 
     /**
-     * @property float $sumDebitRur ora
+     * @var float $sumDebitRur ora
      */
     private $sumDebitRur = null;
 
     /**
-     * @property float $sumDebitCur ova
+     * @var float $sumDebitCur ova
      */
     private $sumDebitCur = null;
 
     /**
-     * @property float $sumDebitTotal oitga
+     * @var float $sumDebitTotal oitga
      */
     private $sumDebitTotal = null;
 
     /**
-     * @property float $sumCreditRur orp
+     * @var float $sumCreditRur orp
      */
     private $sumCreditRur = null;
 
     /**
-     * @property float $sumCreditCur ovp
+     * @var float $sumCreditCur ovp
      */
     private $sumCreditCur = null;
 
     /**
-     * @property float $sumCreditTotal oitgp
+     * @var float $sumCreditTotal oitgp
      */
     private $sumCreditTotal = null;
 
     /**
-     * @property float $ir
+     * @var float $ir
      */
     private $outRur = null;
 
     /**
-     * @property float $outCur iv
+     * @var float $outCur iv
      */
     private $outCur = null;
 
     /**
-     * @property float $outTotal iitg
+     * @var float $outTotal iitg
      */
     private $outTotal = null;
 

@@ -9,7 +9,7 @@ class CoOffices
 {
 
     /**
-     * @property \Gam6itko\Cbrf\Model\CoOffices\OfficesAType[] $offices
+     * @var \Gam6itko\Cbrf\Model\CoOffices\OfficesAType[] $offices
      */
     private $offices = [
         

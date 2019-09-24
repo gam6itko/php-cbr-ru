@@ -9,7 +9,7 @@ class CreditOrg
 {
 
     /**
-     * @property \Gam6itko\Cbrf\Model\CreditOrg\EnumCreditsAType[] $enumCredits
+     * @var \Gam6itko\Cbrf\Model\CreditOrg\EnumCreditsAType[] $enumCredits
      */
     private $enumCredits = [
         

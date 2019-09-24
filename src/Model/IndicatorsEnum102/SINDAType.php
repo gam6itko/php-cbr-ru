@@ -9,32 +9,32 @@ class SINDAType
 {
 
     /**
-     * @property int $symid
+     * @var int $symid
      */
     private $symid = null;
 
     /**
-     * @property int $symsort
+     * @var int $symsort
      */
     private $symsort = null;
 
     /**
-     * @property string $symbol
+     * @var string $symbol
      */
     private $symbol = null;
 
     /**
-     * @property int $symtype
+     * @var int $symtype
      */
     private $symtype = null;
 
     /**
-     * @property string $name
+     * @var string $name
      */
     private $name = null;
 
     /**
-     * @property int $symset
+     * @var int $symset
      */
     private $symset = null;
 

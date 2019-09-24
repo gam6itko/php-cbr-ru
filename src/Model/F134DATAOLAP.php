@@ -9,7 +9,7 @@ class F134DATAOLAP
 {
 
     /**
-     * @property \Gam6itko\Cbrf\Model\F134DATAOLAP\FoAType[] $fo
+     * @var \Gam6itko\Cbrf\Model\F134DATAOLAP\FoAType[] $fo
      */
     private $fo = [
         

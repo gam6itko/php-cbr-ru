@@ -9,12 +9,12 @@ class FoAType
 {
 
     /**
-     * @property \DateTime $dT
+     * @var \DateTime $dT
      */
     private $dT = null;
 
     /**
-     * @property float $v1
+     * @var float $v1
      */
     private $v1 = null;
 

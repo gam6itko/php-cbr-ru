@@ -9,7 +9,7 @@ class IndicatorsEnum101
 {
 
     /**
-     * @property \Gam6itko\Cbrf\Model\IndicatorsEnum101\EINDAType[] $eIND
+     * @var \Gam6itko\Cbrf\Model\IndicatorsEnum101\EINDAType[] $eIND
      */
     private $eIND = [
         

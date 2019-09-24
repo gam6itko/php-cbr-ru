@@ -9,17 +9,17 @@ class FDAType
 {
 
     /**
-     * @property \DateTime $dT
+     * @var \DateTime $dT
      */
     private $dT = null;
 
     /**
-     * @property float $val
+     * @var float $val
      */
     private $val = null;
 
     /**
-     * @property string $aP
+     * @var string $aP
      */
     private $aP = null;
 

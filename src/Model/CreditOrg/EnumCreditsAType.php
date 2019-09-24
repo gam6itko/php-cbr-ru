@@ -9,22 +9,22 @@ class EnumCreditsAType
 {
 
     /**
-     * @property float $intCode
+     * @var float $intCode
      */
     private $intCode = null;
 
     /**
-     * @property string $orgName
+     * @var string $orgName
      */
     private $orgName = null;
 
     /**
-     * @property string $bic
+     * @var string $bic
      */
     private $bic = null;
 
     /**
-     * @property float $cregnum
+     * @var float $cregnum
      */
     private $cregnum = null;
 

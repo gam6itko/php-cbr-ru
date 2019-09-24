@@ -9,32 +9,32 @@ class BICAType
 {
 
     /**
-     * @property string $bIC
+     * @var string $bIC
      */
     private $bIC = null;
 
     /**
-     * @property \DateTime $rC
+     * @var \DateTime $rC
      */
     private $rC = null;
 
     /**
-     * @property string $nM
+     * @var string $nM
      */
     private $nM = null;
 
     /**
-     * @property string $rB
+     * @var string $rB
      */
     private $rB = null;
 
     /**
-     * @property float $rN
+     * @var float $rN
      */
     private $rN = null;
 
     /**
-     * @property float $intCode
+     * @var float $intCode
      */
     private $intCode = null;
 

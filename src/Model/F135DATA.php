@@ -9,42 +9,42 @@ class F135DATA
 {
 
     /**
-     * @property \Gam6itko\Cbrf\Model\F135DATA\F1351AType[] $f1351
+     * @var \Gam6itko\Cbrf\Model\F135DATA\F1351AType[] $f1351
      */
     private $f1351 = [
         
     ];
 
     /**
-     * @property \Gam6itko\Cbrf\Model\F135DATA\F1352AType[] $f1352
+     * @var \Gam6itko\Cbrf\Model\F135DATA\F1352AType[] $f1352
      */
     private $f1352 = [
         
     ];
 
     /**
-     * @property \Gam6itko\Cbrf\Model\F135DATA\F1353AType[] $f1353
+     * @var \Gam6itko\Cbrf\Model\F135DATA\F1353AType[] $f1353
      */
     private $f1353 = [
         
     ];
 
     /**
-     * @property \Gam6itko\Cbrf\Model\F135DATA\F1354AType[] $f1354
+     * @var \Gam6itko\Cbrf\Model\F135DATA\F1354AType[] $f1354
      */
     private $f1354 = [
         
     ];
 
     /**
-     * @property \Gam6itko\Cbrf\Model\F135DATA\F1355AType[] $f1355
+     * @var \Gam6itko\Cbrf\Model\F135DATA\F1355AType[] $f1355
      */
     private $f1355 = [
         
     ];
 
     /**
-     * @property \Gam6itko\Cbrf\Model\F135DATA\F1356AType[] $f1356
+     * @var \Gam6itko\Cbrf\Model\F135DATA\F1356AType[] $f1356
      */
     private $f1356 = [
         

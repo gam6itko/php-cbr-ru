@@ -9,22 +9,22 @@ class F1353AType
 {
 
     /**
-     * @property string $c3
+     * @var string $c3
      */
     private $c3 = null;
 
     /**
-     * @property float $v3
+     * @var float $v3
      */
     private $v3 = null;
 
     /**
-     * @property float $v32
+     * @var float $v32
      */
     private $v32 = null;
 
     /**
-     * @property string $v33
+     * @var string $v33
      */
     private $v33 = null;
 

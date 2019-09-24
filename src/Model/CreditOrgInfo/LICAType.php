@@ -9,17 +9,17 @@ class LICAType
 {
 
     /**
-     * @property int $lCode
+     * @var int $lCode
      */
     private $lCode = null;
 
     /**
-     * @property string $lT
+     * @var string $lT
      */
     private $lT = null;
 
     /**
-     * @property \DateTime $lDate
+     * @var \DateTime $lDate
      */
     private $lDate = null;
 

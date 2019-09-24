@@ -9,27 +9,27 @@ class OfficesAType
 {
 
     /**
-     * @property float $cmain
+     * @var float $cmain
      */
     private $cmain = null;
 
     /**
-     * @property float $cregnum
+     * @var float $cregnum
      */
     private $cregnum = null;
 
     /**
-     * @property string $cname
+     * @var string $cname
      */
     private $cname = null;
 
     /**
-     * @property string $cndate
+     * @var string $cndate
      */
     private $cndate = null;
 
     /**
-     * @property string $straddrmn
+     * @var string $straddrmn
      */
     private $straddrmn = null;
 

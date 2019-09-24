@@ -9,27 +9,27 @@ class EINDAType
 {
 
     /**
-     * @property int $indID
+     * @var int $indID
      */
     private $indID = null;
 
     /**
-     * @property string $indCode
+     * @var string $indCode
      */
     private $indCode = null;
 
     /**
-     * @property string $name
+     * @var string $name
      */
     private $name = null;
 
     /**
-     * @property string $indType
+     * @var string $indType
      */
     private $indType = null;
 
     /**
-     * @property string $indChapter
+     * @var string $indChapter
      */
     private $indChapter = null;
 

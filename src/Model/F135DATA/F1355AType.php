@@ -9,7 +9,7 @@ class F1355AType
 {
 
     /**
-     * @property \DateTime $dT
+     * @var \DateTime $dT
      */
     private $dT = null;
 

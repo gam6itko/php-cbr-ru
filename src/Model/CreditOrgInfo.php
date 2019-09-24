@@ -9,14 +9,14 @@ class CreditOrgInfo
 {
 
     /**
-     * @property \Gam6itko\Cbrf\Model\CreditOrgInfo\COAType[] $cO
+     * @var \Gam6itko\Cbrf\Model\CreditOrgInfo\COAType[] $cO
      */
     private $cO = [
         
     ];
 
     /**
-     * @property \Gam6itko\Cbrf\Model\CreditOrgInfo\LICAType[] $lIC
+     * @var \Gam6itko\Cbrf\Model\CreditOrgInfo\LICAType[] $lIC
      */
     private $lIC = [
         

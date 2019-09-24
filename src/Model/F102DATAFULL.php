@@ -9,7 +9,7 @@ class F102DATAFULL
 {
 
     /**
-     * @property \Gam6itko\Cbrf\Model\F102DATAFULL\FDFAType[] $fDF
+     * @var \Gam6itko\Cbrf\Model\F102DATAFULL\FDFAType[] $fDF
      */
     private $fDF = [
         

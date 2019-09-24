@@ -9,22 +9,22 @@ class FDFAType
 {
 
     /**
-     * @property \DateTime $dT
+     * @var \DateTime $dT
      */
     private $dT = null;
 
     /**
-     * @property float $val
+     * @var float $val
      */
     private $val = null;
 
     /**
-     * @property float $r
+     * @var float $r
      */
     private $r = null;
 
     /**
-     * @property float $v
+     * @var float $v
      */
     private $v = null;
 

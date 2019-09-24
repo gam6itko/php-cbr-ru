@@ -9,22 +9,22 @@ class F1354AType
 {
 
     /**
-     * @property int $num
+     * @var int $num
      */
     private $num = null;
 
     /**
-     * @property string $nn
+     * @var string $nn
      */
     private $nn = null;
 
     /**
-     * @property float $nnd
+     * @var float $nnd
      */
     private $nnd = null;
 
     /**
-     * @property \DateTime $dT
+     * @var \DateTime $dT
      */
     private $dT = null;
 

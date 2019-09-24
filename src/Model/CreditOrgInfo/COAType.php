@@ -9,77 +9,77 @@ class COAType
 {
 
     /**
-     * @property int $regNumber
+     * @var int $regNumber
      */
     private $regNumber = null;
 
     /**
-     * @property string $bIC
+     * @var string $bIC
      */
     private $bIC = null;
 
     /**
-     * @property string $orgName
+     * @var string $orgName
      */
     private $orgName = null;
 
     /**
-     * @property string $orgFullName
+     * @var string $orgFullName
      */
     private $orgFullName = null;
 
     /**
-     * @property string $phones
+     * @var string $phones
      */
     private $phones = null;
 
     /**
-     * @property \DateTime $dateKGRRegistration
+     * @var \DateTime $dateKGRRegistration
      */
     private $dateKGRRegistration = null;
 
     /**
-     * @property string $mainRegNumber
+     * @var string $mainRegNumber
      */
     private $mainRegNumber = null;
 
     /**
-     * @property \DateTime $mainDateReg
+     * @var \DateTime $mainDateReg
      */
     private $mainDateReg = null;
 
     /**
-     * @property string $ustavAdr
+     * @var string $ustavAdr
      */
     private $ustavAdr = null;
 
     /**
-     * @property string $factAdr
+     * @var string $factAdr
      */
     private $factAdr = null;
 
     /**
-     * @property string $director
+     * @var string $director
      */
     private $director = null;
 
     /**
-     * @property float $ustMoney
+     * @var float $ustMoney
      */
     private $ustMoney = null;
 
     /**
-     * @property string $orgStatus
+     * @var string $orgStatus
      */
     private $orgStatus = null;
 
     /**
-     * @property int $regCode
+     * @var int $regCode
      */
     private $regCode = null;
 
     /**
-     * @property \DateTime $sSVDate
+     * @var \DateTime $sSVDate
      */
     private $sSVDate = null;
 

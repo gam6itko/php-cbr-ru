@@ -9,17 +9,17 @@ class FDAType
 {
 
     /**
-     * @property string $nS
+     * @var string $nS
      */
     private $nS = null;
 
     /**
-     * @property string $pN
+     * @var string $pN
      */
     private $pN = null;
 
     /**
-     * @property float $vAL
+     * @var float $vAL
      */
     private $vAL = null;
 

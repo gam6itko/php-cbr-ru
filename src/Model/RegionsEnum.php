@@ -9,7 +9,7 @@ class RegionsEnum
 {
 
     /**
-     * @property \Gam6itko\Cbrf\Model\RegionsEnum\RGIDAType[] $rGID
+     * @var \Gam6itko\Cbrf\Model\RegionsEnum\RGIDAType[] $rGID
      */
     private $rGID = [
         

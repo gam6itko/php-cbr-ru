@@ -9,12 +9,12 @@ class F1351AType
 {
 
     /**
-     * @property string $c1
+     * @var string $c1
      */
     private $c1 = null;
 
     /**
-     * @property float $v1
+     * @var float $v1
      */
     private $v1 = null;
 

@@ -9,7 +9,7 @@ class IndicatorsEnum102
 {
 
     /**
-     * @property \Gam6itko\Cbrf\Model\IndicatorsEnum102\SINDAType[] $sIND
+     * @var \Gam6itko\Cbrf\Model\IndicatorsEnum102\SINDAType[] $sIND
      */
     private $sIND = [
         

@@ -9,7 +9,7 @@ class F123DATA
 {
 
     /**
-     * @property \Gam6itko\Cbrf\Model\F123DATA\F123AType[] $f123
+     * @var \Gam6itko\Cbrf\Model\F123DATA\F123AType[] $f123
      */
     private $f123 = [
         

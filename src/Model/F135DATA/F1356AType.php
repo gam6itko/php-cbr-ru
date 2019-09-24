@@ -9,12 +9,12 @@ class F1356AType
 {
 
     /**
-     * @property float $v61
+     * @var float $v61
      */
     private $v61 = null;
 
     /**
-     * @property float $v62
+     * @var float $v62
      */
     private $v62 = null;
 

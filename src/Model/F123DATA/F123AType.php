@@ -9,17 +9,17 @@ class F123AType
 {
 
     /**
-     * @property string $cODE
+     * @var string $cODE
      */
     private $cODE = null;
 
     /**
-     * @property string $nAME
+     * @var string $nAME
      */
     private $nAME = null;
 
     /**
-     * @property float $vALUE
+     * @var float $vALUE
      */
     private $vALUE = null;
 

@@ -9,12 +9,12 @@ class RGIDAType
 {
 
     /**
-     * @property float $regCode
+     * @var float $regCode
      */
     private $regCode = null;
 
     /**
-     * @property string $cNAME
+     * @var string $cNAME
      */
     private $cNAME = null;
 

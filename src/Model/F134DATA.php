@@ -9,7 +9,7 @@ class F134DATA
 {
 
     /**
-     * @property \Gam6itko\Cbrf\Model\F134DATA\FDAType[] $fD
+     * @var \Gam6itko\Cbrf\Model\F134DATA\FDAType[] $fD
      */
     private $fD = [
         
