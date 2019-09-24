@@ -11,7 +11,7 @@ class IndicatorsEnum102
     /**
      * @var \Gam6itko\Cbrf\Model\IndicatorsEnum102\SINDAType[] $sIND
      */
-    private $sIND = [
+    protected $sIND = [
         
     ];
 

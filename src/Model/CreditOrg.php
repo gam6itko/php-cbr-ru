@@ -11,7 +11,7 @@ class CreditOrg
     /**
      * @var \Gam6itko\Cbrf\Model\CreditOrg\EnumCreditsAType[] $enumCredits
      */
-    private $enumCredits = [
+    protected $enumCredits = [
         
     ];
 

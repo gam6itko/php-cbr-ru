@@ -11,7 +11,7 @@ class F102DATAFULL
     /**
      * @var \Gam6itko\Cbrf\Model\F102DATAFULL\FDFAType[] $fDF
      */
-    private $fDF = [
+    protected $fDF = [
         
     ];
 

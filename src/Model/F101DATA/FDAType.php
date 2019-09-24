@@ -11,17 +11,17 @@ class FDAType
     /**
      * @var \DateTime $dT
      */
-    private $dT = null;
+    protected $dT = null;
 
     /**
      * @var float $val
      */
-    private $val = null;
+    protected $val = null;
 
     /**
      * @var string $aP
      */
-    private $aP = null;
+    protected $aP = null;
 
     /**
      * Gets as dT

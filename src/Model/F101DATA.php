@@ -11,14 +11,14 @@ class F101DATA
     /**
      * @var \Gam6itko\Cbrf\Model\F101DATA\FDAType[] $fD
      */
-    private $fD = [
+    protected $fD = [
         
     ];
 
     /**
      * @var \Gam6itko\Cbrf\Model\F101DATA\FDFAType[] $fDF
      */
-    private $fDF = [
+    protected $fDF = [
         
     ];
 

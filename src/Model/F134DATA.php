@@ -11,7 +11,7 @@ class F134DATA
     /**
      * @var \Gam6itko\Cbrf\Model\F134DATA\FDAType[] $fD
      */
-    private $fD = [
+    protected $fD = [
         
     ];
 

@@ -11,7 +11,7 @@ class CoOffices
     /**
      * @var \Gam6itko\Cbrf\Model\CoOffices\OfficesAType[] $offices
      */
-    private $offices = [
+    protected $offices = [
         
     ];
 

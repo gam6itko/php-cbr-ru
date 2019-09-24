@@ -11,22 +11,22 @@ class F1354AType
     /**
      * @var int $num
      */
-    private $num = null;
+    protected $num = null;
 
     /**
      * @var string $nn
      */
-    private $nn = null;
+    protected $nn = null;
 
     /**
      * @var float $nnd
      */
-    private $nnd = null;
+    protected $nnd = null;
 
     /**
      * @var \DateTime $dT
      */
-    private $dT = null;
+    protected $dT = null;
 
     /**
      * Gets as num

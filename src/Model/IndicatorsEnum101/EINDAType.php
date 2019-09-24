@@ -11,27 +11,27 @@ class EINDAType
     /**
      * @var int $indID
      */
-    private $indID = null;
+    protected $indID = null;
 
     /**
      * @var string $indCode
      */
-    private $indCode = null;
+    protected $indCode = null;
 
     /**
      * @var string $name
      */
-    private $name = null;
+    protected $name = null;
 
     /**
      * @var string $indType
      */
-    private $indType = null;
+    protected $indType = null;
 
     /**
      * @var string $indChapter
      */
-    private $indChapter = null;
+    protected $indChapter = null;
 
     /**
      * Gets as indID

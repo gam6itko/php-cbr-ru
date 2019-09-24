@@ -11,7 +11,7 @@ class F134DATAOLAP
     /**
      * @var \Gam6itko\Cbrf\Model\F134DATAOLAP\FoAType[] $fo
      */
-    private $fo = [
+    protected $fo = [
         
     ];
 

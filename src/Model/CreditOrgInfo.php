@@ -11,14 +11,14 @@ class CreditOrgInfo
     /**
      * @var \Gam6itko\Cbrf\Model\CreditOrgInfo\COAType[] $cO
      */
-    private $cO = [
+    protected $cO = [
         
     ];
 
     /**
      * @var \Gam6itko\Cbrf\Model\CreditOrgInfo\LICAType[] $lIC
      */
-    private $lIC = [
+    protected $lIC = [
         
     ];
 

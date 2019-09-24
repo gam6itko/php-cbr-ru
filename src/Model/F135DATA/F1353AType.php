@@ -11,22 +11,22 @@ class F1353AType
     /**
      * @var string $c3
      */
-    private $c3 = null;
+    protected $c3 = null;
 
     /**
      * @var float $v3
      */
-    private $v3 = null;
+    protected $v3 = null;
 
     /**
      * @var float $v32
      */
-    private $v32 = null;
+    protected $v32 = null;
 
     /**
      * @var string $v33
      */
-    private $v33 = null;
+    protected $v33 = null;
 
     /**
      * Gets as c3

@@ -11,7 +11,7 @@ class IndicatorsEnum101
     /**
      * @var \Gam6itko\Cbrf\Model\IndicatorsEnum101\EINDAType[] $eIND
      */
-    private $eIND = [
+    protected $eIND = [
         
     ];
 

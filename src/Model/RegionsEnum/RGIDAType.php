@@ -11,12 +11,12 @@ class RGIDAType
     /**
      * @var float $regCode
      */
-    private $regCode = null;
+    protected $regCode = null;
 
     /**
      * @var string $cNAME
      */
-    private $cNAME = null;
+    protected $cNAME = null;
 
     /**
      * Gets as regCode

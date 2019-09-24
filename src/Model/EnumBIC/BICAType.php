@@ -11,32 +11,32 @@ class BICAType
     /**
      * @var string $bic
      */
-    private $bic = null;
+    protected $bic = null;
 
     /**
      * @var \DateTime $rc
      */
-    private $rc = null;
+    protected $rc = null;
 
     /**
      * @var string $nm
      */
-    private $nm = null;
+    protected $nm = null;
 
     /**
      * @var string $rb
      */
-    private $rb = null;
+    protected $rb = null;
 
     /**
      * @var float $rn
      */
-    private $rn = null;
+    protected $rn = null;
 
     /**
      * @var float $intCode
      */
-    private $intCode = null;
+    protected $intCode = null;
 
     /**
      * Gets as bIC

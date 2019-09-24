@@ -13,7 +13,7 @@ class EnumBIC
     /**
      * @var BICAType[] $bic
      */
-    private $bic = [];
+    protected $bic = [];
 
     /**
      * Adds as bIC

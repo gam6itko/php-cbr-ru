@@ -11,7 +11,7 @@ class F123DATA
     /**
      * @var \Gam6itko\Cbrf\Model\F123DATA\F123AType[] $f123
      */
-    private $f123 = [
+    protected $f123 = [
         
     ];
 

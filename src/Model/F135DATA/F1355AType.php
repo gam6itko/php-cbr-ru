@@ -11,7 +11,7 @@ class F1355AType
     /**
      * @var \DateTime $dT
      */
-    private $dT = null;
+    protected $dT = null;
 
     /**
      * Gets as dT

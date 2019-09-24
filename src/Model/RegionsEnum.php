@@ -11,7 +11,7 @@ class RegionsEnum
     /**
      * @var \Gam6itko\Cbrf\Model\RegionsEnum\RGIDAType[] $rGID
      */
-    private $rGID = [
+    protected $rGID = [
         
     ];
 

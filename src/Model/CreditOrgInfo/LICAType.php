@@ -11,17 +11,17 @@ class LICAType
     /**
      * @var int $lCode
      */
-    private $lCode = null;
+    protected $lCode = null;
 
     /**
      * @var string $lT
      */
-    private $lt = null;
+    protected $lt = null;
 
     /**
      * @var \DateTime $lDate
      */
-    private $lDate = null;
+    protected $lDate = null;
 
     /**
      * Gets as lCode

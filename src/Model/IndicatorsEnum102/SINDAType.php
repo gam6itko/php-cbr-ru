@@ -11,32 +11,32 @@ class SINDAType
     /**
      * @var int $symid
      */
-    private $symid = null;
+    protected $symid = null;
 
     /**
      * @var int $symsort
      */
-    private $symsort = null;
+    protected $symsort = null;
 
     /**
      * @var string $symbol
      */
-    private $symbol = null;
+    protected $symbol = null;
 
     /**
      * @var int $symtype
      */
-    private $symtype = null;
+    protected $symtype = null;
 
     /**
      * @var string $name
      */
-    private $name = null;
+    protected $name = null;
 
     /**
      * @var int $symset
      */
-    private $symset = null;
+    protected $symset = null;
 
     /**
      * Gets as symid

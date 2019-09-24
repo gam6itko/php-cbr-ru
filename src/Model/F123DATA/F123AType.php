@@ -11,17 +11,17 @@ class F123AType
     /**
      * @var string $cODE
      */
-    private $cODE = null;
+    protected $cODE = null;
 
     /**
      * @var string $nAME
      */
-    private $nAME = null;
+    protected $nAME = null;
 
     /**
      * @var float $vALUE
      */
-    private $vALUE = null;
+    protected $vALUE = null;
 
     /**
      * Gets as cODE

@@ -11,22 +11,22 @@ class EnumCreditsAType
     /**
      * @var float $intCode
      */
-    private $intCode = null;
+    protected $intCode = null;
 
     /**
      * @var string $orgName
      */
-    private $orgName = null;
+    protected $orgName = null;
 
     /**
      * @var string $bic
      */
-    private $bic = null;
+    protected $bic = null;
 
     /**
      * @var float $cregnum
      */
-    private $cregnum = null;
+    protected $cregnum = null;
 
     /**
      * Gets as intCode

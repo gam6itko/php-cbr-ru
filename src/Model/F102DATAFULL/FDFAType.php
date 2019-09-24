@@ -11,22 +11,22 @@ class FDFAType
     /**
      * @var \DateTime $dT
      */
-    private $dT = null;
+    protected $dT = null;
 
     /**
      * @var float $val
      */
-    private $val = null;
+    protected $val = null;
 
     /**
      * @var float $r
      */
-    private $r = null;
+    protected $r = null;
 
     /**
      * @var float $v
      */
-    private $v = null;
+    protected $v = null;
 
     /**
      * Gets as dT
