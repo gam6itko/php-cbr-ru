@@ -8,13 +8,13 @@ Gam6itko\Cbrf\Model\F101DATA\FDFAType:
                 getter: getDt
                 setter: setDt
             type: DateTime
-        pln:
+        plan:
             expose: true
             access_type: public_method
             serialized_name: pln
             accessor:
-                getter: getPln
-                setter: setPln
+                getter: getPlan
+                setter: setPlan
             type: string
         ap:
             expose: true
@@ -24,99 +24,99 @@ Gam6itko\Cbrf\Model\F101DATA\FDFAType:
                 getter: getAp
                 setter: setAp
             type: int
-        vr:
+        inRur:
             expose: true
             access_type: public_method
             serialized_name: vr
             accessor:
-                getter: getVr
-                setter: setVr
+                getter: getInRur
+                setter: setInRur
             type: float
-        vv:
+        inCur:
             expose: true
             access_type: public_method
             serialized_name: vv
             accessor:
-                getter: getVv
-                setter: setVv
+                getter: getInCur
+                setter: setInCur
             type: float
-        vitg:
+        inTotal:
             expose: true
             access_type: public_method
             serialized_name: vitg
             accessor:
-                getter: getVitg
-                setter: setVitg
+                getter: getInTotal
+                setter: setInTotal
             type: float
-        ora:
+        sumDebitRur:
             expose: true
             access_type: public_method
             serialized_name: ora
             accessor:
-                getter: getOra
-                setter: setOra
+                getter: getSumDebitRur
+                setter: setSumDebitRur
             type: float
-        ova:
+        sumDebitCur:
             expose: true
             access_type: public_method
             serialized_name: ova
             accessor:
-                getter: getOva
-                setter: setOva
+                getter: getSumDebitCur
+                setter: setSumDebitCur
             type: float
-        oitga:
+        sumDebitTotal:
             expose: true
             access_type: public_method
             serialized_name: oitga
             accessor:
-                getter: getOitga
-                setter: setOitga
+                getter: getSumDebitTotal
+                setter: setSumDebitTotal
             type: float
-        orp:
+        sumCreditRur:
             expose: true
             access_type: public_method
             serialized_name: orp
             accessor:
-                getter: getOrp
-                setter: setOrp
+                getter: getSumCreditRur
+                setter: setSumCreditRur
             type: float
-        ovp:
+        sumCreditCur:
             expose: true
             access_type: public_method
             serialized_name: ovp
             accessor:
-                getter: getOvp
-                setter: setOvp
+                getter: getSumCreditCur
+                setter: setSumCreditCur
             type: float
-        oitgp:
+        sumCreditTotal:
             expose: true
             access_type: public_method
             serialized_name: oitgp
             accessor:
-                getter: getOitgp
-                setter: setOitgp
+                getter: getSumCreditTotal
+                setter: setSumCreditTotal
             type: float
-        ir:
+        outRur:
             expose: true
             access_type: public_method
             serialized_name: ir
             accessor:
-                getter: getIr
-                setter: setIr
+                getter: getOutRur
+                setter: setOutRur
             type: float
-        iv:
+        outCur:
             expose: true
             access_type: public_method
             serialized_name: iv
             accessor:
-                getter: getIv
-                setter: setIv
+                getter: getOutCur
+                setter: setOutCur
             type: float
-        iitg:
+        outTotal:
             expose: true
             access_type: public_method
             serialized_name: iitg
             accessor:
-                getter: getIitg
-                setter: setIitg
+                getter: getOutTotal
+                setter: setOutTotal
             type: float

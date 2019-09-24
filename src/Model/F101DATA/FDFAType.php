@@ -14,9 +14,9 @@ class FDFAType
     private $dt = null;
 
     /**
-     * @property string $pln
+     * @property string $plan
      */
-    private $pln = null;
+    private $plan = null;
 
     /**
      * @property int $ap
@@ -24,64 +24,64 @@ class FDFAType
     private $ap = null;
 
     /**
-     * @property float $vr
+     * @property float $inRur vr
      */
-    private $vr = null;
+    private $inRur = null;
 
     /**
-     * @property float $vv
+     * @property float $inCur vv
      */
-    private $vv = null;
+    private $inCur = null;
 
     /**
-     * @property float $vitg
+     * @property float $inTotal vitg
      */
-    private $vitg = null;
+    private $inTotal = null;
 
     /**
-     * @property float $ora
+     * @property float $sumDebitRur ora
      */
-    private $ora = null;
+    private $sumDebitRur = null;
 
     /**
-     * @property float $ova
+     * @property float $sumDebitCur ova
      */
-    private $ova = null;
+    private $sumDebitCur = null;
 
     /**
-     * @property float $oitga
+     * @property float $sumDebitTotal oitga
      */
-    private $oitga = null;
+    private $sumDebitTotal = null;
 
     /**
-     * @property float $orp
+     * @property float $sumCreditRur orp
      */
-    private $orp = null;
+    private $sumCreditRur = null;
 
     /**
-     * @property float $ovp
+     * @property float $sumCreditCur ovp
      */
-    private $ovp = null;
+    private $sumCreditCur = null;
 
     /**
-     * @property float $oitgp
+     * @property float $sumCreditTotal oitgp
      */
-    private $oitgp = null;
+    private $sumCreditTotal = null;
 
     /**
      * @property float $ir
      */
-    private $ir = null;
+    private $outRur = null;
 
     /**
-     * @property float $iv
+     * @property float $outCur iv
      */
-    private $iv = null;
+    private $outCur = null;
 
     /**
-     * @property float $iitg
+     * @property float $outTotal iitg
      */
-    private $iitg = null;
+    private $outTotal = null;
 
     /**
      * Gets as dt
@@ -110,20 +110,20 @@ class FDFAType
      *
      * @return string
      */
-    public function getPln()
+    public function getPlan()
     {
-        return $this->pln;
+        return $this->plan;
     }
 
     /**
      * Sets a new pln
      *
-     * @param string $pln
+     * @param string $plan
      * @return self
      */
-    public function setPln($pln)
+    public function setPlan($plan)
     {
-        $this->pln = $pln;
+        $this->plan = $plan;
         return $this;
     }
 
@@ -154,20 +154,20 @@ class FDFAType
      *
      * @return float
      */
-    public function getVr()
+    public function getInRur()
     {
-        return $this->vr;
+        return $this->inRur;
     }
 
     /**
      * Sets a new vr
      *
-     * @param float $vr
+     * @param float $inRur
      * @return self
      */
-    public function setVr($vr)
+    public function setInRur($inRur)
     {
-        $this->vr = $vr;
+        $this->inRur = $inRur;
         return $this;
     }
 
@@ -176,20 +176,20 @@ class FDFAType
      *
      * @return float
      */
-    public function getVv()
+    public function getInCur()
     {
-        return $this->vv;
+        return $this->inCur;
     }
 
     /**
      * Sets a new vv
      *
-     * @param float $vv
+     * @param float $inCur
      * @return self
      */
-    public function setVv($vv)
+    public function setInCur($inCur)
     {
-        $this->vv = $vv;
+        $this->inCur = $inCur;
         return $this;
     }
 
@@ -198,20 +198,20 @@ class FDFAType
      *
      * @return float
      */
-    public function getVitg()
+    public function getInTotal()
     {
-        return $this->vitg;
+        return $this->inTotal;
     }
 
     /**
      * Sets a new vitg
      *
-     * @param float $vitg
+     * @param float $inTotal
      * @return self
      */
-    public function setVitg($vitg)
+    public function setInTotal($inTotal)
     {
-        $this->vitg = $vitg;
+        $this->inTotal = $inTotal;
         return $this;
     }
 
@@ -220,20 +220,20 @@ class FDFAType
      *
      * @return float
      */
-    public function getOra()
+    public function getSumDebitRur()
     {
-        return $this->ora;
+        return $this->sumDebitRur;
     }
 
     /**
      * Sets a new ora
      *
-     * @param float $ora
+     * @param float $sumDebitRur
      * @return self
      */
-    public function setOra($ora)
+    public function setSumDebitRur($sumDebitRur)
     {
-        $this->ora = $ora;
+        $this->sumDebitRur = $sumDebitRur;
         return $this;
     }
 
@@ -242,20 +242,20 @@ class FDFAType
      *
      * @return float
      */
-    public function getOva()
+    public function getSumDebitCur()
     {
-        return $this->ova;
+        return $this->sumDebitCur;
     }
 
     /**
      * Sets a new ova
      *
-     * @param float $ova
+     * @param float $sumDebitCur
      * @return self
      */
-    public function setOva($ova)
+    public function setSumDebitCur($sumDebitCur)
     {
-        $this->ova = $ova;
+        $this->sumDebitCur = $sumDebitCur;
         return $this;
     }
 
@@ -264,20 +264,20 @@ class FDFAType
      *
      * @return float
      */
-    public function getOitga()
+    public function getSumDebitTotal()
     {
-        return $this->oitga;
+        return $this->sumDebitTotal;
     }
 
     /**
      * Sets a new oitga
      *
-     * @param float $oitga
+     * @param float $sumDebitTotal
      * @return self
      */
-    public function setOitga($oitga)
+    public function setSumDebitTotal($sumDebitTotal)
     {
-        $this->oitga = $oitga;
+        $this->sumDebitTotal = $sumDebitTotal;
         return $this;
     }
 
@@ -286,20 +286,20 @@ class FDFAType
      *
      * @return float
      */
-    public function getOrp()
+    public function getSumCreditRur()
     {
-        return $this->orp;
+        return $this->sumCreditRur;
     }
 
     /**
      * Sets a new orp
      *
-     * @param float $orp
+     * @param float $sumCreditRur
      * @return self
      */
-    public function setOrp($orp)
+    public function setSumCreditRur($sumCreditRur)
     {
-        $this->orp = $orp;
+        $this->sumCreditRur = $sumCreditRur;
         return $this;
     }
 
@@ -308,20 +308,20 @@ class FDFAType
      *
      * @return float
      */
-    public function getOvp()
+    public function getSumCreditCur()
     {
-        return $this->ovp;
+        return $this->sumCreditCur;
     }
 
     /**
      * Sets a new ovp
      *
-     * @param float $ovp
+     * @param float $sumCreditCur
      * @return self
      */
-    public function setOvp($ovp)
+    public function setSumCreditCur($sumCreditCur)
     {
-        $this->ovp = $ovp;
+        $this->sumCreditCur = $sumCreditCur;
         return $this;
     }
 
@@ -330,20 +330,20 @@ class FDFAType
      *
      * @return float
      */
-    public function getOitgp()
+    public function getSumCreditTotal()
     {
-        return $this->oitgp;
+        return $this->sumCreditTotal;
     }
 
     /**
      * Sets a new oitgp
      *
-     * @param float $oitgp
+     * @param float $sumCreditTotal
      * @return self
      */
-    public function setOitgp($oitgp)
+    public function setSumCreditTotal($sumCreditTotal)
     {
-        $this->oitgp = $oitgp;
+        $this->sumCreditTotal = $sumCreditTotal;
         return $this;
     }
 
@@ -352,20 +352,20 @@ class FDFAType
      *
      * @return float
      */
-    public function getIr()
+    public function getOutRur()
     {
-        return $this->ir;
+        return $this->outRur;
     }
 
     /**
      * Sets a new ir
      *
-     * @param float $ir
+     * @param float $outRur
      * @return self
      */
-    public function setIr($ir)
+    public function setOutRur($outRur)
     {
-        $this->ir = $ir;
+        $this->outRur = $outRur;
         return $this;
     }
 
@@ -374,20 +374,20 @@ class FDFAType
      *
      * @return float
      */
-    public function getIv()
+    public function getOutCur()
     {
-        return $this->iv;
+        return $this->outCur;
     }
 
     /**
      * Sets a new iv
      *
-     * @param float $iv
+     * @param float $outCur
      * @return self
      */
-    public function setIv($iv)
+    public function setOutCur($outCur)
     {
-        $this->iv = $iv;
+        $this->outCur = $outCur;
         return $this;
     }
 
@@ -396,20 +396,20 @@ class FDFAType
      *
      * @return float
      */
-    public function getIitg()
+    public function getOutTotal()
     {
-        return $this->iitg;
+        return $this->outTotal;
     }
 
     /**
      * Sets a new iitg
      *
-     * @param float $iitg
+     * @param float $outTotal
      * @return self
      */
-    public function setIitg($iitg)
+    public function setOutTotal($outTotal)
     {
-        $this->iitg = $iitg;
+        $this->outTotal = $outTotal;
         return $this;
     }
 

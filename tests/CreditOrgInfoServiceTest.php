@@ -138,20 +138,20 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertCount(2, $result->getFDF());
 
         $fDfa = $result->getFDF()[1];
-        self::assertEquals('А', $fDfa->getPln()); // латинская А
+        self::assertEquals('А', $fDfa->getPlan()); // латинская А
         self::assertEquals(2, $fDfa->getAp());
-        self::assertEquals(903785, $fDfa->getVr());
-        self::assertEquals(13663360, $fDfa->getVv());
-        self::assertEquals(14567145, $fDfa->getVitg());
-        self::assertEquals(667685, $fDfa->getOra());
-        self::assertEquals(13606535, $fDfa->getOva());
-        self::assertEquals(14274220, $fDfa->getOitga());
-        self::assertEquals(900760, $fDfa->getOrp());
-        self::assertEquals(114081, $fDfa->getOvp());
-        self::assertEquals(1014841, $fDfa->getOitgp());
-        self::assertEquals(1136860, $fDfa->getIr());
-        self::assertEquals(170906, $fDfa->getIv());
-        self::assertEquals(1307766, $fDfa->getIitg());
+        self::assertEquals(903785, $fDfa->getInRur());
+        self::assertEquals(13663360, $fDfa->getInCur());
+        self::assertEquals(14567145, $fDfa->getInTotal());
+        self::assertEquals(667685, $fDfa->getSumDebitRur());
+        self::assertEquals(13606535, $fDfa->getSumDebitCur());
+        self::assertEquals(14274220, $fDfa->getSumDebitTotal());
+        self::assertEquals(900760, $fDfa->getSumCreditRur());
+        self::assertEquals(114081, $fDfa->getSumCreditCur());
+        self::assertEquals(1014841, $fDfa->getSumCreditTotal());
+        self::assertEquals(1136860, $fDfa->getOutRur());
+        self::assertEquals(170906, $fDfa->getOutCur());
+        self::assertEquals(1307766, $fDfa->getOutTotal());
     }
 
     public function testData101FullExV2(): void //todo нет реальных данных
