@@ -1,7 +1,7 @@
 Gam6itko\Cbrf\Model\EnumBIC:
     xml_root_name: EnumBIC
     properties:
-        bIC:
+        bic:
             expose: true
             access_type: public_method
             serialized_name: BIC

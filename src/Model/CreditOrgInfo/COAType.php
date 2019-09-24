@@ -14,9 +14,9 @@ class COAType
     private $regNumber = null;
 
     /**
-     * @var string $bIC
+     * @var string $bic
      */
-    private $bIC = null;
+    private $bic = null;
 
     /**
      * @var string $orgName
@@ -74,9 +74,9 @@ class COAType
     private $orgStatus = null;
 
     /**
-     * @var int $regCode
+     * @var int $regionCode
      */
-    private $regCode = null;
+    private $regionCode = null;
 
     /**
      * @var \DateTime $sSVDate
@@ -112,18 +112,18 @@ class COAType
      */
     public function getBIC()
     {
-        return $this->bIC;
+        return $this->bic;
     }
 
     /**
      * Sets a new bIC
      *
-     * @param string $bIC
+     * @param string $bic
      * @return self
      */
-    public function setBIC($bIC)
+    public function setBIC($bic)
     {
-        $this->bIC = $bIC;
+        $this->bic = $bic;
         return $this;
     }
 
@@ -374,20 +374,20 @@ class COAType
      *
      * @return int
      */
-    public function getRegCode()
+    public function getRegionCode()
     {
-        return $this->regCode;
+        return $this->regionCode;
     }
 
     /**
      * Sets a new regCode
      *
-     * @param int $regCode
+     * @param int $regionCode
      * @return self
      */
-    public function setRegCode($regCode)
+    public function setRegionCode($regionCode)
     {
-        $this->regCode = $regCode;
+        $this->regionCode = $regionCode;
         return $this;
     }
 

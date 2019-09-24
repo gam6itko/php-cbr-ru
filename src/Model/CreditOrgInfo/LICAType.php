@@ -16,7 +16,7 @@ class LICAType
     /**
      * @var string $lT
      */
-    private $lT = null;
+    private $lt = null;
 
     /**
      * @var \DateTime $lDate
@@ -46,24 +46,24 @@ class LICAType
     }
 
     /**
-     * Gets as lT
+     * Gets as lt
      *
      * @return string
      */
     public function getLT()
     {
-        return $this->lT;
+        return $this->lt;
     }
 
     /**
-     * Sets a new lT
+     * Sets a new lt
      *
-     * @param string $lT
+     * @param string $lt
      * @return self
      */
-    public function setLT($lT)
+    public function setLT($lt)
     {
-        $this->lT = $lT;
+        $this->lt = $lt;
         return $this;
     }
 

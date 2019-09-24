@@ -9,29 +9,29 @@ class BICAType
 {
 
     /**
-     * @var string $bIC
+     * @var string $bic
      */
-    private $bIC = null;
+    private $bic = null;
 
     /**
-     * @var \DateTime $rC
+     * @var \DateTime $rc
      */
-    private $rC = null;
+    private $rc = null;
 
     /**
-     * @var string $nM
+     * @var string $nm
      */
-    private $nM = null;
+    private $nm = null;
 
     /**
-     * @var string $rB
+     * @var string $rb
      */
-    private $rB = null;
+    private $rb = null;
 
     /**
-     * @var float $rN
+     * @var float $rn
      */
-    private $rN = null;
+    private $rn = null;
 
     /**
      * @var float $intCode
@@ -45,18 +45,18 @@ class BICAType
      */
     public function getBIC()
     {
-        return $this->bIC;
+        return $this->bic;
     }
 
     /**
      * Sets a new bIC
      *
-     * @param string $bIC
+     * @param string $bic
      * @return self
      */
-    public function setBIC($bIC)
+    public function setBIC($bic)
     {
-        $this->bIC = $bIC;
+        $this->bic = $bic;
         return $this;
     }
 
@@ -67,18 +67,18 @@ class BICAType
      */
     public function getRC()
     {
-        return $this->rC;
+        return $this->rc;
     }
 
     /**
      * Sets a new rC
      *
-     * @param \DateTime $rC
+     * @param \DateTime $rc
      * @return self
      */
-    public function setRC(\DateTime $rC)
+    public function setRC(\DateTime $rc)
     {
-        $this->rC = $rC;
+        $this->rc = $rc;
         return $this;
     }
 
@@ -89,7 +89,7 @@ class BICAType
      */
     public function getNM()
     {
-        return $this->nM;
+        return $this->nm;
     }
 
     /**
@@ -100,7 +100,7 @@ class BICAType
      */
     public function setNM($nM)
     {
-        $this->nM = $nM;
+        $this->nm = $nM;
         return $this;
     }
 
@@ -111,40 +111,40 @@ class BICAType
      */
     public function getRB()
     {
-        return $this->rB;
+        return $this->rb;
     }
 
     /**
      * Sets a new rB
      *
-     * @param string $rB
+     * @param string $rb
      * @return self
      */
-    public function setRB($rB)
+    public function setRB($rb)
     {
-        $this->rB = $rB;
+        $this->rb = $rb;
         return $this;
     }
 
     /**
-     * Gets as rN
+     * Gets as rn
      *
      * @return float
      */
     public function getRN()
     {
-        return $this->rN;
+        return $this->rn;
     }
 
     /**
-     * Sets a new rN
+     * Sets a new rn
      *
-     * @param float $rN
+     * @param float $rn
      * @return self
      */
-    public function setRN($rN)
+    public function setRN($rn)
     {
-        $this->rN = $rN;
+        $this->rn = $rn;
         return $this;
     }
 

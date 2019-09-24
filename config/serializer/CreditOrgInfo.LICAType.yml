@@ -8,7 +8,7 @@ Gam6itko\Cbrf\Model\CreditOrgInfo\LICAType:
                 getter: getLCode
                 setter: setLCode
             type: int
-        lT:
+        lt:
             expose: true
             access_type: public_method
             serialized_name: LT

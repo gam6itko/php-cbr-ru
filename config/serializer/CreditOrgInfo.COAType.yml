@@ -8,7 +8,7 @@ Gam6itko\Cbrf\Model\CreditOrgInfo\COAType:
                 getter: getRegNumber
                 setter: setRegNumber
             type: int
-        bIC:
+        bic:
             expose: true
             access_type: public_method
             serialized_name: BIC
@@ -104,13 +104,13 @@ Gam6itko\Cbrf\Model\CreditOrgInfo\COAType:
                 getter: getOrgStatus
                 setter: setOrgStatus
             type: string
-        regCode:
+        regionCode:
             expose: true
             access_type: public_method
             serialized_name: RegCode
             accessor:
-                getter: getRegCode
-                setter: setRegCode
+                getter: getRegionCode
+                setter: setRegionCode
             type: int
         sSVDate:
             expose: true

@@ -1,6 +1,6 @@
 Gam6itko\Cbrf\Model\EnumBIC\BICAType:
     properties:
-        bIC:
+        bic:
             expose: true
             access_type: public_method
             serialized_name: BIC
@@ -8,7 +8,7 @@ Gam6itko\Cbrf\Model\EnumBIC\BICAType:
                 getter: getBIC
                 setter: setBIC
             type: string
-        rC:
+        rc:
             expose: true
             access_type: public_method
             serialized_name: RC
@@ -16,7 +16,7 @@ Gam6itko\Cbrf\Model\EnumBIC\BICAType:
                 getter: getRC
                 setter: setRC
             type: DateTime
-        nM:
+        nm:
             expose: true
             access_type: public_method
             serialized_name: NM
@@ -24,7 +24,7 @@ Gam6itko\Cbrf\Model\EnumBIC\BICAType:
                 getter: getNM
                 setter: setNM
             type: string
-        rB:
+        rb:
             expose: true
             access_type: public_method
             serialized_name: RB
@@ -32,7 +32,7 @@ Gam6itko\Cbrf\Model\EnumBIC\BICAType:
                 getter: getRB
                 setter: setRB
             type: string
-        rN:
+        rn:
             expose: true
             access_type: public_method
             serialized_name: RN

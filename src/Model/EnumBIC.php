@@ -2,6 +2,8 @@
 
 namespace Gam6itko\Cbrf\Model;
 
+use Gam6itko\Cbrf\Model\EnumBIC\BICAType;
+
 /**
  * Class representing EnumBIC
  */
@@ -9,21 +11,19 @@ class EnumBIC
 {
 
     /**
-     * @var \Gam6itko\Cbrf\Model\EnumBIC\BICAType[] $bIC
+     * @var BICAType[] $bic
      */
-    private $bIC = [
-        
-    ];
+    private $bic = [];
 
     /**
      * Adds as bIC
      *
-     * @param \Gam6itko\Cbrf\Model\EnumBIC\BICAType $bIC
+     * @param BICAType $bic
      *@return self
      */
-    public function addToBIC(\Gam6itko\Cbrf\Model\EnumBIC\BICAType $bIC)
+    public function addToBIC(BICAType $bic)
     {
-        $this->bIC[] = $bIC;
+        $this->bic[] = $bic;
         return $this;
     }
 
@@ -35,7 +35,7 @@ class EnumBIC
      */
     public function issetBIC($index)
     {
-        return isset($this->bIC[$index]);
+        return isset($this->bic[$index]);
     }
 
     /**
@@ -46,31 +46,29 @@ class EnumBIC
      */
     public function unsetBIC($index)
     {
-        unset($this->bIC[$index]);
+        unset($this->bic[$index]);
     }
 
     /**
      * Gets as bIC
      *
-     * @return \Gam6itko\Cbrf\Model\EnumBIC\BICAType[]
+     * @return BICAType[]
      */
     public function getBIC()
     {
-        return $this->bIC;
+        return $this->bic;
     }
 
     /**
      * Sets a new bIC
      *
-     * @param \Gam6itko\Cbrf\Model\EnumBIC\BICAType[] $bIC
+     * @param BICAType[] $bic
      * @return self
      */
-    public function setBIC(array $bIC)
+    public function setBIC(array $bic)
     {
-        $this->bIC = $bIC;
+        $this->bic = $bic;
         return $this;
     }
-
-
 }
 
