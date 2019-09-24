@@ -8,7 +8,6 @@ namespace Gam6itko\Cbrf\Model\F101DATA;
  */
 class FDFAType
 {
-
     /**
      * @var \DateTime $dt
      */
@@ -413,7 +412,5 @@ class FDFAType
         $this->outTotal = $outTotal;
         return $this;
     }
-
-
 }
 
