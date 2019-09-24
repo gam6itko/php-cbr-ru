@@ -5,11 +5,11 @@ Dev API: https://www.cbr.ru/development/
 # instalation
 
 ```bash
-    composer require gam6itko/cbrf-api
+composer require gam6itko/cbrf-api
 ```
 
 #Create php Classes from xsd 
 
 ```bash
-    vendor/bin/xsd2php convert xsd2php/config.yml xsd2php/CreditOrgInfoService/*.xsd
+vendor/bin/xsd2php convert xsd2php/config.yml xsd2php/CreditOrgInfoService/*.xsd
 ```
