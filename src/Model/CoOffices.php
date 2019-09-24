@@ -2,6 +2,8 @@
 
 namespace Gam6itko\Cbrf\Model;
 
+use Gam6itko\Cbrf\Model\CoOffices\OfficesAType;
+
 /**
  * Class representing CoOffices
  */
@@ -9,7 +11,7 @@ class CoOffices
 {
 
     /**
-     * @var \Gam6itko\Cbrf\Model\CoOffices\OfficesAType[] $offices
+     * @var OfficesAType[] $offices
      */
     protected $offices = [
         
@@ -18,10 +20,10 @@ class CoOffices
     /**
      * Adds as offices
      *
-     * @param \Gam6itko\Cbrf\Model\CoOffices\OfficesAType $offices
+     * @param OfficesAType $offices
      *@return self
      */
-    public function addToOffices(\Gam6itko\Cbrf\Model\CoOffices\OfficesAType $offices)
+    public function addToOffices(OfficesAType $offices)
     {
         $this->offices[] = $offices;
         return $this;
@@ -52,7 +54,7 @@ class CoOffices
     /**
      * Gets as offices
      *
-     * @return \Gam6itko\Cbrf\Model\CoOffices\OfficesAType[]
+     * @return OfficesAType[]
      */
     public function getOffices()
     {
@@ -62,7 +64,7 @@ class CoOffices
     /**
      * Sets a new offices
      *
-     * @param \Gam6itko\Cbrf\Model\CoOffices\OfficesAType[] $offices
+     * @param OfficesAType[] $offices
      * @return self
      */
     public function setOffices(array $offices)

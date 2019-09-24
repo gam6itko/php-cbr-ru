@@ -2,6 +2,8 @@
 
 namespace Gam6itko\Cbrf\Model;
 
+use Gam6itko\Cbrf\Model\F102DATAFULL\FDFAType;
+
 /**
  * Class representing F102DATAFULL
  */
@@ -9,7 +11,7 @@ class F102DATAFULL
 {
 
     /**
-     * @var \Gam6itko\Cbrf\Model\F102DATAFULL\FDFAType[] $fDF
+     * @var FDFAType[] $fDF
      */
     protected $fDF = [
         
@@ -18,10 +20,10 @@ class F102DATAFULL
     /**
      * Adds as fDF
      *
-     * @param \Gam6itko\Cbrf\Model\F102DATAFULL\FDFAType $fDF
+     * @param FDFAType $fDF
      *@return self
      */
-    public function addToFDF(\Gam6itko\Cbrf\Model\F102DATAFULL\FDFAType $fDF)
+    public function addToFDF(FDFAType $fDF)
     {
         $this->fDF[] = $fDF;
         return $this;
@@ -52,7 +54,7 @@ class F102DATAFULL
     /**
      * Gets as fDF
      *
-     * @return \Gam6itko\Cbrf\Model\F102DATAFULL\FDFAType[]
+     * @return FDFAType[]
      */
     public function getFDF()
     {
@@ -62,7 +64,7 @@ class F102DATAFULL
     /**
      * Sets a new fDF
      *
-     * @param \Gam6itko\Cbrf\Model\F102DATAFULL\FDFAType[] $fDF
+     * @param FDFAType[] $fDF
      * @return self
      */
     public function setFDF(array $fDF)

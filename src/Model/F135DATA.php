@@ -2,6 +2,13 @@
 
 namespace Gam6itko\Cbrf\Model;
 
+use Gam6itko\Cbrf\Model\F135DATA\F1351AType;
+use Gam6itko\Cbrf\Model\F135DATA\F1352AType;
+use Gam6itko\Cbrf\Model\F135DATA\F1353AType;
+use Gam6itko\Cbrf\Model\F135DATA\F1354AType;
+use Gam6itko\Cbrf\Model\F135DATA\F1355AType;
+use Gam6itko\Cbrf\Model\F135DATA\F1356AType;
+
 /**
  * Class representing F135DATA
  */
@@ -9,42 +16,42 @@ class F135DATA
 {
 
     /**
-     * @var \Gam6itko\Cbrf\Model\F135DATA\F1351AType[] $f1351
+     * @var F1351AType[] $f1351
      */
     protected $f1351 = [
         
     ];
 
     /**
-     * @var \Gam6itko\Cbrf\Model\F135DATA\F1352AType[] $f1352
+     * @var F1352AType[] $f1352
      */
     protected $f1352 = [
         
     ];
 
     /**
-     * @var \Gam6itko\Cbrf\Model\F135DATA\F1353AType[] $f1353
+     * @var F1353AType[] $f1353
      */
     protected $f1353 = [
         
     ];
 
     /**
-     * @var \Gam6itko\Cbrf\Model\F135DATA\F1354AType[] $f1354
+     * @var F1354AType[] $f1354
      */
     protected $f1354 = [
         
     ];
 
     /**
-     * @var \Gam6itko\Cbrf\Model\F135DATA\F1355AType[] $f1355
+     * @var F1355AType[] $f1355
      */
     protected $f1355 = [
         
     ];
 
     /**
-     * @var \Gam6itko\Cbrf\Model\F135DATA\F1356AType[] $f1356
+     * @var F1356AType[] $f1356
      */
     protected $f1356 = [
         
@@ -53,10 +60,10 @@ class F135DATA
     /**
      * Adds as f1351
      *
-     * @param \Gam6itko\Cbrf\Model\F135DATA\F1351AType $f1351
+     * @param F1351AType $f1351
      *@return self
      */
-    public function addToF1351(\Gam6itko\Cbrf\Model\F135DATA\F1351AType $f1351)
+    public function addToF1351(F1351AType $f1351)
     {
         $this->f1351[] = $f1351;
         return $this;
@@ -87,7 +94,7 @@ class F135DATA
     /**
      * Gets as f1351
      *
-     * @return \Gam6itko\Cbrf\Model\F135DATA\F1351AType[]
+     * @return F1351AType[]
      */
     public function getF1351()
     {
@@ -97,7 +104,7 @@ class F135DATA
     /**
      * Sets a new f1351
      *
-     * @param \Gam6itko\Cbrf\Model\F135DATA\F1351AType[] $f1351
+     * @param F1351AType[] $f1351
      * @return self
      */
     public function setF1351(array $f1351)
@@ -109,10 +116,10 @@ class F135DATA
     /**
      * Adds as f1352
      *
-     * @param \Gam6itko\Cbrf\Model\F135DATA\F1352AType $f1352
+     * @param F1352AType $f1352
      *@return self
      */
-    public function addToF1352(\Gam6itko\Cbrf\Model\F135DATA\F1352AType $f1352)
+    public function addToF1352(F1352AType $f1352)
     {
         $this->f1352[] = $f1352;
         return $this;
@@ -143,7 +150,7 @@ class F135DATA
     /**
      * Gets as f1352
      *
-     * @return \Gam6itko\Cbrf\Model\F135DATA\F1352AType[]
+     * @return F1352AType[]
      */
     public function getF1352()
     {
@@ -153,7 +160,7 @@ class F135DATA
     /**
      * Sets a new f1352
      *
-     * @param \Gam6itko\Cbrf\Model\F135DATA\F1352AType[] $f1352
+     * @param F1352AType[] $f1352
      * @return self
      */
     public function setF1352(array $f1352)
@@ -165,10 +172,10 @@ class F135DATA
     /**
      * Adds as f1353
      *
-     * @param \Gam6itko\Cbrf\Model\F135DATA\F1353AType $f1353
+     * @param F1353AType $f1353
      *@return self
      */
-    public function addToF1353(\Gam6itko\Cbrf\Model\F135DATA\F1353AType $f1353)
+    public function addToF1353(F1353AType $f1353)
     {
         $this->f1353[] = $f1353;
         return $this;
@@ -199,7 +206,7 @@ class F135DATA
     /**
      * Gets as f1353
      *
-     * @return \Gam6itko\Cbrf\Model\F135DATA\F1353AType[]
+     * @return F1353AType[]
      */
     public function getF1353()
     {
@@ -209,7 +216,7 @@ class F135DATA
     /**
      * Sets a new f1353
      *
-     * @param \Gam6itko\Cbrf\Model\F135DATA\F1353AType[] $f1353
+     * @param F1353AType[] $f1353
      * @return self
      */
     public function setF1353(array $f1353)
@@ -221,10 +228,10 @@ class F135DATA
     /**
      * Adds as f1354
      *
-     * @param \Gam6itko\Cbrf\Model\F135DATA\F1354AType $f1354
+     * @param F1354AType $f1354
      *@return self
      */
-    public function addToF1354(\Gam6itko\Cbrf\Model\F135DATA\F1354AType $f1354)
+    public function addToF1354(F1354AType $f1354)
     {
         $this->f1354[] = $f1354;
         return $this;
@@ -255,7 +262,7 @@ class F135DATA
     /**
      * Gets as f1354
      *
-     * @return \Gam6itko\Cbrf\Model\F135DATA\F1354AType[]
+     * @return F1354AType[]
      */
     public function getF1354()
     {
@@ -265,7 +272,7 @@ class F135DATA
     /**
      * Sets a new f1354
      *
-     * @param \Gam6itko\Cbrf\Model\F135DATA\F1354AType[] $f1354
+     * @param F1354AType[] $f1354
      * @return self
      */
     public function setF1354(array $f1354)
@@ -277,10 +284,10 @@ class F135DATA
     /**
      * Adds as f1355
      *
-     * @param \Gam6itko\Cbrf\Model\F135DATA\F1355AType $f1355
+     * @param F1355AType $f1355
      *@return self
      */
-    public function addToF1355(\Gam6itko\Cbrf\Model\F135DATA\F1355AType $f1355)
+    public function addToF1355(F1355AType $f1355)
     {
         $this->f1355[] = $f1355;
         return $this;
@@ -311,7 +318,7 @@ class F135DATA
     /**
      * Gets as f1355
      *
-     * @return \Gam6itko\Cbrf\Model\F135DATA\F1355AType[]
+     * @return F1355AType[]
      */
     public function getF1355()
     {
@@ -321,7 +328,7 @@ class F135DATA
     /**
      * Sets a new f1355
      *
-     * @param \Gam6itko\Cbrf\Model\F135DATA\F1355AType[] $f1355
+     * @param F1355AType[] $f1355
      * @return self
      */
     public function setF1355(array $f1355)
@@ -333,10 +340,10 @@ class F135DATA
     /**
      * Adds as f1356
      *
-     * @param \Gam6itko\Cbrf\Model\F135DATA\F1356AType $f1356
+     * @param F1356AType $f1356
      *@return self
      */
-    public function addToF1356(\Gam6itko\Cbrf\Model\F135DATA\F1356AType $f1356)
+    public function addToF1356(F1356AType $f1356)
     {
         $this->f1356[] = $f1356;
         return $this;
@@ -367,7 +374,7 @@ class F135DATA
     /**
      * Gets as f1356
      *
-     * @return \Gam6itko\Cbrf\Model\F135DATA\F1356AType[]
+     * @return F1356AType[]
      */
     public function getF1356()
     {
@@ -377,7 +384,7 @@ class F135DATA
     /**
      * Sets a new f1356
      *
-     * @param \Gam6itko\Cbrf\Model\F135DATA\F1356AType[] $f1356
+     * @param F1356AType[] $f1356
      * @return self
      */
     public function setF1356(array $f1356)

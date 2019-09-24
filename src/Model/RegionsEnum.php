@@ -2,6 +2,8 @@
 
 namespace Gam6itko\Cbrf\Model;
 
+use Gam6itko\Cbrf\Model\RegionsEnum\RGIDAType;
+
 /**
  * Class representing RegionsEnum
  */
@@ -9,7 +11,7 @@ class RegionsEnum
 {
 
     /**
-     * @var \Gam6itko\Cbrf\Model\RegionsEnum\RGIDAType[] $rGID
+     * @var RGIDAType[] $rGID
      */
     protected $rGID = [
         
@@ -18,10 +20,10 @@ class RegionsEnum
     /**
      * Adds as rGID
      *
-     * @param \Gam6itko\Cbrf\Model\RegionsEnum\RGIDAType $rGID
+     * @param RGIDAType $rGID
      *@return self
      */
-    public function addToRGID(\Gam6itko\Cbrf\Model\RegionsEnum\RGIDAType $rGID)
+    public function addToRGID(RGIDAType $rGID)
     {
         $this->rGID[] = $rGID;
         return $this;
@@ -52,7 +54,7 @@ class RegionsEnum
     /**
      * Gets as rGID
      *
-     * @return \Gam6itko\Cbrf\Model\RegionsEnum\RGIDAType[]
+     * @return RGIDAType[]
      */
     public function getRGID()
     {
@@ -62,7 +64,7 @@ class RegionsEnum
     /**
      * Sets a new rGID
      *
-     * @param \Gam6itko\Cbrf\Model\RegionsEnum\RGIDAType[] $rGID
+     * @param RGIDAType[] $rGID
      * @return self
      */
     public function setRGID(array $rGID)

@@ -2,6 +2,9 @@
 
 namespace Gam6itko\Cbrf\Model;
 
+use Gam6itko\Cbrf\Model\F101DATA\FDAType;
+use Gam6itko\Cbrf\Model\F101DATA\FDFAType;
+
 /**
  * Class representing F101DATA
  */
@@ -9,14 +12,14 @@ class F101DATA
 {
 
     /**
-     * @var \Gam6itko\Cbrf\Model\F101DATA\FDAType[] $fD
+     * @var FDAType[] $fD
      */
     protected $fD = [
         
     ];
 
     /**
-     * @var \Gam6itko\Cbrf\Model\F101DATA\FDFAType[] $fDF
+     * @var FDFAType[] $fDF
      */
     protected $fDF = [
         
@@ -25,10 +28,10 @@ class F101DATA
     /**
      * Adds as fD
      *
-     * @param \Gam6itko\Cbrf\Model\F101DATA\FDAType $fD
+     * @param FDAType $fD
      *@return self
      */
-    public function addToFD(\Gam6itko\Cbrf\Model\F101DATA\FDAType $fD)
+    public function addToFD(FDAType $fD)
     {
         $this->fD[] = $fD;
         return $this;
@@ -59,7 +62,7 @@ class F101DATA
     /**
      * Gets as fD
      *
-     * @return \Gam6itko\Cbrf\Model\F101DATA\FDAType[]
+     * @return FDAType[]
      */
     public function getFD()
     {
@@ -69,7 +72,7 @@ class F101DATA
     /**
      * Sets a new fD
      *
-     * @param \Gam6itko\Cbrf\Model\F101DATA\FDAType[] $fD
+     * @param FDAType[] $fD
      * @return self
      */
     public function setFD(array $fD)
@@ -81,10 +84,10 @@ class F101DATA
     /**
      * Adds as fDF
      *
-     * @param \Gam6itko\Cbrf\Model\F101DATA\FDFAType $fDF
+     * @param FDFAType $fDF
      *@return self
      */
-    public function addToFDF(\Gam6itko\Cbrf\Model\F101DATA\FDFAType $fDF)
+    public function addToFDF(FDFAType $fDF)
     {
         $this->fDF[] = $fDF;
         return $this;
@@ -115,7 +118,7 @@ class F101DATA
     /**
      * Gets as fDF
      *
-     * @return \Gam6itko\Cbrf\Model\F101DATA\FDFAType[]
+     * @return FDFAType[]
      */
     public function getFDF()
     {
@@ -125,7 +128,7 @@ class F101DATA
     /**
      * Sets a new fDF
      *
-     * @param \Gam6itko\Cbrf\Model\F101DATA\FDFAType[] $fDF
+     * @param FDFAType[] $fDF
      * @return self
      */
     public function setFDF(array $fDF)

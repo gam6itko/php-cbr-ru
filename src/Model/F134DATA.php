@@ -2,6 +2,8 @@
 
 namespace Gam6itko\Cbrf\Model;
 
+use Gam6itko\Cbrf\Model\F134DATA\FDAType;
+
 /**
  * Class representing F134DATA
  */
@@ -9,7 +11,7 @@ class F134DATA
 {
 
     /**
-     * @var \Gam6itko\Cbrf\Model\F134DATA\FDAType[] $fD
+     * @var FDAType[] $fD
      */
     protected $fD = [
         
@@ -18,10 +20,10 @@ class F134DATA
     /**
      * Adds as fD
      *
-     * @param \Gam6itko\Cbrf\Model\F134DATA\FDAType $fD
+     * @param FDAType $fD
      *@return self
      */
-    public function addToFD(\Gam6itko\Cbrf\Model\F134DATA\FDAType $fD)
+    public function addToFD(FDAType $fD)
     {
         $this->fD[] = $fD;
         return $this;
@@ -52,7 +54,7 @@ class F134DATA
     /**
      * Gets as fD
      *
-     * @return \Gam6itko\Cbrf\Model\F134DATA\FDAType[]
+     * @return FDAType[]
      */
     public function getFD()
     {
@@ -62,7 +64,7 @@ class F134DATA
     /**
      * Sets a new fD
      *
-     * @param \Gam6itko\Cbrf\Model\F134DATA\FDAType[] $fD
+     * @param FDAType[] $fD
      * @return self
      */
     public function setFD(array $fD)

@@ -2,6 +2,8 @@
 
 namespace Gam6itko\Cbrf\Model;
 
+use Gam6itko\Cbrf\Model\F134DATAOLAP\FoAType;
+
 /**
  * Class representing F134DATAOLAP
  */
@@ -9,7 +11,7 @@ class F134DATAOLAP
 {
 
     /**
-     * @var \Gam6itko\Cbrf\Model\F134DATAOLAP\FoAType[] $fo
+     * @var FoAType[] $fo
      */
     protected $fo = [
         
@@ -18,10 +20,10 @@ class F134DATAOLAP
     /**
      * Adds as fo
      *
-     * @param \Gam6itko\Cbrf\Model\F134DATAOLAP\FoAType $fo
+     * @param FoAType $fo
      *@return self
      */
-    public function addToFo(\Gam6itko\Cbrf\Model\F134DATAOLAP\FoAType $fo)
+    public function addToFo(FoAType $fo)
     {
         $this->fo[] = $fo;
         return $this;
@@ -52,7 +54,7 @@ class F134DATAOLAP
     /**
      * Gets as fo
      *
-     * @return \Gam6itko\Cbrf\Model\F134DATAOLAP\FoAType[]
+     * @return FoAType[]
      */
     public function getFo()
     {
@@ -62,7 +64,7 @@ class F134DATAOLAP
     /**
      * Sets a new fo
      *
-     * @param \Gam6itko\Cbrf\Model\F134DATAOLAP\FoAType[] $fo
+     * @param FoAType[] $fo
      * @return self
      */
     public function setFo(array $fo)
