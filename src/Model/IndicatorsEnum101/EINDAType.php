@@ -37,7 +37,7 @@ class EINDAType
      *
      * @return int
      */
-    public function getindId()
+    public function getIndId()
     {
         return $this->indId;
     }
@@ -48,7 +48,7 @@ class EINDAType
      * @param int $indId
      * @return self
      */
-    public function setindId($indId)
+    public function setIndId($indId)
     {
         $this->indId = $indId;
         return $this;
