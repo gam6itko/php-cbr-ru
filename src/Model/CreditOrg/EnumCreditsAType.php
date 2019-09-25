@@ -25,7 +25,7 @@ class EnumCreditsAType
     /**
      * @var float
      */
-    protected $cregnum = null;
+    protected $regNumber = null;
 
     /**
      * Gets as intCode.
@@ -104,21 +104,21 @@ class EnumCreditsAType
      *
      * @return float
      */
-    public function getCregnum()
+    public function getRegNumber()
     {
-        return $this->cregnum;
+        return $this->regNumber;
     }
 
     /**
      * Sets a new cregnum.
      *
-     * @param float $cregnum
+     * @param float $regNumber
      *
      * @return self
      */
-    public function setCregnum($cregnum)
+    public function setRegNumber($regNumber)
     {
-        $this->cregnum = $cregnum;
+        $this->regNumber = $regNumber;
 
         return $this;
     }

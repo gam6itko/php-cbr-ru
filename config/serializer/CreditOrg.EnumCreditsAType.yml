@@ -24,11 +24,11 @@ Gam6itko\Cbrf\Model\CreditOrg\EnumCreditsAType:
                 getter: getBic
                 setter: setBic
             type: string
-        cregnum:
+        regNumber:
             expose: true
             access_type: public_method
             serialized_name: cregnum
             accessor:
-                getter: getCregnum
-                setter: setCregnum
-            type: float
+                getter: getRegNumber
+                setter: setRegNumber
+            type: int
