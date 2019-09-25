@@ -9,23 +9,20 @@ use Gam6itko\Cbrf\Model\F134DATA\FDAType;
  */
 class F134DATA
 {
-
     /**
-     * @var FDAType[] $fD
+     * @var FDAType[] $fd
      */
-    protected $fD = [
-        
-    ];
+    protected $fd = [];
 
     /**
      * Adds as fD
      *
-     * @param FDAType $fD
-     *@return self
+     * @param FDAType $fd
+     * @return self
      */
-    public function addToFD(FDAType $fD)
+    public function addToFD(FDAType $fd)
     {
-        $this->fD[] = $fD;
+        $this->fd[] = $fd;
         return $this;
     }
 
@@ -37,7 +34,7 @@ class F134DATA
      */
     public function issetFD($index)
     {
-        return isset($this->fD[$index]);
+        return isset($this->fd[$index]);
     }
 
     /**
@@ -48,7 +45,7 @@ class F134DATA
      */
     public function unsetFD($index)
     {
-        unset($this->fD[$index]);
+        unset($this->fd[$index]);
     }
 
     /**
@@ -58,21 +55,18 @@ class F134DATA
      */
     public function getFD()
     {
-        return $this->fD;
+        return $this->fd;
     }
 
     /**
      * Sets a new fD
      *
-     * @param FDAType[] $fD
+     * @param FDAType[] $fd
      * @return self
      */
-    public function setFD(array $fD)
+    public function setFD(array $fd)
     {
-        $this->fD = $fD;
+        $this->fd = $fd;
         return $this;
     }
-
-
 }
-

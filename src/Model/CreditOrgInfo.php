@@ -10,133 +10,125 @@ use Gam6itko\Cbrf\Model\CreditOrgInfo\LICAType;
  */
 class CreditOrgInfo
 {
-
     /**
-     * @var COAType[] $cO
+     * @var COAType[] $co
      */
-    protected $cO = [
-        
-    ];
+    protected $co = [];
 
     /**
-     * @var LICAType[] $lIC
+     * @var LICAType[] $lic
      */
-    protected $lIC = [
-        
-    ];
+    protected $lic = [];
 
     /**
-     * Adds as cO
+     * Adds as co
      *
-     * @param COAType $cO
-     *@return self
+     * @param COAType $co
+     * @return self
      */
-    public function addToCO(COAType $cO)
+    public function addToCO(COAType $co)
     {
-        $this->cO[] = $cO;
+        $this->co[] = $co;
         return $this;
     }
 
     /**
-     * isset cO
+     * isset co
      *
      * @param int|string $index
      * @return bool
      */
     public function issetCO($index)
     {
-        return isset($this->cO[$index]);
+        return isset($this->co[$index]);
     }
 
     /**
-     * unset cO
+     * unset co
      *
      * @param int|string $index
      * @return void
      */
     public function unsetCO($index)
     {
-        unset($this->cO[$index]);
+        unset($this->co[$index]);
     }
 
     /**
-     * Gets as cO
+     * Gets as co
      *
      * @return COAType[]
      */
     public function getCO()
     {
-        return $this->cO;
+        return $this->co;
     }
 
     /**
-     * Sets a new cO
+     * Sets a new co
      *
-     * @param COAType[] $cO
+     * @param COAType[] $co
      * @return self
      */
-    public function setCO(array $cO)
+    public function setCO(array $co)
     {
-        $this->cO = $cO;
+        $this->co = $co;
         return $this;
     }
 
     /**
-     * Adds as lIC
+     * Adds as lic
      *
-     * @param LICAType $lIC
-     *@return self
+     * @param LICAType $lic
+     * @return self
      */
-    public function addToLIC(LICAType $lIC)
+    public function addToLIC(LICAType $lic)
     {
-        $this->lIC[] = $lIC;
+        $this->lic[] = $lic;
         return $this;
     }
 
     /**
-     * isset lIC
+     * isset lic
      *
      * @param int|string $index
      * @return bool
      */
     public function issetLIC($index)
     {
-        return isset($this->lIC[$index]);
+        return isset($this->lic[$index]);
     }
 
     /**
-     * unset lIC
+     * unset lic
      *
      * @param int|string $index
      * @return void
      */
     public function unsetLIC($index)
     {
-        unset($this->lIC[$index]);
+        unset($this->lic[$index]);
     }
 
     /**
-     * Gets as lIC
+     * Gets as lic
      *
      * @return LICAType[]
      */
     public function getLIC()
     {
-        return $this->lIC;
+        return $this->lic;
     }
 
     /**
-     * Sets a new lIC
+     * Sets a new lic
      *
-     * @param LICAType[] $lIC
+     * @param LICAType[] $lic
      * @return self
      */
-    public function setLIC(array $lIC)
+    public function setLIC(array $lic)
     {
-        $this->lIC = $lIC;
+        $this->lic = $lic;
         return $this;
     }
-
-
 }
-

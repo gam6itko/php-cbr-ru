@@ -1,6 +1,6 @@
 Gam6itko\Cbrf\Model\F135DATA\F1355AType:
     properties:
-        dT:
+        dt:
             expose: true
             access_type: public_method
             serialized_name: DT

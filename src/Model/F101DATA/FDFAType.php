@@ -413,4 +413,3 @@ class FDFAType
         return $this;
     }
 }
-

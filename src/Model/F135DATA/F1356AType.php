@@ -7,7 +7,6 @@ namespace Gam6itko\Cbrf\Model\F135DATA;
  */
 class F1356AType
 {
-
     /**
      * @var float $v61
      */
@@ -61,7 +60,4 @@ class F1356AType
         $this->v62 = $v62;
         return $this;
     }
-
-
 }
-

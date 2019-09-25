@@ -24,7 +24,7 @@ Gam6itko\Cbrf\Model\F135DATA\F1354AType:
                 getter: getNnd
                 setter: setNnd
             type: float
-        dT:
+        dt:
             expose: true
             access_type: public_method
             serialized_name: DT

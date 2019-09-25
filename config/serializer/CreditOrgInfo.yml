@@ -1,7 +1,7 @@
 Gam6itko\Cbrf\Model\CreditOrgInfo:
     xml_root_name: CreditOrgInfo
     properties:
-        cO:
+        co:
             expose: true
             access_type: public_method
             serialized_name: CO
@@ -12,7 +12,7 @@ Gam6itko\Cbrf\Model\CreditOrgInfo:
                 inline: true
                 entry_name: CO
             type: array<Gam6itko\Cbrf\Model\CreditOrgInfo\COAType>
-        lIC:
+        lic:
             expose: true
             access_type: public_method
             serialized_name: LIC

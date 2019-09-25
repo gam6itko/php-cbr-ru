@@ -9,19 +9,16 @@ use Gam6itko\Cbrf\Model\F123DATA\F123AType;
  */
 class F123DATA
 {
-
     /**
      * @var F123AType[] $f123
      */
-    protected $f123 = [
-        
-    ];
+    protected $f123 = [];
 
     /**
      * Adds as f123
      *
      * @param F123AType $f123
-     *@return self
+     * @return self
      */
     public function addToF123(F123AType $f123)
     {
@@ -72,7 +69,4 @@ class F123DATA
         $this->f123 = $f123;
         return $this;
     }
-
-
 }
-

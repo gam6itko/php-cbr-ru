@@ -9,23 +9,20 @@ use Gam6itko\Cbrf\Model\IndicatorsEnum101\EINDAType;
  */
 class IndicatorsEnum101
 {
-
     /**
-     * @var EINDAType[] $eIND
+     * @var EINDAType[] $eind
      */
-    protected $eIND = [
-        
-    ];
+    protected $eind = [];
 
     /**
      * Adds as eIND
      *
-     * @param EINDAType $eIND
-     *@return self
+     * @param EINDAType $eind
+     * @return self
      */
-    public function addToEIND(EINDAType $eIND)
+    public function addToEIND(EINDAType $eind)
     {
-        $this->eIND[] = $eIND;
+        $this->eind[] = $eind;
         return $this;
     }
 
@@ -37,7 +34,7 @@ class IndicatorsEnum101
      */
     public function issetEIND($index)
     {
-        return isset($this->eIND[$index]);
+        return isset($this->eind[$index]);
     }
 
     /**
@@ -48,7 +45,7 @@ class IndicatorsEnum101
      */
     public function unsetEIND($index)
     {
-        unset($this->eIND[$index]);
+        unset($this->eind[$index]);
     }
 
     /**
@@ -58,21 +55,18 @@ class IndicatorsEnum101
      */
     public function getEIND()
     {
-        return $this->eIND;
+        return $this->eind;
     }
 
     /**
      * Sets a new eIND
      *
-     * @param EINDAType[] $eIND
+     * @param EINDAType[] $eind
      * @return self
      */
-    public function setEIND(array $eIND)
+    public function setEIND(array $eind)
     {
-        $this->eIND = $eIND;
+        $this->eind = $eind;
         return $this;
     }
-
-
 }
-

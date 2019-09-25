@@ -7,7 +7,6 @@ namespace Gam6itko\Cbrf\Model\IndicatorsEnum102;
  */
 class SINDAType
 {
-
     /**
      * @var int $symid
      */
@@ -169,7 +168,4 @@ class SINDAType
         $this->symset = $symset;
         return $this;
     }
-
-
 }
-

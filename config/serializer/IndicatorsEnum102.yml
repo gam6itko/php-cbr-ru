@@ -1,7 +1,7 @@
 Gam6itko\Cbrf\Model\IndicatorsEnum102:
     xml_root_name: IndicatorsEnum102
     properties:
-        sIND:
+        sind:
             expose: true
             access_type: public_method
             serialized_name: SIND

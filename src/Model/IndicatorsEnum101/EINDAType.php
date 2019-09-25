@@ -7,7 +7,6 @@ namespace Gam6itko\Cbrf\Model\IndicatorsEnum101;
  */
 class EINDAType
 {
-
     /**
      * @var int $indID
      */
@@ -142,7 +141,4 @@ class EINDAType
         $this->indChapter = $indChapter;
         return $this;
     }
-
-
 }
-

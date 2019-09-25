@@ -7,7 +7,6 @@ namespace Gam6itko\Cbrf\Model\CreditOrg;
  */
 class EnumCreditsAType
 {
-
     /**
      * @var float $intCode
      */
@@ -115,7 +114,4 @@ class EnumCreditsAType
         $this->cregnum = $cregnum;
         return $this;
     }
-
-
 }
-

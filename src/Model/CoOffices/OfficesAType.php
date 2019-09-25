@@ -7,7 +7,6 @@ namespace Gam6itko\Cbrf\Model\CoOffices;
  */
 class OfficesAType
 {
-
     /**
      * @var float $cmain
      */
@@ -142,7 +141,4 @@ class OfficesAType
         $this->straddrmn = $straddrmn;
         return $this;
     }
-
-
 }
-

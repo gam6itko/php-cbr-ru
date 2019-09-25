@@ -1,7 +1,7 @@
 Gam6itko\Cbrf\Model\F101DATA:
     xml_root_name: F101DATA
     properties:
-        fD:
+        fd:
             expose: true
             access_type: public_method
             serialized_name: FD
@@ -12,7 +12,7 @@ Gam6itko\Cbrf\Model\F101DATA:
                 inline: true
                 entry_name: FD
             type: array<Gam6itko\Cbrf\Model\F101DATA\FDAType>
-        fDF:
+        fdf:
             expose: true
             access_type: public_method
             serialized_name: FDF

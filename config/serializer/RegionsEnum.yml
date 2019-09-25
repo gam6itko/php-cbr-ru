@@ -1,7 +1,7 @@
 Gam6itko\Cbrf\Model\RegionsEnum:
     xml_root_name: RegionsEnum
     properties:
-        rGID:
+        rgid:
             expose: true
             access_type: public_method
             serialized_name: RGID

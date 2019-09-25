@@ -9,9 +9,9 @@ class FDFAType
 {
 
     /**
-     * @var \DateTime $dT
+     * @var \DateTime $dt
      */
-    protected $dT = null;
+    protected $dt = null;
 
     /**
      * @var float $val
@@ -29,24 +29,24 @@ class FDFAType
     protected $v = null;
 
     /**
-     * Gets as dT
+     * Gets as dt
      *
      * @return \DateTime
      */
     public function getDT()
     {
-        return $this->dT;
+        return $this->dt;
     }
 
     /**
-     * Sets a new dT
+     * Sets a new dt
      *
-     * @param \DateTime $dT
+     * @param \DateTime $dt
      * @return self
      */
-    public function setDT(\DateTime $dT)
+    public function setDT(\DateTime $dt)
     {
-        $this->dT = $dT;
+        $this->dt = $dt;
         return $this;
     }
 
@@ -115,7 +115,5 @@ class FDFAType
         $this->v = $v;
         return $this;
     }
-
-
 }
 

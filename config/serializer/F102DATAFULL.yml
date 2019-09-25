@@ -1,7 +1,7 @@
 Gam6itko\Cbrf\Model\F102DATAFULL:
     xml_root_name: F102DATAFULL
     properties:
-        fDF:
+        fdf:
             expose: true
             access_type: public_method
             serialized_name: FDF

@@ -1,6 +1,6 @@
 Gam6itko\Cbrf\Model\F134DATAOLAP\FoAType:
     properties:
-        dT:
+        dt:
             expose: true
             access_type: public_method
             serialized_name: DT

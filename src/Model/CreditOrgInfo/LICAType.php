@@ -7,7 +7,6 @@ namespace Gam6itko\Cbrf\Model\CreditOrgInfo;
  */
 class LICAType
 {
-
     /**
      * @var int $lCode
      */
@@ -88,7 +87,4 @@ class LICAType
         $this->lDate = $lDate;
         return $this;
     }
-
-
 }
-

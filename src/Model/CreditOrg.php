@@ -9,19 +9,16 @@ use Gam6itko\Cbrf\Model\CreditOrg\EnumCreditsAType;
  */
 class CreditOrg
 {
-
     /**
      * @var EnumCreditsAType[] $enumCredits
      */
-    protected $enumCredits = [
-        
-    ];
+    protected $enumCredits = [];
 
     /**
      * Adds as enumCredits
      *
      * @param EnumCreditsAType $enumCredits
-     *@return self
+     * @return self
      */
     public function addToEnumCredits(EnumCreditsAType $enumCredits)
     {
@@ -72,7 +69,4 @@ class CreditOrg
         $this->enumCredits = $enumCredits;
         return $this;
     }
-
-
 }
-

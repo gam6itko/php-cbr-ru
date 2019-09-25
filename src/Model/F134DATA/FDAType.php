@@ -7,88 +7,84 @@ namespace Gam6itko\Cbrf\Model\F134DATA;
  */
 class FDAType
 {
+    /**
+     * @var string $ns
+     */
+    protected $ns = null;
 
     /**
-     * @var string $nS
+     * @var string $pn
      */
-    protected $nS = null;
-
-    /**
-     * @var string $pN
-     */
-    protected $pN = null;
+    protected $pn = null;
 
     /**
      * @var float $vAL
      */
-    protected $vAL = null;
+    protected $value = null;
 
     /**
-     * Gets as nS
+     * Gets as ns
      *
      * @return string
      */
     public function getNS()
     {
-        return $this->nS;
+        return $this->ns;
     }
 
     /**
-     * Sets a new nS
+     * Sets a new ns
      *
-     * @param string $nS
+     * @param string $ns
      * @return self
      */
-    public function setNS($nS)
+    public function setNS($ns)
     {
-        $this->nS = $nS;
+        $this->ns = $ns;
         return $this;
     }
 
     /**
-     * Gets as pN
+     * Gets as pn
      *
      * @return string
      */
     public function getPN()
     {
-        return $this->pN;
+        return $this->pn;
     }
 
     /**
-     * Sets a new pN
+     * Sets a new pn
      *
-     * @param string $pN
+     * @param string $pn
      * @return self
      */
-    public function setPN($pN)
+    public function setPN($pn)
     {
-        $this->pN = $pN;
+        $this->pn = $pn;
         return $this;
     }
 
     /**
-     * Gets as vAL
+     * Gets as value
      *
      * @return float
      */
-    public function getVAL()
+    public function getValue()
     {
-        return $this->vAL;
+        return $this->value;
     }
 
     /**
-     * Sets a new vAL
+     * Sets a new value
      *
-     * @param float $vAL
+     * @param float $value
      * @return self
      */
-    public function setVAL($vAL)
+    public function setValue($value)
     {
-        $this->vAL = $vAL;
+        $this->value = $value;
         return $this;
     }
-
-
 }
-

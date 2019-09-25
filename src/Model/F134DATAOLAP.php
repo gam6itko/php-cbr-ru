@@ -9,19 +9,16 @@ use Gam6itko\Cbrf\Model\F134DATAOLAP\FoAType;
  */
 class F134DATAOLAP
 {
-
     /**
      * @var FoAType[] $fo
      */
-    protected $fo = [
-        
-    ];
+    protected $fo = [];
 
     /**
      * Adds as fo
      *
      * @param FoAType $fo
-     *@return self
+     * @return self
      */
     public function addToFo(FoAType $fo)
     {
@@ -72,7 +69,4 @@ class F134DATAOLAP
         $this->fo = $fo;
         return $this;
     }
-
-
 }
-

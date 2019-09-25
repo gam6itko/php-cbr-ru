@@ -9,70 +9,64 @@ use Gam6itko\Cbrf\Model\IndicatorsEnum102\SINDAType;
  */
 class IndicatorsEnum102
 {
-
     /**
-     * @var SINDAType[] $sIND
+     * @var SINDAType[] $sind
      */
-    protected $sIND = [
-        
-    ];
+    protected $sind = [];
 
     /**
-     * Adds as sIND
+     * Adds as sind
      *
-     * @param SINDAType $sIND
-     *@return self
+     * @param SINDAType $sind
+     * @return self
      */
-    public function addToSIND(SINDAType $sIND)
+    public function addToSIND(SINDAType $sind)
     {
-        $this->sIND[] = $sIND;
+        $this->sind[] = $sind;
         return $this;
     }
 
     /**
-     * isset sIND
+     * isset sind
      *
      * @param int|string $index
      * @return bool
      */
     public function issetSIND($index)
     {
-        return isset($this->sIND[$index]);
+        return isset($this->sind[$index]);
     }
 
     /**
-     * unset sIND
+     * unset sind
      *
      * @param int|string $index
      * @return void
      */
     public function unsetSIND($index)
     {
-        unset($this->sIND[$index]);
+        unset($this->sind[$index]);
     }
 
     /**
-     * Gets as sIND
+     * Gets as sind
      *
      * @return SINDAType[]
      */
     public function getSIND()
     {
-        return $this->sIND;
+        return $this->sind;
     }
 
     /**
-     * Sets a new sIND
+     * Sets a new sind
      *
-     * @param SINDAType[] $sIND
+     * @param SINDAType[] $sind
      * @return self
      */
-    public function setSIND(array $sIND)
+    public function setSIND(array $sind)
     {
-        $this->sIND = $sIND;
+        $this->sind = $sind;
         return $this;
     }
-
-
 }
-

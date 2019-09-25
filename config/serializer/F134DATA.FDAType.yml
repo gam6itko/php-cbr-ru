@@ -1,6 +1,6 @@
 Gam6itko\Cbrf\Model\F134DATA\FDAType:
     properties:
-        nS:
+        ns:
             expose: true
             access_type: public_method
             serialized_name: NS
@@ -8,7 +8,7 @@ Gam6itko\Cbrf\Model\F134DATA\FDAType:
                 getter: getNS
                 setter: setNS
             type: string
-        pN:
+        pn:
             expose: true
             access_type: public_method
             serialized_name: PN
@@ -16,11 +16,11 @@ Gam6itko\Cbrf\Model\F134DATA\FDAType:
                 getter: getPN
                 setter: setPN
             type: string
-        vAL:
+        value:
             expose: true
             access_type: public_method
             serialized_name: VAL
             accessor:
-                getter: getVAL
-                setter: setVAL
+                getter: getValue
+                setter: setValue
             type: float

@@ -1,7 +1,7 @@
 Gam6itko\Cbrf\Model\F134DATA:
     xml_root_name: F134DATA
     properties:
-        fD:
+        fd:
             expose: true
             access_type: public_method
             serialized_name: FD

@@ -9,7 +9,6 @@ use Gam6itko\Cbrf\Model\EnumBIC\BICAType;
  */
 class EnumBIC
 {
-
     /**
      * @var BICAType[] $bic
      */
@@ -19,7 +18,7 @@ class EnumBIC
      * Adds as bIC
      *
      * @param BICAType $bic
-     *@return self
+     * @return self
      */
     public function addToBIC(BICAType $bic)
     {
@@ -71,4 +70,3 @@ class EnumBIC
         return $this;
     }
 }
-

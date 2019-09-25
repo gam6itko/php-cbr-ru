@@ -1,6 +1,6 @@
 Gam6itko\Cbrf\Model\F101DATA\FDAType:
     properties:
-        dT:
+        dt:
             expose: true
             access_type: public_method
             serialized_name: DT
@@ -16,7 +16,7 @@ Gam6itko\Cbrf\Model\F101DATA\FDAType:
                 getter: getVal
                 setter: setVal
             type: float
-        aP:
+        ap:
             expose: true
             access_type: public_method
             serialized_name: AP

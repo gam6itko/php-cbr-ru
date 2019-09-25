@@ -7,7 +7,6 @@ namespace Gam6itko\Cbrf\Model\EnumBIC;
  */
 class BICAType
 {
-
     /**
      * @var string $bic
      */
@@ -169,7 +168,4 @@ class BICAType
         $this->intCode = $intCode;
         return $this;
     }
-
-
 }
-

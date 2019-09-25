@@ -14,54 +14,41 @@ use Gam6itko\Cbrf\Model\F135DATA\F1356AType;
  */
 class F135DATA
 {
-
     /**
      * @var F1351AType[] $f1351
      */
-    protected $f1351 = [
-        
-    ];
+    protected $f1351 = [];
 
     /**
      * @var F1352AType[] $f1352
      */
-    protected $f1352 = [
-        
-    ];
+    protected $f1352 = [];
 
     /**
      * @var F1353AType[] $f1353
      */
-    protected $f1353 = [
-        
-    ];
+    protected $f1353 = [];
 
     /**
      * @var F1354AType[] $f1354
      */
-    protected $f1354 = [
-        
-    ];
+    protected $f1354 = [];
 
     /**
      * @var F1355AType[] $f1355
      */
-    protected $f1355 = [
-        
-    ];
+    protected $f1355 = [];
 
     /**
      * @var F1356AType[] $f1356
      */
-    protected $f1356 = [
-        
-    ];
+    protected $f1356 = [];
 
     /**
      * Adds as f1351
      *
      * @param F1351AType $f1351
-     *@return self
+     * @return self
      */
     public function addToF1351(F1351AType $f1351)
     {
@@ -117,7 +104,7 @@ class F135DATA
      * Adds as f1352
      *
      * @param F1352AType $f1352
-     *@return self
+     * @return self
      */
     public function addToF1352(F1352AType $f1352)
     {
@@ -173,7 +160,7 @@ class F135DATA
      * Adds as f1353
      *
      * @param F1353AType $f1353
-     *@return self
+     * @return self
      */
     public function addToF1353(F1353AType $f1353)
     {
@@ -229,7 +216,7 @@ class F135DATA
      * Adds as f1354
      *
      * @param F1354AType $f1354
-     *@return self
+     * @return self
      */
     public function addToF1354(F1354AType $f1354)
     {
@@ -285,7 +272,7 @@ class F135DATA
      * Adds as f1355
      *
      * @param F1355AType $f1355
-     *@return self
+     * @return self
      */
     public function addToF1355(F1355AType $f1355)
     {
@@ -341,7 +328,7 @@ class F135DATA
      * Adds as f1356
      *
      * @param F1356AType $f1356
-     *@return self
+     * @return self
      */
     public function addToF1356(F1356AType $f1356)
     {
@@ -392,7 +379,4 @@ class F135DATA
         $this->f1356 = $f1356;
         return $this;
     }
-
-
 }
-

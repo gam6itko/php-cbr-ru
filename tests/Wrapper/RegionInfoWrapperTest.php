@@ -124,5 +124,4 @@ class RegionInfoWrapperTest extends TestCase
         $result = $svc->swToEnglish();
         self::assertNotEmpty($result);
     }
-
 }

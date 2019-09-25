@@ -7,11 +7,10 @@ namespace Gam6itko\Cbrf\Model\F134DATAOLAP;
  */
 class FoAType
 {
-
     /**
-     * @var \DateTime $dT
+     * @var \DateTime $dt
      */
-    protected $dT = null;
+    protected $dt = null;
 
     /**
      * @var float $v1
@@ -19,24 +18,24 @@ class FoAType
     protected $v1 = null;
 
     /**
-     * Gets as dT
+     * Gets as dt
      *
      * @return \DateTime
      */
     public function getDT()
     {
-        return $this->dT;
+        return $this->dt;
     }
 
     /**
-     * Sets a new dT
+     * Sets a new dt
      *
-     * @param \DateTime $dT
+     * @param \DateTime $dt
      * @return self
      */
-    public function setDT(\DateTime $dT)
+    public function setDT(\DateTime $dt)
     {
-        $this->dT = $dT;
+        $this->dt = $dt;
         return $this;
     }
 
@@ -61,7 +60,4 @@ class FoAType
         $this->v1 = $v1;
         return $this;
     }
-
-
 }
-

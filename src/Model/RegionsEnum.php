@@ -9,23 +9,20 @@ use Gam6itko\Cbrf\Model\RegionsEnum\RGIDAType;
  */
 class RegionsEnum
 {
-
     /**
-     * @var RGIDAType[] $rGID
+     * @var RGIDAType[] $rgid
      */
-    protected $rGID = [
-        
-    ];
+    protected $rgid = [];
 
     /**
      * Adds as rGID
      *
-     * @param RGIDAType $rGID
-     *@return self
+     * @param RGIDAType $rgid
+     * @return self
      */
-    public function addToRGID(RGIDAType $rGID)
+    public function addToRGID(RGIDAType $rgid)
     {
-        $this->rGID[] = $rGID;
+        $this->rgid[] = $rgid;
         return $this;
     }
 
@@ -37,7 +34,7 @@ class RegionsEnum
      */
     public function issetRGID($index)
     {
-        return isset($this->rGID[$index]);
+        return isset($this->rgid[$index]);
     }
 
     /**
@@ -48,7 +45,7 @@ class RegionsEnum
      */
     public function unsetRGID($index)
     {
-        unset($this->rGID[$index]);
+        unset($this->rgid[$index]);
     }
 
     /**
@@ -58,21 +55,18 @@ class RegionsEnum
      */
     public function getRGID()
     {
-        return $this->rGID;
+        return $this->rgid;
     }
 
     /**
      * Sets a new rGID
      *
-     * @param RGIDAType[] $rGID
+     * @param RGIDAType[] $rgid
      * @return self
      */
-    public function setRGID(array $rGID)
+    public function setRGID(array $rgid)
     {
-        $this->rGID = $rGID;
+        $this->rgid = $rgid;
         return $this;
     }
-
-
 }
-

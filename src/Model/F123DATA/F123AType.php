@@ -7,88 +7,84 @@ namespace Gam6itko\Cbrf\Model\F123DATA;
  */
 class F123AType
 {
-
     /**
-     * @var string $cODE
+     * @var string $code
      */
-    protected $cODE = null;
+    protected $code = null;
 
     /**
-     * @var string $nAME
+     * @var string $name
      */
-    protected $nAME = null;
+    protected $name = null;
 
     /**
-     * @var float $vALUE
+     * @var float $value
      */
-    protected $vALUE = null;
+    protected $value = null;
 
     /**
-     * Gets as cODE
+     * Gets as code
      *
      * @return string
      */
-    public function getCODE()
+    public function getCode()
     {
-        return $this->cODE;
+        return $this->code;
     }
 
     /**
-     * Sets a new cODE
+     * Sets a new code
      *
-     * @param string $cODE
+     * @param string $code
      * @return self
      */
-    public function setCODE($cODE)
+    public function setCode($code)
     {
-        $this->cODE = $cODE;
+        $this->code = $code;
         return $this;
     }
 
     /**
-     * Gets as nAME
+     * Gets as name
      *
      * @return string
      */
-    public function getNAME()
+    public function getName()
     {
-        return $this->nAME;
+        return $this->name;
     }
 
     /**
-     * Sets a new nAME
+     * Sets a new name
      *
-     * @param string $nAME
+     * @param string $name
      * @return self
      */
-    public function setNAME($nAME)
+    public function setName($name)
     {
-        $this->nAME = $nAME;
+        $this->name = $name;
         return $this;
     }
 
     /**
-     * Gets as vALUE
+     * Gets as value
      *
      * @return float
      */
-    public function getVALUE()
+    public function getValue()
     {
-        return $this->vALUE;
+        return $this->value;
     }
 
     /**
-     * Sets a new vALUE
+     * Sets a new value
      *
-     * @param float $vALUE
+     * @param float $value
      * @return self
      */
-    public function setVALUE($vALUE)
+    public function setValue($value)
     {
-        $this->vALUE = $vALUE;
+        $this->value = $value;
         return $this;
     }
-
-
 }
-

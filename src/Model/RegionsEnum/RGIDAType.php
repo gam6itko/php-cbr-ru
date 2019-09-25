@@ -7,7 +7,6 @@ namespace Gam6itko\Cbrf\Model\RegionsEnum;
  */
 class RGIDAType
 {
-
     /**
      * @var float $regCode
      */
@@ -16,7 +15,7 @@ class RGIDAType
     /**
      * @var string $cNAME
      */
-    protected $cNAME = null;
+    protected $cname = null;
 
     /**
      * Gets as regCode
@@ -41,27 +40,24 @@ class RGIDAType
     }
 
     /**
-     * Gets as cNAME
+     * Gets as cname
      *
      * @return string
      */
     public function getCNAME()
     {
-        return $this->cNAME;
+        return $this->cname;
     }
 
     /**
-     * Sets a new cNAME
+     * Sets a new cname
      *
-     * @param string $cNAME
+     * @param string $cname
      * @return self
      */
-    public function setCNAME($cNAME)
+    public function setCNAME($cname)
     {
-        $this->cNAME = $cNAME;
+        $this->cname = $cname;
         return $this;
     }
-
-
 }
-

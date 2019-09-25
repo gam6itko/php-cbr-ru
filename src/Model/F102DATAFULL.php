@@ -9,23 +9,20 @@ use Gam6itko\Cbrf\Model\F102DATAFULL\FDFAType;
  */
 class F102DATAFULL
 {
-
     /**
-     * @var FDFAType[] $fDF
+     * @var FDFAType[] $fdf
      */
-    protected $fDF = [
-        
-    ];
+    protected $fdf = [];
 
     /**
      * Adds as fDF
      *
-     * @param FDFAType $fDF
-     *@return self
+     * @param FDFAType $fdf
+     * @return self
      */
-    public function addToFDF(FDFAType $fDF)
+    public function addToFDF(FDFAType $fdf)
     {
-        $this->fDF[] = $fDF;
+        $this->fdf[] = $fdf;
         return $this;
     }
 
@@ -37,7 +34,7 @@ class F102DATAFULL
      */
     public function issetFDF($index)
     {
-        return isset($this->fDF[$index]);
+        return isset($this->fdf[$index]);
     }
 
     /**
@@ -48,7 +45,7 @@ class F102DATAFULL
      */
     public function unsetFDF($index)
     {
-        unset($this->fDF[$index]);
+        unset($this->fdf[$index]);
     }
 
     /**
@@ -58,21 +55,18 @@ class F102DATAFULL
      */
     public function getFDF()
     {
-        return $this->fDF;
+        return $this->fdf;
     }
 
     /**
      * Sets a new fDF
      *
-     * @param FDFAType[] $fDF
+     * @param FDFAType[] $fdf
      * @return self
      */
-    public function setFDF(array $fDF)
+    public function setFDF(array $fdf)
     {
-        $this->fDF = $fDF;
+        $this->fdf = $fdf;
         return $this;
     }
-
-
 }
-

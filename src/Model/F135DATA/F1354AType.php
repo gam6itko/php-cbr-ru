@@ -7,7 +7,6 @@ namespace Gam6itko\Cbrf\Model\F135DATA;
  */
 class F1354AType
 {
-
     /**
      * @var int $num
      */
@@ -24,9 +23,9 @@ class F1354AType
     protected $nnd = null;
 
     /**
-     * @var \DateTime $dT
+     * @var \DateTime $dt
      */
-    protected $dT = null;
+    protected $dt = null;
 
     /**
      * Gets as num
@@ -95,27 +94,24 @@ class F1354AType
     }
 
     /**
-     * Gets as dT
+     * Gets as dt
      *
      * @return \DateTime
      */
     public function getDT()
     {
-        return $this->dT;
+        return $this->dt;
     }
 
     /**
-     * Sets a new dT
+     * Sets a new dt
      *
-     * @param \DateTime $dT
+     * @param \DateTime $dt
      * @return self
      */
-    public function setDT(\DateTime $dT)
+    public function setDT(\DateTime $dt)
     {
-        $this->dT = $dT;
+        $this->dt = $dt;
         return $this;
     }
-
-
 }
-

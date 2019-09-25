@@ -7,7 +7,6 @@ namespace Gam6itko\Cbrf\Model\CreditOrgInfo;
  */
 class COAType
 {
-
     /**
      * @var int $regNumber
      */
@@ -412,7 +411,4 @@ class COAType
         $this->sSVDate = $sSVDate;
         return $this;
     }
-
-
 }
-

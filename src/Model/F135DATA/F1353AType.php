@@ -7,7 +7,6 @@ namespace Gam6itko\Cbrf\Model\F135DATA;
  */
 class F1353AType
 {
-
     /**
      * @var string $c3
      */
@@ -115,7 +114,4 @@ class F1353AType
         $this->v33 = $v33;
         return $this;
     }
-
-
 }
-

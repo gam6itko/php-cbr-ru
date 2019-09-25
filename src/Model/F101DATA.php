@@ -10,133 +10,125 @@ use Gam6itko\Cbrf\Model\F101DATA\FDFAType;
  */
 class F101DATA
 {
-
     /**
-     * @var FDAType[] $fD
+     * @var FDAType[] $fd
      */
-    protected $fD = [
-        
-    ];
+    protected $fd = [];
 
     /**
-     * @var FDFAType[] $fDF
+     * @var FDFAType[] $fdf
      */
-    protected $fDF = [
-        
-    ];
+    protected $fdf = [];
 
     /**
-     * Adds as fD
+     * Adds as fd
      *
-     * @param FDAType $fD
-     *@return self
+     * @param FDAType $fd
+     * @return self
      */
-    public function addToFD(FDAType $fD)
+    public function addToFD(FDAType $fd)
     {
-        $this->fD[] = $fD;
+        $this->fd[] = $fd;
         return $this;
     }
 
     /**
-     * isset fD
+     * isset fd
      *
      * @param int|string $index
      * @return bool
      */
     public function issetFD($index)
     {
-        return isset($this->fD[$index]);
+        return isset($this->fd[$index]);
     }
 
     /**
-     * unset fD
+     * unset fd
      *
      * @param int|string $index
      * @return void
      */
     public function unsetFD($index)
     {
-        unset($this->fD[$index]);
+        unset($this->fd[$index]);
     }
 
     /**
-     * Gets as fD
+     * Gets as fd
      *
      * @return FDAType[]
      */
     public function getFD()
     {
-        return $this->fD;
+        return $this->fd;
     }
 
     /**
-     * Sets a new fD
+     * Sets a new fd
      *
-     * @param FDAType[] $fD
+     * @param FDAType[] $fd
      * @return self
      */
-    public function setFD(array $fD)
+    public function setFD(array $fd)
     {
-        $this->fD = $fD;
+        $this->fd = $fd;
         return $this;
     }
 
     /**
-     * Adds as fDF
+     * Adds as fdf
      *
-     * @param FDFAType $fDF
-     *@return self
+     * @param FDFAType $fdf
+     * @return self
      */
-    public function addToFDF(FDFAType $fDF)
+    public function addToFDF(FDFAType $fdf)
     {
-        $this->fDF[] = $fDF;
+        $this->fdf[] = $fdf;
         return $this;
     }
 
     /**
-     * isset fDF
+     * isset fdf
      *
      * @param int|string $index
      * @return bool
      */
     public function issetFDF($index)
     {
-        return isset($this->fDF[$index]);
+        return isset($this->fdf[$index]);
     }
 
     /**
-     * unset fDF
+     * unset fdf
      *
      * @param int|string $index
      * @return void
      */
     public function unsetFDF($index)
     {
-        unset($this->fDF[$index]);
+        unset($this->fdf[$index]);
     }
 
     /**
-     * Gets as fDF
+     * Gets as fdf
      *
      * @return FDFAType[]
      */
     public function getFDF()
     {
-        return $this->fDF;
+        return $this->fdf;
     }
 
     /**
-     * Sets a new fDF
+     * Sets a new fdf
      *
-     * @param FDFAType[] $fDF
+     * @param FDFAType[] $fdf
      * @return self
      */
-    public function setFDF(array $fDF)
+    public function setFDF(array $fdf)
     {
-        $this->fDF = $fDF;
+        $this->fdf = $fdf;
         return $this;
     }
-
-
 }
-

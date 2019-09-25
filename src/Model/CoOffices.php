@@ -9,19 +9,16 @@ use Gam6itko\Cbrf\Model\CoOffices\OfficesAType;
  */
 class CoOffices
 {
-
     /**
      * @var OfficesAType[] $offices
      */
-    protected $offices = [
-        
-    ];
+    protected $offices = [];
 
     /**
      * Adds as offices
      *
      * @param OfficesAType $offices
-     *@return self
+     * @return self
      */
     public function addToOffices(OfficesAType $offices)
     {
@@ -72,7 +69,4 @@ class CoOffices
         $this->offices = $offices;
         return $this;
     }
-
-
 }
-
