@@ -315,6 +315,7 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(IndicatorsEnum102::class, $result);
         self::assertNotEmpty($result->getSIND());
         self::assertInstanceOf(IndicatorsEnum102\SINDAType::class, $result->getSIND()[0]);
+        self::assertCount(84024, $result->getSIND());
     }
     //</editor-fold>
 }

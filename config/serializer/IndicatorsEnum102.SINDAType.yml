@@ -1,6 +1,6 @@
 Gam6itko\Cbrf\Model\IndicatorsEnum102\SINDAType:
     properties:
-        symid:
+        symId:
             expose: true
             access_type: public_method
             serialized_name: symid
@@ -8,7 +8,7 @@ Gam6itko\Cbrf\Model\IndicatorsEnum102\SINDAType:
                 getter: getSymid
                 setter: setSymid
             type: int
-        symsort:
+        symSort:
             expose: true
             access_type: public_method
             serialized_name: symsort
@@ -24,7 +24,7 @@ Gam6itko\Cbrf\Model\IndicatorsEnum102\SINDAType:
                 getter: getSymbol
                 setter: setSymbol
             type: string
-        symtype:
+        symType:
             expose: true
             access_type: public_method
             serialized_name: symtype
@@ -40,7 +40,7 @@ Gam6itko\Cbrf\Model\IndicatorsEnum102\SINDAType:
                 getter: getName
                 setter: setName
             type: string
-        symset:
+        symSet:
             expose: true
             access_type: public_method
             serialized_name: symset
