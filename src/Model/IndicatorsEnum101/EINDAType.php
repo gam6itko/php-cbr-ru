@@ -8,9 +8,9 @@ namespace Gam6itko\Cbrf\Model\IndicatorsEnum101;
 class EINDAType
 {
     /**
-     * @var int $indID
+     * @var int $indId
      */
-    protected $indID = null;
+    protected $indId = null;
 
     /**
      * @var string $indCode
@@ -33,24 +33,24 @@ class EINDAType
     protected $indChapter = null;
 
     /**
-     * Gets as indID
+     * Gets as indId
      *
      * @return int
      */
-    public function getIndID()
+    public function getindId()
     {
-        return $this->indID;
+        return $this->indId;
     }
 
     /**
-     * Sets a new indID
+     * Sets a new indId
      *
-     * @param int $indID
+     * @param int $indId
      * @return self
      */
-    public function setIndID($indID)
+    public function setindId($indId)
     {
-        $this->indID = $indID;
+        $this->indId = $indId;
         return $this;
     }
 
