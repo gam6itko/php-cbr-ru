@@ -31,7 +31,7 @@ class CreditOrgInfoServiceTest extends TestCase
     }
 
     /**
-     * @covers ::getBicToIntCode()
+     * @covers ::BicToIntCode()
      * @param string $bic
      */
     public function testGetBicToIntCode(string $bic = '044525225'): void
@@ -41,7 +41,7 @@ class CreditOrgInfoServiceTest extends TestCase
     }
 
     /**
-     * @covers ::getBicToRegNumber
+     * @covers ::BicToRegNumber
      * @param string $bic
      */
     public function testBicToRegNumber(string $bic = '044525225'): void
@@ -51,6 +51,7 @@ class CreditOrgInfoServiceTest extends TestCase
     }
 
     /**
+     * @covers ::testCreditInfoByIntCode
      * @param int $intCode
      */
     public function testCreditInfoByIntCode(int $intCode = 350000004): void
@@ -67,6 +68,9 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(CreditOrgInfo\LICAType::class, $list[0]);
     }
 
+    /**
+     * @covers ::testCreditInfoByIntCodeEx
+     */
     public function testCreditInfoByIntCodeEx(): void
     {
         $array = [350000004, 450000036];
@@ -83,6 +87,7 @@ class CreditOrgInfoServiceTest extends TestCase
     }
 
     /**
+     * @covers ::testSearchByRegion
      * @param int $regionCode
      */
     public function testSearchByRegion(int $regionCode = 19): void
@@ -94,6 +99,7 @@ class CreditOrgInfoServiceTest extends TestCase
     }
 
     /**
+     * @covers ::testSearchByName
      * @param string $name
      */
     public function testSearchByName(string $name = 'альфа'): void
@@ -104,18 +110,27 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(EnumCreditsAType::class, $result->getEnumCredits()[0]);
     }
 
+    /**
+     * @covers ::testData101Form
+     */
     public function testData101Form(): void //todo нет реальных данных
     {
         $result = $this->build()->data101Form(1481, 1, new \DateTime('2019-01-01'), new \DateTime('2019-08-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
+    /**
+     * @covers ::testData101FormEx
+     */
     public function testData101FormEx(): void //todo нет реальных данных
     {
         $result = $this->build()->data101FormEx([1481], 1);
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
+    /**
+     * @covers ::testData101Full
+     */
     public function testData101Full(): void
     {
         $result = $this->build()->data101Full(1481, 42503, new \DateTime('2019-01-01'), new \DateTime('2019-02-01'));
@@ -124,12 +139,18 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertCount(2, $result->getFDF());
     }
 
+    /**
+     * @covers ::testData101FullEx
+     */
     public function testData101FullEx(): void //todo нет реальных данных
     {
         $result = $this->build()->data101FullEx([101, 1481], 42503, new \DateTime('2019-01-01'), new \DateTime('2019-02-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
+    /**
+     * @covers ::testData101FullV2
+     */
     public function testData101FullV2(): void
     {
         $result = $this->build()->data101FullV2(1481, 42503, new \DateTime('2019-01-01'), new \DateTime('2019-02-01'));
@@ -154,36 +175,54 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertEquals(1307766, $fDfa->getOutTotal());
     }
 
+    /**
+     * @covers ::testData101FullExV2
+     */
     public function testData101FullExV2(): void //todo нет реальных данных
     {
         $result = $this->build()->data101FullExV2([101, 1481], 42503, new \DateTime('2019-01-01'), new \DateTime('2019-02-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
+    /**
+     * @covers ::testData102Form
+     */
     public function testData102Form(): void //todo нет реальных данных
     {
         $result = $this->build()->data102Form(1481, 10101, new \DateTime('2019-01-01'), new \DateTime('2019-02-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
+    /**
+     * @covers ::testData102FormEx
+     */
     public function testData102FormEx(): void //todo нет реальных данных
     {
         $result = $this->build()->data102FormEx([1481], 10101, new \DateTime('2019-01-01'), new \DateTime('2019-02-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
+    /**
+     * @covers ::testData123FormFull
+     */
     public function testData123FormFull(): void //todo нет реальных данных
     {
         $result = $this->build()->data123FormFull(1481, new \DateTime('2019-01-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
+    /**
+     * @covers ::
+     */
     public function testData134FormFull(): void //todo нет реальных данных
     {
         $result = $this->build()->data134FormFull(1481, new \DateTime('2019-01-01'));
         self::assertInstanceOf(F101DATA::class, $result);
     }
 
+    /**
+     * @covers ::testData135FormFull
+     */
     public function testData135FormFull(): void //todo нет реальных данных
     {
         $result = $this->build()->data135FormFull(1481, new \DateTime('2019-01-01'));
@@ -191,6 +230,9 @@ class CreditOrgInfoServiceTest extends TestCase
     }
 
     //<editor-fold desc="enum">
+    /**
+     * @covers ::testGetDatesForForm
+     */
     public function testGetDatesForForm(): void
     {
         $result = $this->build()->getDatesForForm(FormType::F101, 1481);
@@ -198,6 +240,7 @@ class CreditOrgInfoServiceTest extends TestCase
     }
 
     /**
+     * @covers ::testGetDatesForFormException
      * @expectedException \LogicException
      */
     public function testGetDatesForFormException(): void
@@ -206,7 +249,7 @@ class CreditOrgInfoServiceTest extends TestCase
     }
 
     /**
-     * @covers ::getLastUpdate
+     * @covers ::testLastUpdate
      * @throws \Exception
      */
     public function testLastUpdate(): void
@@ -215,6 +258,9 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(\DateTime::class, $result);
     }
 
+    /**
+     * @covers ::testEnumBIC
+     */
     public function testEnumBIC(): void
     {
         $result = $this->build()->enumBIC();
@@ -224,6 +270,9 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(EnumBIC\BICAType::class, $list[0]);
     }
 
+    /**
+     * @covers ::testRegionsEnum
+     */
     public function testRegionsEnum(): void
     {
         $result = $this->build()->regionsEnum();
@@ -234,6 +283,7 @@ class CreditOrgInfoServiceTest extends TestCase
     }
 
     /**
+     * @covers ::testOfficesByRegion
      * @param int $regionCode
      */
     public function testOfficesByRegion(int $regionCode = 19): void
@@ -244,21 +294,27 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertNotEmpty($list);
         self::assertInstanceOf(CoOffices\OfficesAType::class, $list[0]);
     }
-
-    public function testForm102IndicatorsEnum(): void
-    {
-        $result = $this->build()->form102IndicatorsEnum();
-        self::assertInstanceOf(IndicatorsEnum102::class, $result);
-        self::assertNotEmpty($result->getSIND());
-        self::assertInstanceOf(IndicatorsEnum102\SINDAType::class, $result->getSIND()[0]);
-    }
-
+    
+    /**
+     * @covers ::testForm101IndicatorsEnum
+     */
     public function testForm101IndicatorsEnum(): void
     {
         $result = $this->build()->form101IndicatorsEnum();
         self::assertInstanceOf(IndicatorsEnum101::class, $result);
         self::assertNotEmpty($result->getEIND());
         self::assertInstanceOf(IndicatorsEnum101\EINDAType::class, $result->getEIND()[0]);
+    }
+
+    /**
+     * @covers ::testForm102IndicatorsEnum
+     */
+    public function testForm102IndicatorsEnum(): void
+    {
+        $result = $this->build()->form102IndicatorsEnum();
+        self::assertInstanceOf(IndicatorsEnum102::class, $result);
+        self::assertNotEmpty($result->getSIND());
+        self::assertInstanceOf(IndicatorsEnum102\SINDAType::class, $result->getSIND()[0]);
     }
     //</editor-fold>
 }

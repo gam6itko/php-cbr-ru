@@ -63,10 +63,9 @@ class CreditOrgInfoWrapper extends AbstractWrapper
     protected $fixTimezone = true;
 
     /**
-     * CreditOrgInfoWrapper constructor.
      * @param bool $fixTimezone
      */
-    public function __construct(bool $fixTimezone = true)
+    public function setFixTimezone(bool $fixTimezone): void
     {
         $this->fixTimezone = $fixTimezone;
     }
