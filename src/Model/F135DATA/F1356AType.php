@@ -3,22 +3,22 @@
 namespace Gam6itko\Cbrf\Model\F135DATA;
 
 /**
- * Class representing F1356AType
+ * Class representing F1356AType.
  */
 class F1356AType
 {
     /**
-     * @var float $v61
+     * @var float
      */
     protected $v61 = null;
 
     /**
-     * @var float $v62
+     * @var float
      */
     protected $v62 = null;
 
     /**
-     * Gets as v61
+     * Gets as v61.
      *
      * @return float
      */
@@ -28,19 +28,21 @@ class F1356AType
     }
 
     /**
-     * Sets a new v61
+     * Sets a new v61.
      *
      * @param float $v61
+     *
      * @return self
      */
     public function setV61($v61)
     {
         $this->v61 = $v61;
+
         return $this;
     }
 
     /**
-     * Gets as v62
+     * Gets as v62.
      *
      * @return float
      */
@@ -50,14 +52,16 @@ class F1356AType
     }
 
     /**
-     * Sets a new v62
+     * Sets a new v62.
      *
      * @param float $v62
+     *
      * @return self
      */
     public function setV62($v62)
     {
         $this->v62 = $v62;
+
         return $this;
     }
 }

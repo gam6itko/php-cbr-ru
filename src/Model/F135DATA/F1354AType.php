@@ -3,32 +3,32 @@
 namespace Gam6itko\Cbrf\Model\F135DATA;
 
 /**
- * Class representing F1354AType
+ * Class representing F1354AType.
  */
 class F1354AType
 {
     /**
-     * @var int $num
+     * @var int
      */
     protected $num = null;
 
     /**
-     * @var string $nn
+     * @var string
      */
     protected $nn = null;
 
     /**
-     * @var float $nnd
+     * @var float
      */
     protected $nnd = null;
 
     /**
-     * @var \DateTime $dt
+     * @var \DateTime
      */
     protected $dt = null;
 
     /**
-     * Gets as num
+     * Gets as num.
      *
      * @return int
      */
@@ -38,19 +38,21 @@ class F1354AType
     }
 
     /**
-     * Sets a new num
+     * Sets a new num.
      *
      * @param int $num
+     *
      * @return self
      */
     public function setNum($num)
     {
         $this->num = $num;
+
         return $this;
     }
 
     /**
-     * Gets as nn
+     * Gets as nn.
      *
      * @return string
      */
@@ -60,19 +62,21 @@ class F1354AType
     }
 
     /**
-     * Sets a new nn
+     * Sets a new nn.
      *
      * @param string $nn
+     *
      * @return self
      */
     public function setNn($nn)
     {
         $this->nn = $nn;
+
         return $this;
     }
 
     /**
-     * Gets as nnd
+     * Gets as nnd.
      *
      * @return float
      */
@@ -82,19 +86,21 @@ class F1354AType
     }
 
     /**
-     * Sets a new nnd
+     * Sets a new nnd.
      *
      * @param float $nnd
+     *
      * @return self
      */
     public function setNnd($nnd)
     {
         $this->nnd = $nnd;
+
         return $this;
     }
 
     /**
-     * Gets as dt
+     * Gets as dt.
      *
      * @return \DateTime
      */
@@ -104,14 +110,16 @@ class F1354AType
     }
 
     /**
-     * Sets a new dt
+     * Sets a new dt.
      *
      * @param \DateTime $dt
+     *
      * @return self
      */
     public function setDT(\DateTime $dt)
     {
         $this->dt = $dt;
+
         return $this;
     }
 }

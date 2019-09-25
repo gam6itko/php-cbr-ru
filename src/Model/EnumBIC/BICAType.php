@@ -3,42 +3,42 @@
 namespace Gam6itko\Cbrf\Model\EnumBIC;
 
 /**
- * Class representing BICAType
+ * Class representing BICAType.
  */
 class BICAType
 {
     /**
-     * @var string $bic
+     * @var string
      */
     protected $bic = null;
 
     /**
-     * @var \DateTime $rc
+     * @var \DateTime
      */
     protected $rc = null;
 
     /**
-     * @var string $nm
+     * @var string
      */
     protected $nm = null;
 
     /**
-     * @var string $rb
+     * @var string
      */
     protected $rb = null;
 
     /**
-     * @var float $rn
+     * @var float
      */
     protected $rn = null;
 
     /**
-     * @var float $intCode
+     * @var float
      */
     protected $intCode = null;
 
     /**
-     * Gets as bIC
+     * Gets as bIC.
      *
      * @return string
      */
@@ -48,19 +48,21 @@ class BICAType
     }
 
     /**
-     * Sets a new bIC
+     * Sets a new bIC.
      *
      * @param string $bic
+     *
      * @return self
      */
     public function setBIC($bic)
     {
         $this->bic = $bic;
+
         return $this;
     }
 
     /**
-     * Gets as rC
+     * Gets as rC.
      *
      * @return \DateTime
      */
@@ -70,19 +72,21 @@ class BICAType
     }
 
     /**
-     * Sets a new rC
+     * Sets a new rC.
      *
      * @param \DateTime $rc
+     *
      * @return self
      */
     public function setRC(\DateTime $rc)
     {
         $this->rc = $rc;
+
         return $this;
     }
 
     /**
-     * Gets as nM
+     * Gets as nM.
      *
      * @return string
      */
@@ -92,19 +96,21 @@ class BICAType
     }
 
     /**
-     * Sets a new nM
+     * Sets a new nM.
      *
      * @param string $nM
+     *
      * @return self
      */
     public function setNM($nM)
     {
         $this->nm = $nM;
+
         return $this;
     }
 
     /**
-     * Gets as rB
+     * Gets as rB.
      *
      * @return string
      */
@@ -114,19 +120,21 @@ class BICAType
     }
 
     /**
-     * Sets a new rB
+     * Sets a new rB.
      *
      * @param string $rb
+     *
      * @return self
      */
     public function setRB($rb)
     {
         $this->rb = $rb;
+
         return $this;
     }
 
     /**
-     * Gets as rn
+     * Gets as rn.
      *
      * @return float
      */
@@ -136,19 +144,21 @@ class BICAType
     }
 
     /**
-     * Sets a new rn
+     * Sets a new rn.
      *
      * @param float $rn
+     *
      * @return self
      */
     public function setRN($rn)
     {
         $this->rn = $rn;
+
         return $this;
     }
 
     /**
-     * Gets as intCode
+     * Gets as intCode.
      *
      * @return float
      */
@@ -158,14 +168,16 @@ class BICAType
     }
 
     /**
-     * Sets a new intCode
+     * Sets a new intCode.
      *
      * @param float $intCode
+     *
      * @return self
      */
     public function setIntCode($intCode)
     {
         $this->intCode = $intCode;
+
         return $this;
     }
 }

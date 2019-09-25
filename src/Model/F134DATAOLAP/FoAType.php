@@ -3,22 +3,22 @@
 namespace Gam6itko\Cbrf\Model\F134DATAOLAP;
 
 /**
- * Class representing FoAType
+ * Class representing FoAType.
  */
 class FoAType
 {
     /**
-     * @var \DateTime $dt
+     * @var \DateTime
      */
     protected $dt = null;
 
     /**
-     * @var float $v1
+     * @var float
      */
     protected $v1 = null;
 
     /**
-     * Gets as dt
+     * Gets as dt.
      *
      * @return \DateTime
      */
@@ -28,19 +28,21 @@ class FoAType
     }
 
     /**
-     * Sets a new dt
+     * Sets a new dt.
      *
      * @param \DateTime $dt
+     *
      * @return self
      */
     public function setDT(\DateTime $dt)
     {
         $this->dt = $dt;
+
         return $this;
     }
 
     /**
-     * Gets as v1
+     * Gets as v1.
      *
      * @return float
      */
@@ -50,14 +52,16 @@ class FoAType
     }
 
     /**
-     * Sets a new v1
+     * Sets a new v1.
      *
      * @param float $v1
+     *
      * @return self
      */
     public function setV1($v1)
     {
         $this->v1 = $v1;
+
         return $this;
     }
 }

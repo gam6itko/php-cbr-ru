@@ -6,36 +6,39 @@ use Gam6itko\Cbrf\Model\F101DATA\FDAType;
 use Gam6itko\Cbrf\Model\F101DATA\FDFAType;
 
 /**
- * Class representing F101DATA
+ * Class representing F101DATA.
  */
 class F101DATA
 {
     /**
-     * @var FDAType[] $fd
+     * @var FDAType[]
      */
     protected $fd = [];
 
     /**
-     * @var FDFAType[] $fdf
+     * @var FDFAType[]
      */
     protected $fdf = [];
 
     /**
-     * Adds as fd
+     * Adds as fd.
      *
      * @param FDAType $fd
+     *
      * @return self
      */
     public function addToFD(FDAType $fd)
     {
         $this->fd[] = $fd;
+
         return $this;
     }
 
     /**
-     * isset fd
+     * isset fd.
      *
      * @param int|string $index
+     *
      * @return bool
      */
     public function issetFD($index)
@@ -44,10 +47,9 @@ class F101DATA
     }
 
     /**
-     * unset fd
+     * unset fd.
      *
      * @param int|string $index
-     * @return void
      */
     public function unsetFD($index)
     {
@@ -55,7 +57,7 @@ class F101DATA
     }
 
     /**
-     * Gets as fd
+     * Gets as fd.
      *
      * @return FDAType[]
      */
@@ -65,33 +67,38 @@ class F101DATA
     }
 
     /**
-     * Sets a new fd
+     * Sets a new fd.
      *
      * @param FDAType[] $fd
+     *
      * @return self
      */
     public function setFD(array $fd)
     {
         $this->fd = $fd;
+
         return $this;
     }
 
     /**
-     * Adds as fdf
+     * Adds as fdf.
      *
      * @param FDFAType $fdf
+     *
      * @return self
      */
     public function addToFDF(FDFAType $fdf)
     {
         $this->fdf[] = $fdf;
+
         return $this;
     }
 
     /**
-     * isset fdf
+     * isset fdf.
      *
      * @param int|string $index
+     *
      * @return bool
      */
     public function issetFDF($index)
@@ -100,10 +107,9 @@ class F101DATA
     }
 
     /**
-     * unset fdf
+     * unset fdf.
      *
      * @param int|string $index
-     * @return void
      */
     public function unsetFDF($index)
     {
@@ -111,7 +117,7 @@ class F101DATA
     }
 
     /**
-     * Gets as fdf
+     * Gets as fdf.
      *
      * @return FDFAType[]
      */
@@ -121,14 +127,16 @@ class F101DATA
     }
 
     /**
-     * Sets a new fdf
+     * Sets a new fdf.
      *
      * @param FDFAType[] $fdf
+     *
      * @return self
      */
     public function setFDF(array $fdf)
     {
         $this->fdf = $fdf;
+
         return $this;
     }
 }

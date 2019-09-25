@@ -3,27 +3,27 @@
 namespace Gam6itko\Cbrf\Model\F123DATA;
 
 /**
- * Class representing F123AType
+ * Class representing F123AType.
  */
 class F123AType
 {
     /**
-     * @var string $code
+     * @var string
      */
     protected $code = null;
 
     /**
-     * @var string $name
+     * @var string
      */
     protected $name = null;
 
     /**
-     * @var float $value
+     * @var float
      */
     protected $value = null;
 
     /**
-     * Gets as code
+     * Gets as code.
      *
      * @return string
      */
@@ -33,19 +33,21 @@ class F123AType
     }
 
     /**
-     * Sets a new code
+     * Sets a new code.
      *
      * @param string $code
+     *
      * @return self
      */
     public function setCode($code)
     {
         $this->code = $code;
+
         return $this;
     }
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -55,19 +57,21 @@ class F123AType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
      * @param string $name
+     *
      * @return self
      */
     public function setName($name)
     {
         $this->name = $name;
+
         return $this;
     }
 
     /**
-     * Gets as value
+     * Gets as value.
      *
      * @return float
      */
@@ -77,14 +81,16 @@ class F123AType
     }
 
     /**
-     * Sets a new value
+     * Sets a new value.
      *
      * @param float $value
+     *
      * @return self
      */
     public function setValue($value)
     {
         $this->value = $value;
+
         return $this;
     }
 }

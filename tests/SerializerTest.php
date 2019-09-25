@@ -1,4 +1,5 @@
 <?php
+
 namespace Gam6itko\Cbrf\Tests;
 
 use Gam6itko\Cbrf\Model\F101DATA;
@@ -11,7 +12,7 @@ class SerializerTest extends TestCase
     private function build(): SerializerInterface
     {
         return SerializerBuilder::create()
-            ->addMetadataDir(realpath(__DIR__ . '/../config/serializer/'), 'Gam6itko\Cbrf\Model')
+            ->addMetadataDir(realpath(__DIR__.'/../config/serializer/'), 'Gam6itko\Cbrf\Model')
             ->build();
     }
 
@@ -44,7 +45,7 @@ XML;
         self::assertNotEmpty($object);
         self::assertInstanceOf(F101DATA::class, $object);
         self::assertCount(1, $object->getFDF());
-        /** @var  $fdFaType */
+        /** @var $fdFaType */
         $fdFaType = $object->getFDF()[0];
         self::assertInstanceOf(F101DATA\FDFAType::class, $fdFaType);
         self::assertEquals('А', $fdFaType->getPlan());

@@ -3,32 +3,32 @@
 namespace Gam6itko\Cbrf\Model\CreditOrg;
 
 /**
- * Class representing EnumCreditsAType
+ * Class representing EnumCreditsAType.
  */
 class EnumCreditsAType
 {
     /**
-     * @var float $intCode
+     * @var float
      */
     protected $intCode = null;
 
     /**
-     * @var string $orgName
+     * @var string
      */
     protected $orgName = null;
 
     /**
-     * @var string $bic
+     * @var string
      */
     protected $bic = null;
 
     /**
-     * @var float $cregnum
+     * @var float
      */
     protected $cregnum = null;
 
     /**
-     * Gets as intCode
+     * Gets as intCode.
      *
      * @return float
      */
@@ -38,19 +38,21 @@ class EnumCreditsAType
     }
 
     /**
-     * Sets a new intCode
+     * Sets a new intCode.
      *
      * @param float $intCode
+     *
      * @return self
      */
     public function setIntCode($intCode)
     {
         $this->intCode = $intCode;
+
         return $this;
     }
 
     /**
-     * Gets as orgName
+     * Gets as orgName.
      *
      * @return string
      */
@@ -60,19 +62,21 @@ class EnumCreditsAType
     }
 
     /**
-     * Sets a new orgName
+     * Sets a new orgName.
      *
      * @param string $orgName
+     *
      * @return self
      */
     public function setOrgName($orgName)
     {
         $this->orgName = $orgName;
+
         return $this;
     }
 
     /**
-     * Gets as bic
+     * Gets as bic.
      *
      * @return string
      */
@@ -82,19 +86,21 @@ class EnumCreditsAType
     }
 
     /**
-     * Sets a new bic
+     * Sets a new bic.
      *
      * @param string $bic
+     *
      * @return self
      */
     public function setBic($bic)
     {
         $this->bic = $bic;
+
         return $this;
     }
 
     /**
-     * Gets as cregnum
+     * Gets as cregnum.
      *
      * @return float
      */
@@ -104,14 +110,16 @@ class EnumCreditsAType
     }
 
     /**
-     * Sets a new cregnum
+     * Sets a new cregnum.
      *
      * @param float $cregnum
+     *
      * @return self
      */
     public function setCregnum($cregnum)
     {
         $this->cregnum = $cregnum;
+
         return $this;
     }
 }

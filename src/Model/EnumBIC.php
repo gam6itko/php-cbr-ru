@@ -5,31 +5,34 @@ namespace Gam6itko\Cbrf\Model;
 use Gam6itko\Cbrf\Model\EnumBIC\BICAType;
 
 /**
- * Class representing EnumBIC
+ * Class representing EnumBIC.
  */
 class EnumBIC
 {
     /**
-     * @var BICAType[] $bic
+     * @var BICAType[]
      */
     protected $bic = [];
 
     /**
-     * Adds as bIC
+     * Adds as bIC.
      *
      * @param BICAType $bic
+     *
      * @return self
      */
     public function addToBIC(BICAType $bic)
     {
         $this->bic[] = $bic;
+
         return $this;
     }
 
     /**
-     * isset bIC
+     * isset bIC.
      *
      * @param int|string $index
+     *
      * @return bool
      */
     public function issetBIC($index)
@@ -38,10 +41,9 @@ class EnumBIC
     }
 
     /**
-     * unset bIC
+     * unset bIC.
      *
      * @param int|string $index
-     * @return void
      */
     public function unsetBIC($index)
     {
@@ -49,7 +51,7 @@ class EnumBIC
     }
 
     /**
-     * Gets as bIC
+     * Gets as bIC.
      *
      * @return BICAType[]
      */
@@ -59,14 +61,16 @@ class EnumBIC
     }
 
     /**
-     * Sets a new bIC
+     * Sets a new bIC.
      *
      * @param BICAType[] $bic
+     *
      * @return self
      */
     public function setBIC(array $bic)
     {
         $this->bic = $bic;
+
         return $this;
     }
 }

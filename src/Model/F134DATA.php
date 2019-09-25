@@ -5,31 +5,34 @@ namespace Gam6itko\Cbrf\Model;
 use Gam6itko\Cbrf\Model\F134DATA\FDAType;
 
 /**
- * Class representing F134DATA
+ * Class representing F134DATA.
  */
 class F134DATA
 {
     /**
-     * @var FDAType[] $fd
+     * @var FDAType[]
      */
     protected $fd = [];
 
     /**
-     * Adds as fD
+     * Adds as fD.
      *
      * @param FDAType $fd
+     *
      * @return self
      */
     public function addToFD(FDAType $fd)
     {
         $this->fd[] = $fd;
+
         return $this;
     }
 
     /**
-     * isset fD
+     * isset fD.
      *
      * @param int|string $index
+     *
      * @return bool
      */
     public function issetFD($index)
@@ -38,10 +41,9 @@ class F134DATA
     }
 
     /**
-     * unset fD
+     * unset fD.
      *
      * @param int|string $index
-     * @return void
      */
     public function unsetFD($index)
     {
@@ -49,7 +51,7 @@ class F134DATA
     }
 
     /**
-     * Gets as fD
+     * Gets as fD.
      *
      * @return FDAType[]
      */
@@ -59,14 +61,16 @@ class F134DATA
     }
 
     /**
-     * Sets a new fD
+     * Sets a new fD.
      *
      * @param FDAType[] $fd
+     *
      * @return self
      */
     public function setFD(array $fd)
     {
         $this->fd = $fd;
+
         return $this;
     }
 }

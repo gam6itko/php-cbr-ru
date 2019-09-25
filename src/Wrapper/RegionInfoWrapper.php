@@ -1,4 +1,5 @@
 <?php
+
 namespace Gam6itko\Cbrf\Wrapper;
 
 class RegionInfoWrapper extends AbstractWrapper
@@ -9,8 +10,10 @@ class RegionInfoWrapper extends AbstractWrapper
     }
 
     /**
-     * Добавление кода индикатора в список
+     * Добавление кода индикатора в список.
+     *
      * @param int $indicatorCode
+     *
      * @return array|mixed|\stdClass
      */
     public function addIndicators(int $indicatorCode)
@@ -19,8 +22,10 @@ class RegionInfoWrapper extends AbstractWrapper
     }
 
     /**
-     * Добавление кодов региона в список регионов
+     * Добавление кодов региона в список регионов.
+     *
      * @param int $regionCode
+     *
      * @return array|mixed|\stdClass
      */
     public function addRegion(int $regionCode)

@@ -3,22 +3,22 @@
 namespace Gam6itko\Cbrf\Model\RegionsEnum;
 
 /**
- * Class representing RGIDAType
+ * Class representing RGIDAType.
  */
 class RGIDAType
 {
     /**
-     * @var float $regCode
+     * @var float
      */
     protected $regCode = null;
 
     /**
-     * @var string $cNAME
+     * @var string
      */
     protected $cname = null;
 
     /**
-     * Gets as regCode
+     * Gets as regCode.
      *
      * @return float
      */
@@ -28,19 +28,21 @@ class RGIDAType
     }
 
     /**
-     * Sets a new regCode
+     * Sets a new regCode.
      *
      * @param float $regCode
+     *
      * @return self
      */
     public function setRegCode($regCode)
     {
         $this->regCode = $regCode;
+
         return $this;
     }
 
     /**
-     * Gets as cname
+     * Gets as cname.
      *
      * @return string
      */
@@ -50,14 +52,16 @@ class RGIDAType
     }
 
     /**
-     * Sets a new cname
+     * Sets a new cname.
      *
      * @param string $cname
+     *
      * @return self
      */
     public function setCNAME($cname)
     {
         $this->cname = $cname;
+
         return $this;
     }
 }

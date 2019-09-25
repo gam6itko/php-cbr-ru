@@ -1,4 +1,5 @@
 <?php
+
 namespace Gam6itko\Cbrf\Wrapper\Cached;
 
 use Gam6itko\Cbrf\Wrapper\CreditOrgInfoWrapper;
@@ -11,6 +12,7 @@ class CreditOrgInfoCachedWrapper extends CreditOrgInfoWrapper
 
     /**
      * CachedCreditOrgInfoWrapper constructor.
+     *
      * @param CacheItemPoolInterface $cache
      */
     public function __construct(CacheItemPoolInterface $cache)
@@ -21,6 +23,7 @@ class CreditOrgInfoCachedWrapper extends CreditOrgInfoWrapper
     public function __call($name, $arguments)
     {
         $argsHash = $this->buildHash($arguments);
+
         return $this->easyCache("{$name}_{$argsHash}", function () use ($name, $arguments) {
             return parent::__call($name, $arguments);
         });
@@ -57,6 +60,7 @@ class CreditOrgInfoCachedWrapper extends CreditOrgInfoWrapper
     public function Olap134Form(string $code, int $credorgNumber, \DateTimeInterface $dateFrom = null, \DateTimeInterface $dateTo = null)
     {
         $argsHash = md5(json_encode([$code, $credorgNumber, $dateFrom->format('Ymd'), $dateTo->format('Ymd')]));
+
         return $this->easyCache("Olap134Form:$argsHash", function () use ($code, $credorgNumber, $dateFrom, $dateTo) {
             return parent::Olap134Form($code, $credorgNumber, $dateFrom, $dateTo);
         });

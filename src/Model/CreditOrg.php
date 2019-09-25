@@ -5,31 +5,34 @@ namespace Gam6itko\Cbrf\Model;
 use Gam6itko\Cbrf\Model\CreditOrg\EnumCreditsAType;
 
 /**
- * Class representing CreditOrg
+ * Class representing CreditOrg.
  */
 class CreditOrg
 {
     /**
-     * @var EnumCreditsAType[] $enumCredits
+     * @var EnumCreditsAType[]
      */
     protected $enumCredits = [];
 
     /**
-     * Adds as enumCredits
+     * Adds as enumCredits.
      *
      * @param EnumCreditsAType $enumCredits
+     *
      * @return self
      */
     public function addToEnumCredits(EnumCreditsAType $enumCredits)
     {
         $this->enumCredits[] = $enumCredits;
+
         return $this;
     }
 
     /**
-     * isset enumCredits
+     * isset enumCredits.
      *
      * @param int|string $index
+     *
      * @return bool
      */
     public function issetEnumCredits($index)
@@ -38,10 +41,9 @@ class CreditOrg
     }
 
     /**
-     * unset enumCredits
+     * unset enumCredits.
      *
      * @param int|string $index
-     * @return void
      */
     public function unsetEnumCredits($index)
     {
@@ -49,7 +51,7 @@ class CreditOrg
     }
 
     /**
-     * Gets as enumCredits
+     * Gets as enumCredits.
      *
      * @return EnumCreditsAType[]
      */
@@ -59,14 +61,16 @@ class CreditOrg
     }
 
     /**
-     * Sets a new enumCredits
+     * Sets a new enumCredits.
      *
      * @param EnumCreditsAType[] $enumCredits
+     *
      * @return self
      */
     public function setEnumCredits(array $enumCredits)
     {
         $this->enumCredits = $enumCredits;
+
         return $this;
     }
 }

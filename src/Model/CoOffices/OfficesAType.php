@@ -3,37 +3,37 @@
 namespace Gam6itko\Cbrf\Model\CoOffices;
 
 /**
- * Class representing OfficesAType
+ * Class representing OfficesAType.
  */
 class OfficesAType
 {
     /**
-     * @var float $cmain
+     * @var float
      */
     protected $cmain = null;
 
     /**
-     * @var float $cregnum
+     * @var float
      */
     protected $cregnum = null;
 
     /**
-     * @var string $cname
+     * @var string
      */
     protected $cname = null;
 
     /**
-     * @var string $cndate
+     * @var string
      */
     protected $cndate = null;
 
     /**
-     * @var string $straddrmn
+     * @var string
      */
     protected $straddrmn = null;
 
     /**
-     * Gets as cmain
+     * Gets as cmain.
      *
      * @return float
      */
@@ -43,19 +43,21 @@ class OfficesAType
     }
 
     /**
-     * Sets a new cmain
+     * Sets a new cmain.
      *
      * @param float $cmain
+     *
      * @return self
      */
     public function setCmain($cmain)
     {
         $this->cmain = $cmain;
+
         return $this;
     }
 
     /**
-     * Gets as cregnum
+     * Gets as cregnum.
      *
      * @return float
      */
@@ -65,19 +67,21 @@ class OfficesAType
     }
 
     /**
-     * Sets a new cregnum
+     * Sets a new cregnum.
      *
      * @param float $cregnum
+     *
      * @return self
      */
     public function setCregnum($cregnum)
     {
         $this->cregnum = $cregnum;
+
         return $this;
     }
 
     /**
-     * Gets as cname
+     * Gets as cname.
      *
      * @return string
      */
@@ -87,19 +91,21 @@ class OfficesAType
     }
 
     /**
-     * Sets a new cname
+     * Sets a new cname.
      *
      * @param string $cname
+     *
      * @return self
      */
     public function setCname($cname)
     {
         $this->cname = $cname;
+
         return $this;
     }
 
     /**
-     * Gets as cndate
+     * Gets as cndate.
      *
      * @return string
      */
@@ -109,19 +115,21 @@ class OfficesAType
     }
 
     /**
-     * Sets a new cndate
+     * Sets a new cndate.
      *
      * @param string $cndate
+     *
      * @return self
      */
     public function setCndate($cndate)
     {
         $this->cndate = $cndate;
+
         return $this;
     }
 
     /**
-     * Gets as straddrmn
+     * Gets as straddrmn.
      *
      * @return string
      */
@@ -131,14 +139,16 @@ class OfficesAType
     }
 
     /**
-     * Sets a new straddrmn
+     * Sets a new straddrmn.
      *
      * @param string $straddrmn
+     *
      * @return self
      */
     public function setStraddrmn($straddrmn)
     {
         $this->straddrmn = $straddrmn;
+
         return $this;
     }
 }

@@ -1,4 +1,5 @@
 <?php
+
 namespace Gam6itko\Cbrf\Tests\Wrapper;
 
 use Gam6itko\Cbrf\Wrapper\RegionInfoWrapper;

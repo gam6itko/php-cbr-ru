@@ -1,4 +1,5 @@
 <?php
+
 namespace Gam6itko\Cbrf\Tests;
 
 use Gam6itko\Cbrf\CreditOrgInfoService;
@@ -25,13 +26,15 @@ class CreditOrgInfoServiceTest extends TestCase
     {
         $svc = new CreditOrgInfoWrapper();
         $serializer = SerializerBuilder::create()
-            ->addMetadataDir(realpath(__DIR__ . '/../config/serializer/'), 'Gam6itko\Cbrf\Model')
+            ->addMetadataDir(realpath(__DIR__.'/../config/serializer/'), 'Gam6itko\Cbrf\Model')
             ->build();
+
         return new CreditOrgInfoService($svc, $serializer);
     }
 
     /**
      * @covers ::BicToIntCode()
+     *
      * @param string $bic
      */
     public function testGetBicToIntCode(string $bic = '044525225'): void
@@ -42,6 +45,7 @@ class CreditOrgInfoServiceTest extends TestCase
 
     /**
      * @covers ::BicToRegNumber
+     *
      * @param string $bic
      */
     public function testBicToRegNumber(string $bic = '044525225'): void
@@ -52,6 +56,7 @@ class CreditOrgInfoServiceTest extends TestCase
 
     /**
      * @covers ::testCreditInfoByIntCode
+     *
      * @param int $intCode
      */
     public function testCreditInfoByIntCode(int $intCode = 350000004): void
@@ -88,6 +93,7 @@ class CreditOrgInfoServiceTest extends TestCase
 
     /**
      * @covers ::testSearchByRegion
+     *
      * @param int $regionCode
      */
     public function testSearchByRegion(int $regionCode = 19): void
@@ -100,6 +106,7 @@ class CreditOrgInfoServiceTest extends TestCase
 
     /**
      * @covers ::testSearchByName
+     *
      * @param string $name
      */
     public function testSearchByName(string $name = 'альфа'): void
@@ -230,6 +237,7 @@ class CreditOrgInfoServiceTest extends TestCase
     }
 
     //<editor-fold desc="enum">
+
     /**
      * @covers ::testGetDatesForForm
      */
@@ -250,6 +258,7 @@ class CreditOrgInfoServiceTest extends TestCase
 
     /**
      * @covers ::testLastUpdate
+     *
      * @throws \Exception
      */
     public function testLastUpdate(): void
@@ -284,6 +293,7 @@ class CreditOrgInfoServiceTest extends TestCase
 
     /**
      * @covers ::testOfficesByRegion
+     *
      * @param int $regionCode
      */
     public function testOfficesByRegion(int $regionCode = 19): void
@@ -294,7 +304,7 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertNotEmpty($list);
         self::assertInstanceOf(CoOffices\OfficesAType::class, $list[0]);
     }
-    
+
     /**
      * @covers ::testForm101IndicatorsEnum
      */
@@ -317,5 +327,6 @@ class CreditOrgInfoServiceTest extends TestCase
         self::assertInstanceOf(IndicatorsEnum102\SINDAType::class, $result->getSIND()[0]);
         self::assertCount(84024, $result->getSIND());
     }
+
     //</editor-fold>
 }

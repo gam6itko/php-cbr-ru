@@ -1,4 +1,5 @@
 <?php
+
 namespace Gam6itko\Cbrf\Tests\Wrapper;
 
 use Gam6itko\Cbrf\Wrapper\CreditOrgInfoWrapper;
@@ -13,12 +14,13 @@ class CreditOrgInfoWrapperTest extends TestCase
     {
         return new CreditOrgInfoWrapper();
     }
-    
+
     /**
      * @dataProvider dataBicToIntCode
      * @covers ::BicToIntCode
+     *
      * @param string $bic
-     * @param int $expectedIntCode
+     * @param int    $expectedIntCode
      */
     public function testBicToIntCode(string $bic, int $expectedIntCode)
     {
@@ -38,6 +40,7 @@ class CreditOrgInfoWrapperTest extends TestCase
     /**
      * @dataProvider dataBicToRegNumber
      * @covers ::BicToRegNumber
+     *
      * @param string $bic
      * @param string $expectedRegNumber
      */
@@ -59,6 +62,7 @@ class CreditOrgInfoWrapperTest extends TestCase
     /**
      * @dataProvider dataRegNumToIntCode
      * @covers ::RegNumToIntCode
+     *
      * @param int $regNum
      * @param int $expectedInternalCode
      */
@@ -79,6 +83,7 @@ class CreditOrgInfoWrapperTest extends TestCase
 
     /**
      * @covers ::SearchByName
+     *
      * @param string $name
      */
     public function testSearchByName(string $name = 'банк')
@@ -89,6 +94,7 @@ class CreditOrgInfoWrapperTest extends TestCase
 
     /**
      * @covers ::SearchByNameXML
+     *
      * @param string $name
      */
     public function testSearchByNameXML(string $name = 'альфа')
@@ -117,6 +123,7 @@ class CreditOrgInfoWrapperTest extends TestCase
 
     /**
      * @covers ::CreditInfoByIntCode
+     *
      * @param string $internalCode
      */
     public function testCreditInfoByIntCode(string $internalCode = '350000004')
@@ -147,6 +154,7 @@ class CreditOrgInfoWrapperTest extends TestCase
 
     /**
      * @covers ::CreditInfoByIntCodeXML
+     *
      * @param string $ic
      */
     public function testCreditInfoByIntCodeXML(string $ic = '350000004')
@@ -156,6 +164,7 @@ class CreditOrgInfoWrapperTest extends TestCase
     }
 
     //<editor-fold desc="101Form">
+
     /**
      * @covers ::Form101IndicatorsEnum
      */
@@ -287,9 +296,11 @@ class CreditOrgInfoWrapperTest extends TestCase
         $result = $this->getSvc()->Data101FullXML(350000004, 1, new \DateTime('2018-01-01'), new \DateTime('2018-12-31'));
         self::assertNotEmpty($result);
     }
+
     //</editor-fold>
 
     //<editor-fold desc="102Form">
+
     /**
      * @covers ::Form102IndicatorsEnum
      */
@@ -347,6 +358,7 @@ class CreditOrgInfoWrapperTest extends TestCase
     }
 
     //</editor-fold desc="102Form">
+
     /**
      * @covers ::Data123FormFull
      */
@@ -563,5 +575,4 @@ class CreditOrgInfoWrapperTest extends TestCase
         $result = $this->getSvc()->RegionsEnumXML();
         self::assertNotEmpty($result);
     }
-    
 }

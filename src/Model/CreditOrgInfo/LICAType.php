@@ -3,27 +3,27 @@
 namespace Gam6itko\Cbrf\Model\CreditOrgInfo;
 
 /**
- * Class representing LICAType
+ * Class representing LICAType.
  */
 class LICAType
 {
     /**
-     * @var int $lCode
+     * @var int
      */
     protected $lCode = null;
 
     /**
-     * @var string $lT
+     * @var string
      */
     protected $lt = null;
 
     /**
-     * @var \DateTime $lDate
+     * @var \DateTime
      */
     protected $lDate = null;
 
     /**
-     * Gets as lCode
+     * Gets as lCode.
      *
      * @return int
      */
@@ -33,19 +33,21 @@ class LICAType
     }
 
     /**
-     * Sets a new lCode
+     * Sets a new lCode.
      *
      * @param int $lCode
+     *
      * @return self
      */
     public function setLCode($lCode)
     {
         $this->lCode = $lCode;
+
         return $this;
     }
 
     /**
-     * Gets as lt
+     * Gets as lt.
      *
      * @return string
      */
@@ -55,19 +57,21 @@ class LICAType
     }
 
     /**
-     * Sets a new lt
+     * Sets a new lt.
      *
      * @param string $lt
+     *
      * @return self
      */
     public function setLT($lt)
     {
         $this->lt = $lt;
+
         return $this;
     }
 
     /**
-     * Gets as lDate
+     * Gets as lDate.
      *
      * @return \DateTime
      */
@@ -77,14 +81,16 @@ class LICAType
     }
 
     /**
-     * Sets a new lDate
+     * Sets a new lDate.
      *
      * @param \DateTime $lDate
+     *
      * @return self
      */
     public function setLDate(\DateTime $lDate)
     {
         $this->lDate = $lDate;
+
         return $this;
     }
 }

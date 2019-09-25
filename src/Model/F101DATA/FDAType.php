@@ -3,27 +3,27 @@
 namespace Gam6itko\Cbrf\Model\F101DATA;
 
 /**
- * Class representing FDAType
+ * Class representing FDAType.
  */
 class FDAType
 {
     /**
-     * @var \DateTime $dT
+     * @var \DateTime
      */
     protected $dt = null;
 
     /**
-     * @var float $val
+     * @var float
      */
     protected $val = null;
 
     /**
-     * @var string $ap
+     * @var string
      */
     protected $ap = null;
 
     /**
-     * Gets as dt
+     * Gets as dt.
      *
      * @return \DateTime
      */
@@ -33,19 +33,21 @@ class FDAType
     }
 
     /**
-     * Sets a new dt
+     * Sets a new dt.
      *
      * @param \DateTime $dt
+     *
      * @return self
      */
     public function setDT(\DateTime $dt)
     {
         $this->dt = $dt;
+
         return $this;
     }
 
     /**
-     * Gets as val
+     * Gets as val.
      *
      * @return float
      */
@@ -55,19 +57,21 @@ class FDAType
     }
 
     /**
-     * Sets a new val
+     * Sets a new val.
      *
      * @param float $val
+     *
      * @return self
      */
     public function setVal($val)
     {
         $this->val = $val;
+
         return $this;
     }
 
     /**
-     * Gets as ap
+     * Gets as ap.
      *
      * @return string
      */
@@ -77,14 +81,16 @@ class FDAType
     }
 
     /**
-     * Sets a new ap
+     * Sets a new ap.
      *
      * @param string $ap
+     *
      * @return self
      */
     public function setAP($ap)
     {
         $this->ap = $ap;
+
         return $this;
     }
 }

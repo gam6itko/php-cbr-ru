@@ -3,87 +3,87 @@
 namespace Gam6itko\Cbrf\Model\CreditOrgInfo;
 
 /**
- * Class representing COAType
+ * Class representing COAType.
  */
 class COAType
 {
     /**
-     * @var int $regNumber
+     * @var int
      */
     protected $regNumber = null;
 
     /**
-     * @var string $bic
+     * @var string
      */
     protected $bic = null;
 
     /**
-     * @var string $orgName
+     * @var string
      */
     protected $orgName = null;
 
     /**
-     * @var string $orgFullName
+     * @var string
      */
     protected $orgFullName = null;
 
     /**
-     * @var string $phones
+     * @var string
      */
     protected $phones = null;
 
     /**
-     * @var \DateTime $dateKGRRegistration
+     * @var \DateTime
      */
     protected $dateKGRRegistration = null;
 
     /**
-     * @var string $mainRegNumber
+     * @var string
      */
     protected $mainRegNumber = null;
 
     /**
-     * @var \DateTime $mainDateReg
+     * @var \DateTime
      */
     protected $mainDateReg = null;
 
     /**
-     * @var string $ustavAdr
+     * @var string
      */
     protected $ustavAdr = null;
 
     /**
-     * @var string $factAdr
+     * @var string
      */
     protected $factAdr = null;
 
     /**
-     * @var string $director
+     * @var string
      */
     protected $director = null;
 
     /**
-     * @var float $ustMoney
+     * @var float
      */
     protected $ustMoney = null;
 
     /**
-     * @var string $orgStatus
+     * @var string
      */
     protected $orgStatus = null;
 
     /**
-     * @var int $regionCode
+     * @var int
      */
     protected $regionCode = null;
 
     /**
-     * @var \DateTime $sSVDate
+     * @var \DateTime
      */
     protected $sSVDate = null;
 
     /**
-     * Gets as regNumber
+     * Gets as regNumber.
      *
      * @return int
      */
@@ -93,19 +93,21 @@ class COAType
     }
 
     /**
-     * Sets a new regNumber
+     * Sets a new regNumber.
      *
      * @param int $regNumber
+     *
      * @return self
      */
     public function setRegNumber($regNumber)
     {
         $this->regNumber = $regNumber;
+
         return $this;
     }
 
     /**
-     * Gets as bIC
+     * Gets as bIC.
      *
      * @return string
      */
@@ -115,19 +117,21 @@ class COAType
     }
 
     /**
-     * Sets a new bIC
+     * Sets a new bIC.
      *
      * @param string $bic
+     *
      * @return self
      */
     public function setBIC($bic)
     {
         $this->bic = $bic;
+
         return $this;
     }
 
     /**
-     * Gets as orgName
+     * Gets as orgName.
      *
      * @return string
      */
@@ -137,19 +141,21 @@ class COAType
     }
 
     /**
-     * Sets a new orgName
+     * Sets a new orgName.
      *
      * @param string $orgName
+     *
      * @return self
      */
     public function setOrgName($orgName)
     {
         $this->orgName = $orgName;
+
         return $this;
     }
 
     /**
-     * Gets as orgFullName
+     * Gets as orgFullName.
      *
      * @return string
      */
@@ -159,19 +165,21 @@ class COAType
     }
 
     /**
-     * Sets a new orgFullName
+     * Sets a new orgFullName.
      *
      * @param string $orgFullName
+     *
      * @return self
      */
     public function setOrgFullName($orgFullName)
     {
         $this->orgFullName = $orgFullName;
+
         return $this;
     }
 
     /**
-     * Gets as phones
+     * Gets as phones.
      *
      * @return string
      */
@@ -181,19 +189,21 @@ class COAType
     }
 
     /**
-     * Sets a new phones
+     * Sets a new phones.
      *
      * @param string $phones
+     *
      * @return self
      */
     public function setPhones($phones)
     {
         $this->phones = $phones;
+
         return $this;
     }
 
     /**
-     * Gets as dateKGRRegistration
+     * Gets as dateKGRRegistration.
      *
      * @return \DateTime
      */
@@ -203,19 +213,21 @@ class COAType
     }
 
     /**
-     * Sets a new dateKGRRegistration
+     * Sets a new dateKGRRegistration.
      *
      * @param \DateTime $dateKGRRegistration
+     *
      * @return self
      */
     public function setDateKGRRegistration(\DateTime $dateKGRRegistration)
     {
         $this->dateKGRRegistration = $dateKGRRegistration;
+
         return $this;
     }
 
     /**
-     * Gets as mainRegNumber
+     * Gets as mainRegNumber.
      *
      * @return string
      */
@@ -225,19 +237,21 @@ class COAType
     }
 
     /**
-     * Sets a new mainRegNumber
+     * Sets a new mainRegNumber.
      *
      * @param string $mainRegNumber
+     *
      * @return self
      */
     public function setMainRegNumber($mainRegNumber)
     {
         $this->mainRegNumber = $mainRegNumber;
+
         return $this;
     }
 
     /**
-     * Gets as mainDateReg
+     * Gets as mainDateReg.
      *
      * @return \DateTime
      */
@@ -247,19 +261,21 @@ class COAType
     }
 
     /**
-     * Sets a new mainDateReg
+     * Sets a new mainDateReg.
      *
      * @param \DateTime $mainDateReg
+     *
      * @return self
      */
     public function setMainDateReg(\DateTime $mainDateReg)
     {
         $this->mainDateReg = $mainDateReg;
+
         return $this;
     }
 
     /**
-     * Gets as ustavAdr
+     * Gets as ustavAdr.
      *
      * @return string
      */
@@ -269,19 +285,21 @@ class COAType
     }
 
     /**
-     * Sets a new ustavAdr
+     * Sets a new ustavAdr.
      *
      * @param string $ustavAdr
+     *
      * @return self
      */
     public function setUstavAdr($ustavAdr)
     {
         $this->ustavAdr = $ustavAdr;
+
         return $this;
     }
 
     /**
-     * Gets as factAdr
+     * Gets as factAdr.
      *
      * @return string
      */
@@ -291,19 +309,21 @@ class COAType
     }
 
     /**
-     * Sets a new factAdr
+     * Sets a new factAdr.
      *
      * @param string $factAdr
+     *
      * @return self
      */
     public function setFactAdr($factAdr)
     {
         $this->factAdr = $factAdr;
+
         return $this;
     }
 
     /**
-     * Gets as director
+     * Gets as director.
      *
      * @return string
      */
@@ -313,19 +333,21 @@ class COAType
     }
 
     /**
-     * Sets a new director
+     * Sets a new director.
      *
      * @param string $director
+     *
      * @return self
      */
     public function setDirector($director)
     {
         $this->director = $director;
+
         return $this;
     }
 
     /**
-     * Gets as ustMoney
+     * Gets as ustMoney.
      *
      * @return float
      */
@@ -335,19 +357,21 @@ class COAType
     }
 
     /**
-     * Sets a new ustMoney
+     * Sets a new ustMoney.
      *
      * @param float $ustMoney
+     *
      * @return self
      */
     public function setUstMoney($ustMoney)
     {
         $this->ustMoney = $ustMoney;
+
         return $this;
     }
 
     /**
-     * Gets as orgStatus
+     * Gets as orgStatus.
      *
      * @return string
      */
@@ -357,19 +381,21 @@ class COAType
     }
 
     /**
-     * Sets a new orgStatus
+     * Sets a new orgStatus.
      *
      * @param string $orgStatus
+     *
      * @return self
      */
     public function setOrgStatus($orgStatus)
     {
         $this->orgStatus = $orgStatus;
+
         return $this;
     }
 
     /**
-     * Gets as regCode
+     * Gets as regCode.
      *
      * @return int
      */
@@ -379,19 +405,21 @@ class COAType
     }
 
     /**
-     * Sets a new regCode
+     * Sets a new regCode.
      *
      * @param int $regionCode
+     *
      * @return self
      */
     public function setRegionCode($regionCode)
     {
         $this->regionCode = $regionCode;
+
         return $this;
     }
 
     /**
-     * Gets as sSVDate
+     * Gets as sSVDate.
      *
      * @return \DateTime
      */
@@ -401,14 +429,16 @@ class COAType
     }
 
     /**
-     * Sets a new sSVDate
+     * Sets a new sSVDate.
      *
      * @param \DateTime $sSVDate
+     *
      * @return self
      */
     public function setSSVDate(\DateTime $sSVDate)
     {
         $this->sSVDate = $sSVDate;
+
         return $this;
     }
 }

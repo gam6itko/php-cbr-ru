@@ -3,17 +3,17 @@
 namespace Gam6itko\Cbrf\Model\F135DATA;
 
 /**
- * Class representing F1355AType
+ * Class representing F1355AType.
  */
 class F1355AType
 {
     /**
-     * @var \DateTime $dt
+     * @var \DateTime
      */
     protected $dt = null;
 
     /**
-     * Gets as dt
+     * Gets as dt.
      *
      * @return \DateTime
      */
@@ -23,14 +23,16 @@ class F1355AType
     }
 
     /**
-     * Sets a new dt
+     * Sets a new dt.
      *
      * @param \DateTime $dt
+     *
      * @return self
      */
     public function setDT(\DateTime $dt)
     {
         $this->dt = $dt;
+
         return $this;
     }
 }

@@ -5,31 +5,34 @@ namespace Gam6itko\Cbrf\Model;
 use Gam6itko\Cbrf\Model\IndicatorsEnum102\SINDAType;
 
 /**
- * Class representing IndicatorsEnum102
+ * Class representing IndicatorsEnum102.
  */
 class IndicatorsEnum102
 {
     /**
-     * @var SINDAType[] $sind
+     * @var SINDAType[]
      */
     protected $sind = [];
 
     /**
-     * Adds as sind
+     * Adds as sind.
      *
      * @param SINDAType $sind
+     *
      * @return self
      */
     public function addToSIND(SINDAType $sind)
     {
         $this->sind[] = $sind;
+
         return $this;
     }
 
     /**
-     * isset sind
+     * isset sind.
      *
      * @param int|string $index
+     *
      * @return bool
      */
     public function issetSIND($index)
@@ -38,10 +41,9 @@ class IndicatorsEnum102
     }
 
     /**
-     * unset sind
+     * unset sind.
      *
      * @param int|string $index
-     * @return void
      */
     public function unsetSIND($index)
     {
@@ -49,7 +51,7 @@ class IndicatorsEnum102
     }
 
     /**
-     * Gets as sind
+     * Gets as sind.
      *
      * @return SINDAType[]
      */
@@ -59,14 +61,16 @@ class IndicatorsEnum102
     }
 
     /**
-     * Sets a new sind
+     * Sets a new sind.
      *
      * @param SINDAType[] $sind
+     *
      * @return self
      */
     public function setSIND(array $sind)
     {
         $this->sind = $sind;
+
         return $this;
     }
 }

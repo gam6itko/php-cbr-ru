@@ -1,4 +1,5 @@
 <?php
+
 namespace Gam6itko\Cbrf\Tests\Wrapper\Cached;
 
 use Gam6itko\Cbrf\Wrapper\Cached\CreditOrgInfoCachedWrapper;
@@ -14,13 +15,15 @@ class CreditOrgInfoCachedWrapperTest extends TestCase
     private function getSvc(&$cache)
     {
         $cache = new ArrayAdapter();
+
         return new CreditOrgInfoCachedWrapper($cache);
     }
 
     /**
      * @dataProvider dataBicToIntCode
+     *
      * @param string $bic
-     * @param int $expectedIntCode
+     * @param int    $expectedIntCode
      */
     public function testBicToIntCode(string $bic, int $expectedIntCode)
     {

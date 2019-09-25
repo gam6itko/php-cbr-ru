@@ -1,4 +1,5 @@
 <?php
+
 namespace Gam6itko\Cbrf\Wrapper;
 
 abstract class AbstractWrapper
@@ -20,6 +21,7 @@ abstract class AbstractWrapper
     /**
      * @param $methodName
      * @param array $soapRequest
+     *
      * @return array|mixed|\stdClass
      */
     protected function doRequest(string $methodName, array $soapRequest = [])
@@ -31,14 +33,14 @@ abstract class AbstractWrapper
             return $result;
         }
 
-        return (array)$result;
+        return (array) $result;
     }
 
     private function soapCall(string $methodName, array $soapRequest = [])
     {
         $soapResult = $this->getSoapClient()->__soapCall($methodName, [$methodName => $soapRequest]);
-        if (isset($soapResult->{$methodName . 'Result'})) {
-            return $soapResult->{$methodName . 'Result'};
+        if (isset($soapResult->{$methodName.'Result'})) {
+            return $soapResult->{$methodName.'Result'};
         }
 
         return $soapResult;
@@ -50,10 +52,10 @@ abstract class AbstractWrapper
     protected function buildSoapClient()
     {
         return new \SoapClient($this->getWsdl(), [
-            'soap_version'       => SOAP_1_1,
-            'trace'              => true,
-            'features'           => SOAP_USE_XSI_ARRAY_TYPE,
-            'connection_timeout' => 5
+            'soap_version' => SOAP_1_1,
+            'trace' => true,
+            'features' => SOAP_USE_XSI_ARRAY_TYPE,
+            'connection_timeout' => 5,
         ]);
     }
 }

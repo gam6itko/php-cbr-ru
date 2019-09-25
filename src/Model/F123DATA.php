@@ -5,31 +5,34 @@ namespace Gam6itko\Cbrf\Model;
 use Gam6itko\Cbrf\Model\F123DATA\F123AType;
 
 /**
- * Class representing F123DATA
+ * Class representing F123DATA.
  */
 class F123DATA
 {
     /**
-     * @var F123AType[] $f123
+     * @var F123AType[]
      */
     protected $f123 = [];
 
     /**
-     * Adds as f123
+     * Adds as f123.
      *
      * @param F123AType $f123
+     *
      * @return self
      */
     public function addToF123(F123AType $f123)
     {
         $this->f123[] = $f123;
+
         return $this;
     }
 
     /**
-     * isset f123
+     * isset f123.
      *
      * @param int|string $index
+     *
      * @return bool
      */
     public function issetF123($index)
@@ -38,10 +41,9 @@ class F123DATA
     }
 
     /**
-     * unset f123
+     * unset f123.
      *
      * @param int|string $index
-     * @return void
      */
     public function unsetF123($index)
     {
@@ -49,7 +51,7 @@ class F123DATA
     }
 
     /**
-     * Gets as f123
+     * Gets as f123.
      *
      * @return F123AType[]
      */
@@ -59,14 +61,16 @@ class F123DATA
     }
 
     /**
-     * Sets a new f123
+     * Sets a new f123.
      *
      * @param F123AType[] $f123
+     *
      * @return self
      */
     public function setF123(array $f123)
     {
         $this->f123 = $f123;
+
         return $this;
     }
 }

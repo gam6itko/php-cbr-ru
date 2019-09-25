@@ -3,42 +3,42 @@
 namespace Gam6itko\Cbrf\Model\IndicatorsEnum102;
 
 /**
- * Class representing SINDAType
+ * Class representing SINDAType.
  */
 class SINDAType
 {
     /**
-     * @var int $symId
+     * @var int
      */
     protected $symId = null;
 
     /**
-     * @var int $symSort
+     * @var int
      */
     protected $symSort = null;
 
     /**
-     * @var string $symbol
+     * @var string
      */
     protected $symbol = null;
 
     /**
-     * @var int $symType
+     * @var int
      */
     protected $symType = null;
 
     /**
-     * @var string $name
+     * @var string
      */
     protected $name = null;
 
     /**
-     * @var int $symSet
+     * @var int
      */
     protected $symSet = null;
 
     /**
-     * Gets as symid
+     * Gets as symid.
      *
      * @return int
      */
@@ -48,19 +48,21 @@ class SINDAType
     }
 
     /**
-     * Sets a new symid
+     * Sets a new symid.
      *
      * @param int $symId
+     *
      * @return self
      */
     public function setSymId($symId)
     {
         $this->symId = $symId;
+
         return $this;
     }
 
     /**
-     * Gets as symSort
+     * Gets as symSort.
      *
      * @return int
      */
@@ -70,19 +72,21 @@ class SINDAType
     }
 
     /**
-     * Sets a new symSort
+     * Sets a new symSort.
      *
      * @param int $symSort
+     *
      * @return self
      */
     public function setSymsort($symSort)
     {
         $this->symSort = $symSort;
+
         return $this;
     }
 
     /**
-     * Gets as symbol
+     * Gets as symbol.
      *
      * @return string
      */
@@ -92,19 +96,21 @@ class SINDAType
     }
 
     /**
-     * Sets a new symbol
+     * Sets a new symbol.
      *
      * @param string $symbol
+     *
      * @return self
      */
     public function setSymbol($symbol)
     {
         $this->symbol = $symbol;
+
         return $this;
     }
 
     /**
-     * Gets as symType
+     * Gets as symType.
      *
      * @return int
      */
@@ -114,19 +120,21 @@ class SINDAType
     }
 
     /**
-     * Sets a new symType
+     * Sets a new symType.
      *
      * @param int $symType
+     *
      * @return self
      */
     public function setSymtype($symType)
     {
         $this->symType = $symType;
+
         return $this;
     }
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -136,19 +144,21 @@ class SINDAType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
      * @param string $name
+     *
      * @return self
      */
     public function setName($name)
     {
         $this->name = $name;
+
         return $this;
     }
 
     /**
-     * Gets as symSet
+     * Gets as symSet.
      *
      * @return int
      */
@@ -158,14 +168,16 @@ class SINDAType
     }
 
     /**
-     * Sets a new symSet
+     * Sets a new symSet.
      *
      * @param int $symSet
+     *
      * @return self
      */
     public function setSymset($symSet)
     {
         $this->symSet = $symSet;
+
         return $this;
     }
 }

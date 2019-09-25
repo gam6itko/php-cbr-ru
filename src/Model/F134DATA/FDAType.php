@@ -3,27 +3,27 @@
 namespace Gam6itko\Cbrf\Model\F134DATA;
 
 /**
- * Class representing FDAType
+ * Class representing FDAType.
  */
 class FDAType
 {
     /**
-     * @var string $ns
+     * @var string
      */
     protected $ns = null;
 
     /**
-     * @var string $pn
+     * @var string
      */
     protected $pn = null;
 
     /**
-     * @var float $vAL
+     * @var float
      */
     protected $value = null;
 
     /**
-     * Gets as ns
+     * Gets as ns.
      *
      * @return string
      */
@@ -33,19 +33,21 @@ class FDAType
     }
 
     /**
-     * Sets a new ns
+     * Sets a new ns.
      *
      * @param string $ns
+     *
      * @return self
      */
     public function setNS($ns)
     {
         $this->ns = $ns;
+
         return $this;
     }
 
     /**
-     * Gets as pn
+     * Gets as pn.
      *
      * @return string
      */
@@ -55,19 +57,21 @@ class FDAType
     }
 
     /**
-     * Sets a new pn
+     * Sets a new pn.
      *
      * @param string $pn
+     *
      * @return self
      */
     public function setPN($pn)
     {
         $this->pn = $pn;
+
         return $this;
     }
 
     /**
-     * Gets as value
+     * Gets as value.
      *
      * @return float
      */
@@ -77,14 +81,16 @@ class FDAType
     }
 
     /**
-     * Sets a new value
+     * Sets a new value.
      *
      * @param float $value
+     *
      * @return self
      */
     public function setValue($value)
     {
         $this->value = $value;
+
         return $this;
     }
 }

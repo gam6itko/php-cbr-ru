@@ -5,31 +5,34 @@ namespace Gam6itko\Cbrf\Model;
 use Gam6itko\Cbrf\Model\CoOffices\OfficesAType;
 
 /**
- * Class representing CoOffices
+ * Class representing CoOffices.
  */
 class CoOffices
 {
     /**
-     * @var OfficesAType[] $offices
+     * @var OfficesAType[]
      */
     protected $offices = [];
 
     /**
-     * Adds as offices
+     * Adds as offices.
      *
      * @param OfficesAType $offices
+     *
      * @return self
      */
     public function addToOffices(OfficesAType $offices)
     {
         $this->offices[] = $offices;
+
         return $this;
     }
 
     /**
-     * isset offices
+     * isset offices.
      *
      * @param int|string $index
+     *
      * @return bool
      */
     public function issetOffices($index)
@@ -38,10 +41,9 @@ class CoOffices
     }
 
     /**
-     * unset offices
+     * unset offices.
      *
      * @param int|string $index
-     * @return void
      */
     public function unsetOffices($index)
     {
@@ -49,7 +51,7 @@ class CoOffices
     }
 
     /**
-     * Gets as offices
+     * Gets as offices.
      *
      * @return OfficesAType[]
      */
@@ -59,14 +61,16 @@ class CoOffices
     }
 
     /**
-     * Sets a new offices
+     * Sets a new offices.
      *
      * @param OfficesAType[] $offices
+     *
      * @return self
      */
     public function setOffices(array $offices)
     {
         $this->offices = $offices;
+
         return $this;
     }
 }

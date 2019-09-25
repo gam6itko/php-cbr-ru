@@ -5,31 +5,34 @@ namespace Gam6itko\Cbrf\Model;
 use Gam6itko\Cbrf\Model\IndicatorsEnum101\EINDAType;
 
 /**
- * Class representing IndicatorsEnum101
+ * Class representing IndicatorsEnum101.
  */
 class IndicatorsEnum101
 {
     /**
-     * @var EINDAType[] $eind
+     * @var EINDAType[]
      */
     protected $eind = [];
 
     /**
-     * Adds as eIND
+     * Adds as eIND.
      *
      * @param EINDAType $eind
+     *
      * @return self
      */
     public function addToEIND(EINDAType $eind)
     {
         $this->eind[] = $eind;
+
         return $this;
     }
 
     /**
-     * isset eIND
+     * isset eIND.
      *
      * @param int|string $index
+     *
      * @return bool
      */
     public function issetEIND($index)
@@ -38,10 +41,9 @@ class IndicatorsEnum101
     }
 
     /**
-     * unset eIND
+     * unset eIND.
      *
      * @param int|string $index
-     * @return void
      */
     public function unsetEIND($index)
     {
@@ -49,7 +51,7 @@ class IndicatorsEnum101
     }
 
     /**
-     * Gets as eIND
+     * Gets as eIND.
      *
      * @return EINDAType[]
      */
@@ -59,14 +61,16 @@ class IndicatorsEnum101
     }
 
     /**
-     * Sets a new eIND
+     * Sets a new eIND.
      *
      * @param EINDAType[] $eind
+     *
      * @return self
      */
     public function setEIND(array $eind)
     {
         $this->eind = $eind;
+
         return $this;
     }
 }

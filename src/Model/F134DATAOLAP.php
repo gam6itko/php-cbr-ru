@@ -5,31 +5,34 @@ namespace Gam6itko\Cbrf\Model;
 use Gam6itko\Cbrf\Model\F134DATAOLAP\FoAType;
 
 /**
- * Class representing F134DATAOLAP
+ * Class representing F134DATAOLAP.
  */
 class F134DATAOLAP
 {
     /**
-     * @var FoAType[] $fo
+     * @var FoAType[]
      */
     protected $fo = [];
 
     /**
-     * Adds as fo
+     * Adds as fo.
      *
      * @param FoAType $fo
+     *
      * @return self
      */
     public function addToFo(FoAType $fo)
     {
         $this->fo[] = $fo;
+
         return $this;
     }
 
     /**
-     * isset fo
+     * isset fo.
      *
      * @param int|string $index
+     *
      * @return bool
      */
     public function issetFo($index)
@@ -38,10 +41,9 @@ class F134DATAOLAP
     }
 
     /**
-     * unset fo
+     * unset fo.
      *
      * @param int|string $index
-     * @return void
      */
     public function unsetFo($index)
     {
@@ -49,7 +51,7 @@ class F134DATAOLAP
     }
 
     /**
-     * Gets as fo
+     * Gets as fo.
      *
      * @return FoAType[]
      */
@@ -59,14 +61,16 @@ class F134DATAOLAP
     }
 
     /**
-     * Sets a new fo
+     * Sets a new fo.
      *
      * @param FoAType[] $fo
+     *
      * @return self
      */
     public function setFo(array $fo)
     {
         $this->fo = $fo;
+
         return $this;
     }
 }
