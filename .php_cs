@@ -1,7 +1,8 @@
 <?php
 
 $rules = [
-    '@Symfony' => true,
+    '@Symfony'               => true,
+    'binary_operator_spaces' => false,
 ];
 
 $finder = PhpCsFixer\Finder::create()
