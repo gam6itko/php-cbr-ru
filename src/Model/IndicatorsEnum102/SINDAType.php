@@ -10,32 +10,32 @@ class SINDAType
     /**
      * @var int
      */
-    protected $symId = null;
+    protected $symId;
 
     /**
      * @var int
      */
-    protected $symSort = null;
+    protected $symSort;
 
     /**
      * @var string
      */
-    protected $symbol = null;
+    protected $symbol;
 
     /**
      * @var int
      */
-    protected $symType = null;
+    protected $symType;
 
     /**
      * @var string
      */
-    protected $name = null;
+    protected $name;
 
     /**
      * @var int
      */
-    protected $symSet = null;
+    protected $symSet;
 
     /**
      * Gets as symid.

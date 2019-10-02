@@ -10,77 +10,77 @@ class COAType
     /**
      * @var int
      */
-    protected $regNumber = null;
+    protected $regNumber;
 
     /**
      * @var string
      */
-    protected $bic = null;
+    protected $bic;
 
     /**
      * @var string
      */
-    protected $orgName = null;
+    protected $orgName;
 
     /**
      * @var string
      */
-    protected $orgFullName = null;
+    protected $orgFullName;
 
     /**
      * @var string
      */
-    protected $phones = null;
+    protected $phones;
 
     /**
      * @var \DateTime
      */
-    protected $dateKGRRegistration = null;
+    protected $dateKGRRegistration;
 
     /**
      * @var string
      */
-    protected $mainRegNumber = null;
+    protected $mainRegNumber;
 
     /**
      * @var \DateTime
      */
-    protected $mainDateReg = null;
+    protected $mainDateReg;
 
     /**
      * @var string
      */
-    protected $ustavAdr = null;
+    protected $ustavAdr;
 
     /**
      * @var string
      */
-    protected $factAdr = null;
+    protected $factAdr;
 
     /**
      * @var string
      */
-    protected $director = null;
+    protected $director;
 
     /**
      * @var float
      */
-    protected $ustMoney = null;
+    protected $ustMoney;
 
     /**
      * @var string
      */
-    protected $orgStatus = null;
+    protected $orgStatus;
 
     /**
      * @var int
      */
-    protected $regionCode = null;
+    protected $regionCode;
 
     /**
      * @var \DateTime
      */
-    protected $sSVDate = null;
+    protected $sSVDate;
 
     /**
      * Gets as regNumber.

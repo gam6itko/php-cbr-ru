@@ -11,77 +11,77 @@ class FDFAType
     /**
      * @var \DateTime
      */
-    protected $dt = null;
+    protected $dt;
 
     /**
      * @var string
      */
-    protected $plan = null;
+    protected $plan;
 
     /**
      * @var int
      */
-    protected $ap = null;
+    protected $ap;
 
     /**
      * @var float vr
      */
-    protected $inRur = null;
+    protected $inRur;
 
     /**
      * @var float vv
      */
-    protected $inCur = null;
+    protected $inCur;
 
     /**
      * @var float vitg
      */
-    protected $inTotal = null;
+    protected $inTotal;
 
     /**
      * @var float ora
      */
-    protected $sumDebitRur = null;
+    protected $sumDebitRur;
 
     /**
      * @var float ova
      */
-    protected $sumDebitCur = null;
+    protected $sumDebitCur;
 
     /**
      * @var float oitga
      */
-    protected $sumDebitTotal = null;
+    protected $sumDebitTotal;
 
     /**
      * @var float orp
      */
-    protected $sumCreditRur = null;
+    protected $sumCreditRur;
 
     /**
      * @var float ovp
      */
-    protected $sumCreditCur = null;
+    protected $sumCreditCur;
 
     /**
      * @var float oitgp
      */
-    protected $sumCreditTotal = null;
+    protected $sumCreditTotal;
 
     /**
      * @var float
      */
-    protected $outRur = null;
+    protected $outRur;
 
     /**
      * @var float iv
      */
-    protected $outCur = null;
+    protected $outCur;
 
     /**
      * @var float iitg
      */
-    protected $outTotal = null;
+    protected $outTotal;
 
     /**
      * Gets as dt.

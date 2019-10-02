@@ -10,7 +10,7 @@ class F1355AType
     /**
      * @var \DateTime
      */
-    protected $dt = null;
+    protected $dt;
 
     /**
      * Gets as dt.

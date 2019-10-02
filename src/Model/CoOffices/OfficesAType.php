@@ -10,27 +10,27 @@ class OfficesAType
     /**
      * @var float
      */
-    protected $cmain = null;
+    protected $cmain;
 
     /**
      * @var float
      */
-    protected $cregnum = null;
+    protected $cregnum;
 
     /**
      * @var string
      */
-    protected $cname = null;
+    protected $cname;
 
     /**
      * @var string
      */
-    protected $cndate = null;
+    protected $cndate;
 
     /**
      * @var string
      */
-    protected $straddrmn = null;
+    protected $straddrmn;
 
     /**
      * Gets as cmain.

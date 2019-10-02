@@ -10,12 +10,12 @@ class F1356AType
     /**
      * @var float
      */
-    protected $v61 = null;
+    protected $v61;
 
     /**
      * @var float
      */
-    protected $v62 = null;
+    protected $v62;
 
     /**
      * Gets as v61.

@@ -10,12 +10,12 @@ class FoAType
     /**
      * @var \DateTime
      */
-    protected $dt = null;
+    protected $dt;
 
     /**
      * @var float
      */
-    protected $v1 = null;
+    protected $v1;
 
     /**
      * Gets as dt.

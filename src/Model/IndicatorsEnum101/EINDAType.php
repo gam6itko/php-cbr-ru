@@ -10,27 +10,27 @@ class EINDAType
     /**
      * @var int
      */
-    protected $indId = null;
+    protected $indId;
 
     /**
      * @var string
      */
-    protected $indCode = null;
+    protected $indCode;
 
     /**
      * @var string
      */
-    protected $name = null;
+    protected $name;
 
     /**
      * @var string
      */
-    protected $indType = null;
+    protected $indType;
 
     /**
      * @var string
      */
-    protected $indChapter = null;
+    protected $indChapter;
 
     /**
      * Gets as indId.

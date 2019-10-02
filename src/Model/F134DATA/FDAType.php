@@ -10,17 +10,17 @@ class FDAType
     /**
      * @var string
      */
-    protected $ns = null;
+    protected $ns;
 
     /**
      * @var string
      */
-    protected $pn = null;
+    protected $pn;
 
     /**
      * @var float
      */
-    protected $value = null;
+    protected $value;
 
     /**
      * Gets as ns.

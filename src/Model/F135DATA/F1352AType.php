@@ -10,12 +10,12 @@ class F1352AType
     /**
      * @var string
      */
-    protected $c2 = null;
+    protected $c2;
 
     /**
      * @var float
      */
-    protected $v2 = null;
+    protected $v2;
 
     /**
      * Gets as c2.

@@ -10,17 +10,17 @@ class F123AType
     /**
      * @var string
      */
-    protected $code = null;
+    protected $code;
 
     /**
      * @var string
      */
-    protected $name = null;
+    protected $name;
 
     /**
      * @var float
      */
-    protected $value = null;
+    protected $value;
 
     /**
      * Gets as code.

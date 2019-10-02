@@ -10,22 +10,22 @@ class F1354AType
     /**
      * @var int
      */
-    protected $num = null;
+    protected $num;
 
     /**
      * @var string
      */
-    protected $nn = null;
+    protected $nn;
 
     /**
      * @var float
      */
-    protected $nnd = null;
+    protected $nnd;
 
     /**
      * @var \DateTime
      */
-    protected $dt = null;
+    protected $dt;
 
     /**
      * Gets as num.
